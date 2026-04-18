@@ -1,16 +1,34 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class RadioDialogue : MonoBehaviour
 {
     [SerializeField] private RadioData[] RequiredRadioData;
+    [SerializeField] private bool[] hasConnected;
     [SerializeField] private InteractionHook[] InteractionHooks;
 
+    private void Awake()
+    {
+        hasConnected = new bool[RequiredRadioData.Length];
+        //for (int i = 0; i < hasConnected.Length; i++)
+        //{
+        //    hasConnected[i] = false;
+        //}
+    }
+    public void MakeCallBack(int callIndex)
+    {
+        if (hasConnected[callIndex])
+        {
+            InteractionHooks[callIndex].OnInteract();
+        }
+    }
     public void MakeCall(RadioData incomingSettings)
     {
         for (int i = 0; i < RequiredRadioData.Length; i++)
         {
             if (Similarity(incomingSettings, RequiredRadioData[i]) >= 2f){
                 Debug.Log("Match Found!");
+                hasConnected[i] = true;
                 InteractionHooks[i].OnInteract();
                 return;
             }

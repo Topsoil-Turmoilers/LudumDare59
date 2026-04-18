@@ -54,6 +54,12 @@ public class RadioUIManager : MonoBehaviour
         RadioState.toggles = new bool[Toggles.Length];
 
         PlaceCallButton.onClick.AddListener(() => { radioDialogue.MakeCall(RadioState); });
+
+        CallbackButton1.onClick.AddListener(() => { radioDialogue.MakeCallBack(0); });
+        CallbackButton2.onClick.AddListener(() => { radioDialogue.MakeCallBack(1); });
+        CallbackButton3.onClick.AddListener(() => { radioDialogue.MakeCallBack(2); });
+        CallbackButton4.onClick.AddListener(() => { radioDialogue.MakeCallBack(3); });
+        CallbackButton5.onClick.AddListener(() => { radioDialogue.MakeCallBack(4); });
     }
 
     private void OnEnable()

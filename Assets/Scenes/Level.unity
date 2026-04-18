@@ -695,6 +695,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6046081489244355539, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: defaultDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 81540d2599f45f74ba5df3c0acae8766, type: 2}
     - target: {fileID: 6606557063358357887, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
