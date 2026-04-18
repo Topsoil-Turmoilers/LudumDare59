@@ -31,8 +31,8 @@ public class AudioManager : MonoBehaviour
     }
 
     private void Start()
-    {
-        //Safety check
+    { 
+            //Safety check -> Plays Menu Music by Default
         if (playlist != null && playlist.menuTheme != null)
         {
             PlayMenuMusic();

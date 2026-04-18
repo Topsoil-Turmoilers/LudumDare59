@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf9d72866ea4e448b8e24a83f7d5ad9, type: 3}
   m_Name: AudioPlaylist
   m_EditorClassIdentifier: Assembly-CSharp::AudioPlaylist
-  menuTheme: {fileID: 0}
+  menuTheme: {fileID: 8300000, guid: 5d7a3c6a1e3ced641bf00619d7152e48, type: 3}
   insideTheme: {fileID: 0}
   outsideTheme: {fileID: 0}
   radioButton01: {fileID: 0}
@@ -20,3 +20,11 @@ MonoBehaviour:
   radioPlayingHighFQ: {fileID: 0}
   radioPlayingLowFQ: {fileID: 0}
   radioPlayingOffKeyFQ: {fileID: 0}
+  walkInside: {fileID: 0}
+  windowHit01: {fileID: 0}
+  windowHit02: {fileID: 0}
+  windowKnock: {fileID: 0}
+  windowSingleTap: {fileID: 0}
+  windowTap01: {fileID: 0}
+  windowTap02: {fileID: 0}
+  walkOutside: {fileID: 0}
