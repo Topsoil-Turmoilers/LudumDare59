@@ -5,7 +5,17 @@ public class RadioDialogue : MonoBehaviour
     [SerializeField] private RadioData[] RequiredRadioData;
     [SerializeField] private InteractionHook[] InteractionHooks;
 
-
+    public void MakeCall(RadioData incomingSettings)
+    {
+        for (int i = 0; i < RequiredRadioData.Length; i++)
+        {
+            if (Similarity(incomingSettings, RequiredRadioData[i]) >= 2f){
+                Debug.Log("Match Found!");
+                InteractionHooks[i].OnInteract();
+                return;
+            }
+        }
+    }
 
     private float Similarity(RadioData input, RadioData comparison)
     {

@@ -52,6 +52,8 @@ public class RadioUIManager : MonoBehaviour
         }
 
         RadioState.toggles = new bool[Toggles.Length];
+
+        PlaceCallButton.onClick.AddListener(() => { radioDialogue.MakeCall(RadioState); });
     }
 
     private void OnEnable()
