@@ -33,11 +33,17 @@ public class RadioUIManager : MonoBehaviour
     [SerializeField] private Button CallbackButton4;
     [SerializeField] private Button CallbackButton5;
 
+    [SerializeField] private Material FrequencyMaterial;
+
     private RadioDialogue.RadioData RadioState;
 
     private void Awake()
     {
-        frequencySlider.onValueChanged.AddListener(value => { RadioState.frequency = frequencySlider.value; });
+        frequencySlider.onValueChanged.AddListener(value => { 
+            RadioState.frequency = frequencySlider.value;
+            FrequencyMaterial.SetFloat("_MarkerPosition", RadioState.frequency);
+        });
+        FrequencyMaterial.SetFloat("_MarkerPosition", RadioState.frequency);
 
         horizontalPositionSlider.onValueChanged.AddListener(value => { RadioState.horizontalPosition = value; });
         verticalPositionSlider.onValueChanged.AddListener(value => { RadioState.verticalPosition = value; });

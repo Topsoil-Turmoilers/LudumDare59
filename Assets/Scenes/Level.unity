@@ -667,6 +667,14 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1216653407095847500, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216653407095847500, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5051058811547485036, guid: 5c907acba0a0e1d429683166feff1670, type: 3}
     - target: {fileID: 1480342834735998982, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -683,6 +691,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2547419829094381411, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5887401282879244351, guid: 5c907acba0a0e1d429683166feff1670, type: 3}
     - target: {fileID: 2673332116890637475, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -695,10 +707,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6046081489244355539, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
-      propertyPath: defaultDialogue
+    - target: {fileID: 6335710177544737683, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 11400000, guid: 81540d2599f45f74ba5df3c0acae8766, type: 2}
+      objectReference: {fileID: 6144898358377742849, guid: 5c907acba0a0e1d429683166feff1670, type: 3}
+    - target: {fileID: 6361126092679695938, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4772112979267200701, guid: 5c907acba0a0e1d429683166feff1670, type: 3}
     - target: {fileID: 6606557063358357887, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -742,6 +758,22 @@ PrefabInstance:
     - target: {fileID: 7218447697703471131, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_Name
       value: Radio UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7310148074984338595, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5887401282879244351, guid: 5c907acba0a0e1d429683166feff1670, type: 3}
+    - target: {fileID: 7611503123766790968, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611503123766790968, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611503123766790968, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
