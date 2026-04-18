@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6ad35f92afb6a47aed33cd8564c5aa, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: Assembly-CSharp::PlayerData
-  walkSpeed: 0
-  runSpeed: 0
-  runStamina: 0
+  walkSpeed: 2
+  runSpeed: 4
+  runStamina: 5

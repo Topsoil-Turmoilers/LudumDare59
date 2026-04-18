@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Animator), typeof(Rigidbody2D), typeof(SpriteRenderer))]
 public class PlayerMain : MonoBehaviour
 {
     //Variables
+
     [Header ("Components")]
     public PlayerData playerData;
     [HideInInspector] public Animator anim;
@@ -12,22 +14,30 @@ public class PlayerMain : MonoBehaviour
 
     [Header("States")] //Put all States here
     public PlayerBaseState currentState;
+    public PlayerStateWalk WalkState = new PlayerStateWalk();
+    public PlayerStateSprint SprintState = new PlayerStateSprint();
 
     [Header("Stats")]
     public Vector2 moveInput;
+    public float RunStamina; //Done here so it can change with a stamina bar
+    public bool canSprint;
 
     //Main
+
     private void Awake()
     {
         //Initializing Components
         anim = GetComponent<Animator>();
         rBody = GetComponent<Rigidbody2D>();
         sRend = GetComponent<SpriteRenderer>();
+
+        RunStamina = playerData.runStamina;
+        canSprint = true;
     }
 
     private void Start()
     {
-        //Switch to main walking state
+        SwitchState(WalkState);
     }
 
     private void Update()
@@ -71,7 +81,15 @@ public class PlayerMain : MonoBehaviour
 
     public void OnSprint(InputAction.CallbackContext context)
     {
-        //switch to sprint state
+        if (canSprint && context.performed) //Only Sprint if you can and if held
+        {
+            SwitchState(SprintState);
+        }
+
+        if (context.canceled) //If sprint is let go early, go back to walk
+        {
+            SwitchState(WalkState);
+        }
     }
 
     //Helpers
