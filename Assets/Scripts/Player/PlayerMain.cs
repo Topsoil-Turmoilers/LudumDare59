@@ -105,4 +105,22 @@ public class PlayerMain : MonoBehaviour
             anim.transform.localScale = newScale;
         }
     }
+
+    //Regenerates Stamina
+    public void StaminaRegen()
+    {
+        //Don't let Stamina be over the max
+        if (RunStamina > playerData.runStamina) { RunStamina = playerData.runStamina; }
+
+        //Regenerate Stamina until max
+        if (RunStamina < playerData.runStamina)
+        {
+            RunStamina += Time.deltaTime;
+        }
+
+        if (RunStamina > 1)
+        {
+            canSprint = true;
+        }
+    }
 }

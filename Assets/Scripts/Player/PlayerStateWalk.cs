@@ -11,7 +11,7 @@ public class PlayerStateWalk : PlayerBaseState
     //When Update Runs in a State
     public override void UpdateState(PlayerMain player)
     {
-
+        player.StaminaRegen();
     }
 
     //When FixedUpdate Runs in a State
