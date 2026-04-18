@@ -6,7 +6,7 @@ public class PlayerStateWalk : PlayerBaseState
     //When a State is Entered
     public override void EnterState(PlayerMain player)
     {
-
+        
     }
 
     //When Update Runs in a State
@@ -28,13 +28,13 @@ public class PlayerStateWalk : PlayerBaseState
     //When LateUpdate Runs in a State
     public override void LateUpdateState(PlayerMain player)
     {
-
+        
     }
 
     //When a State is Exited
     public override void ExitState(PlayerMain player)
     {
-
+        
     }
 
     public override void OnSprint(InputAction.CallbackContext context, PlayerMain player)
