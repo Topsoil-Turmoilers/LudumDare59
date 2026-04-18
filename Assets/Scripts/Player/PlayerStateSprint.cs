@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerStateSprint : PlayerBaseState
 {
@@ -46,5 +47,13 @@ public class PlayerStateSprint : PlayerBaseState
     public override void ExitState(PlayerMain player)
     {
 
+    }
+
+    public override void OnSprint(InputAction.CallbackContext context, PlayerMain player)
+    {
+        if (context.canceled) //If sprint is let go early, go back to walk
+        {
+            player.SwitchState(player.WalkState);
+        }
     }
 }
