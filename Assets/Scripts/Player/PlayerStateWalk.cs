@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerStateWalk : PlayerBaseState
 {
@@ -34,5 +35,13 @@ public class PlayerStateWalk : PlayerBaseState
     public override void ExitState(PlayerMain player)
     {
 
+    }
+
+    public override void OnSprint(InputAction.CallbackContext context, PlayerMain player)
+    {
+        if (player.canSprint && context.performed) //Only Sprint if you can and if held
+        {
+            player.SwitchState(player.SprintState);
+        }
     }
 }

@@ -40,6 +40,7 @@ public class PlayerMain : MonoBehaviour
     private void Start()
     {
         SwitchState(WalkState);
+        DialogueManager.onDialogueFinished += DialogueManager_onDialogueFinished;
     }
 
     private void Update()
@@ -83,15 +84,7 @@ public class PlayerMain : MonoBehaviour
 
     public void OnSprint(InputAction.CallbackContext context)
     {
-        if (canSprint && context.performed) //Only Sprint if you can and if held
-        {
-            SwitchState(SprintState);
-        }
-
-        if (context.canceled) //If sprint is let go early, go back to walk
-        {
-            SwitchState(WalkState);
-        }
+        currentState.OnSprint(context, this);
     }
 
     public void OnInteract(InputAction.CallbackContext context)
@@ -150,8 +143,7 @@ public class PlayerMain : MonoBehaviour
         }
     }
 
-    //For when an interaction has ended
-    public void InteractionEnded()
+    private void DialogueManager_onDialogueFinished()
     {
         SwitchState(WalkState);
     }

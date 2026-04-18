@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public abstract class PlayerBaseState
 {
@@ -16,4 +17,10 @@ public abstract class PlayerBaseState
 
     //When a State is Exited
     public abstract void ExitState(PlayerMain player);
+
+    //Sprinting!
+    public virtual void OnSprint(InputAction.CallbackContext context, PlayerMain player)
+    {
+
+    }
 }
