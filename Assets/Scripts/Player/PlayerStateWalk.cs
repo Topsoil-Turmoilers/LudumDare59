@@ -18,9 +18,6 @@ public class PlayerStateWalk : PlayerBaseState
     //When FixedUpdate Runs in a State
     public override void FixedUpdateState(PlayerMain player)
     {
-        //Flips Sprite based on Movement
-       // player.FlipSprite(player.moveInput.x);
-
         //Moves player based on input and walk speed
         player.rBody.linearVelocity = new Vector2(player.moveInput.x * player.playerData.walkSpeed, player.moveInput.y * player.playerData.walkSpeed);
     }
