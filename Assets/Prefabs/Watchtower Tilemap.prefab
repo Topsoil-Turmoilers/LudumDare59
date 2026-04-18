@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 457323597702967350}
   - component: {fileID: 8472392179449555724}
   m_Layer: 0
-  m_Name: Front Tree Wall
+  m_Name: Front Rock Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -425,7 +425,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: b354369ce16de5241b344c4862e8570b, type: 3}
-  m_Color: {r: 0.16470589, g: 0.24313726, b: 0.17124182, a: 1}
+  m_Color: {r: 0.24313726, g: 0.22745098, b: 0.16470589, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -630,7 +630,7 @@ GameObject:
   - component: {fileID: 559413883771457300}
   - component: {fileID: 3391159125843438394}
   m_Layer: 0
-  m_Name: Back Tree Wall
+  m_Name: Back Rock Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -699,7 +699,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: b354369ce16de5241b344c4862e8570b, type: 3}
-  m_Color: {r: 0.16470589, g: 0.24313726, b: 0.17124182, a: 1}
+  m_Color: {r: 0.24313726, g: 0.2270174, b: 0.16470589, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1041,7 +1041,7 @@ GameObject:
   - component: {fileID: 8274724738711748495}
   - component: {fileID: 2796621487051353841}
   m_Layer: 0
-  m_Name: Left Tree Wall
+  m_Name: Left Rock Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1110,7 +1110,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: b354369ce16de5241b344c4862e8570b, type: 3}
-  m_Color: {r: 0.16470589, g: 0.24313726, b: 0.17124182, a: 1}
+  m_Color: {r: 0.24313726, g: 0.22745098, b: 0.16470589, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1178,7 +1178,7 @@ GameObject:
   - component: {fileID: 6936730201509246316}
   - component: {fileID: 970797604164122709}
   m_Layer: 0
-  m_Name: Right Tree Wall
+  m_Name: Right Rock Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1247,7 +1247,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: b354369ce16de5241b344c4862e8570b, type: 3}
-  m_Color: {r: 0.16470589, g: 0.24313726, b: 0.17124182, a: 1}
+  m_Color: {r: 0.24313726, g: 0.22745098, b: 0.16470589, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1630,7 +1630,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: b354369ce16de5241b344c4862e8570b, type: 3}
-  m_Color: {r: 0.23137255, g: 0.38039216, b: 0.2338562, a: 1}
+  m_Color: {r: 0.2901961, g: 0.28117633, b: 0.23137255, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1787,7 +1787,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5650911726472511255}
   m_Layer: 0
-  m_Name: Tree Walls
+  m_Name: Rock Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
