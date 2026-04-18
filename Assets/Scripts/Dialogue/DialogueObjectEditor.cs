@@ -9,11 +9,10 @@ public class DialogueObjectEditor : Editor
     {
         DialogueObject obj = target as DialogueObject;
         if (obj == null) return;
+        if (obj.lines == null) obj.lines = new string[0];
         for(int i=0; i<obj.lines.Length; i++)
         {
-            
             obj.lines[i] = GUILayout.TextArea(obj.lines[i]);
-            
         }
         EditorGUILayout.BeginHorizontal();
         if (GUILayout.Button("+"))

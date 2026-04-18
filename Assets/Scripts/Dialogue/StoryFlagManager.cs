@@ -19,7 +19,7 @@ public class StoryFlagManager : MonoBehaviour
         SetupStoryFlagDictionary();
     }
 
-    public enum StoryFlag {CheckRadio};
+    public enum StoryFlag {CheckRadio, TalkLeader, LeaderDead, TalkMedic};
 
     //public Dictionary<StoryFlag, string> StoryFlagDescription;
 
@@ -63,12 +63,4 @@ public class StoryFlagManager : MonoBehaviour
         }
             
     }
-
-    //[System.Serializable]
-    //public struct StoryFlagInternal
-    //{
-    //    public StoryFlag Flag;
-    //    public string description;
-    //    public bool value;
-    //}
 }

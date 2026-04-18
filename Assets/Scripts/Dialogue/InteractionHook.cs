@@ -16,7 +16,7 @@ public class InteractionHook : MonoBehaviour
             ConditionalDialogue cd = conditionalDialogue[i];
             if (StoryFlagManager.instance.checkFlag(cd.requiredStoryFlag)){
                 DialogueManager.instance.StartDialogue(cd.dialogue);
-                StoryFlagManager.instance.setFlag(cd.storyFlagToTrigger, true);
+                DialogueManager.onDialogueFinished += cd.DialogueManager_onDialogueFinished;
                 return;
             }
         }
@@ -35,7 +35,12 @@ public class InteractionHook : MonoBehaviour
     {
         public StoryFlagManager.StoryFlag requiredStoryFlag;
         public DialogueObject dialogue;
-        
-        public StoryFlagManager.StoryFlag storyFlagToTrigger;
+
+        public UnityEvent onDialogueFinished;
+        public void DialogueManager_onDialogueFinished()
+        {
+            onDialogueFinished?.Invoke();
+            DialogueManager.onDialogueFinished -= DialogueManager_onDialogueFinished;
+        }
     }
 }
