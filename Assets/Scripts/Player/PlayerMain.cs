@@ -23,6 +23,7 @@ public class PlayerMain : MonoBehaviour
     public float RunStamina; //Done here so it can change with a stamina bar
     public bool canSprint;
     public bool isInteracting;
+    public float playerWidth;
 
     //Main
 
@@ -35,6 +36,8 @@ public class PlayerMain : MonoBehaviour
 
         RunStamina = playerData.runStamina;
         canSprint = true;
+
+        playerWidth = transform.localScale.x;
     }
 
     private void Start()
@@ -120,6 +123,7 @@ public class PlayerMain : MonoBehaviour
         {
             float direction = hVelocity > 0 ? 1f : -1f;
             Vector3 newScale = anim.transform.localScale;
+            direction = direction > 0 ? playerWidth : -playerWidth;
             newScale.x = direction;
             anim.transform.localScale = newScale;
         }
