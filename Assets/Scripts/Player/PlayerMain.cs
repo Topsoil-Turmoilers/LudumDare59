@@ -16,11 +16,13 @@ public class PlayerMain : MonoBehaviour
     public PlayerBaseState currentState;
     public PlayerStateWalk WalkState = new PlayerStateWalk();
     public PlayerStateSprint SprintState = new PlayerStateSprint();
+    public PlayerStateInteract InteractState = new PlayerStateInteract();
 
     [Header("Stats")]
     public Vector2 moveInput;
     public float RunStamina; //Done here so it can change with a stamina bar
     public bool canSprint;
+    public bool isInteracting;
 
     //Main
 
@@ -92,6 +94,30 @@ public class PlayerMain : MonoBehaviour
         }
     }
 
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        if (context.started) { isInteracting = true; }
+        if (context.canceled) { isInteracting = false; }
+    }
+
+    //Collision Interaction Check
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (isInteracting) //If the player is trying to interact
+        {
+            //Looking for any IInteractable script
+            IInteractable interact = collision.gameObject.GetComponent<IInteractable>();
+
+            if (interact != null) //If there is an IInteractable script
+            {
+                //Interact
+                interact.OnInteract();
+                Debug.Log("Interacting with " + collision);
+                SwitchState(InteractState);
+            }
+        }
+    }
+
     //Helpers
 
     //Flips the Sprite
@@ -122,5 +148,11 @@ public class PlayerMain : MonoBehaviour
         {
             canSprint = true;
         }
+    }
+
+    //For when an interaction has ended
+    public void InteractionEnded()
+    {
+        SwitchState(WalkState);
     }
 }
