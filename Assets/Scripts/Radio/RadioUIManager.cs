@@ -30,7 +30,7 @@ public class RadioUIManager : MonoBehaviour
     [SerializeField] private Button CallbackButton4;
     [SerializeField] private Button CallbackButton5;
 
-    private RadioData RadioState;
+    private RadioDialogue.RadioData RadioState;
 
     private void Awake()
     {
@@ -73,15 +73,5 @@ public class RadioUIManager : MonoBehaviour
         {
             toggleDisplay.color = value ? Color.green : Color.red;
         }
-    }
-
-    [System.Serializable]
-    public struct RadioData
-    {
-        public float frequency;
-        public float horizontalPosition;
-        public float verticalPosition;
-
-        public bool[] toggles;
     }
 }
