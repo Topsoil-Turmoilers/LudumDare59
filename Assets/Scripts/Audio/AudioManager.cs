@@ -4,6 +4,9 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
+    [Header("Playlist")]
+    [SerializeField] private AudioPlaylist playlist;
+
     [Header("Music")]
     [SerializeField] private AudioSource musicSource;
 
@@ -14,25 +17,25 @@ public class AudioManager : MonoBehaviour
     {
         if(instance == null)
         {
+            //Instanciate the AudioManager
             instance = this;
 
+            //Persists across scenes even though we're planning to stick to one
             DontDestroyOnLoad(gameObject);
         }
         else
         {
+            //If there is already an Audiomanager, a new one will not be created
             Destroy(gameObject);
         }
     }
 
-    public void PlayMusic(AudioClip musicClip, bool isLooping = true)
+    private void Start()
     {
-        musicSource.clip = musicClip;
-        musicSource.loop = isLooping;
-        musicSource.Play();
-    }
+        //Safety check
+        if (playlist != null)
+        {
 
-    public void PlaySFX(AudioClip clip)
-    {
-        sfxSource.PlayOneShot(clip);
+        }
     }
 }
