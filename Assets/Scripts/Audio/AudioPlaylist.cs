@@ -16,10 +16,14 @@ public class AudioPlaylist : ScriptableObject
     public AudioClip radioPlayingOffKeyFQ;
 
     [Header("Inside SFX")]
+    public AudioClip walkInside;
     public AudioClip windowHit01;
     public AudioClip windowHit02;
     public AudioClip windowKnock;
     public AudioClip windowSingleTap;
     public AudioClip windowTap01;
     public AudioClip windowTap02;
+
+    [Header("Outside SFX")]
+    public AudioClip walkOutside;
 }
