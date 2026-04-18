@@ -119,11 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &30178714 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6918472571170664008, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
-  m_PrefabInstance: {fileID: 4704951344666287659}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,6 +471,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: StoryFlags.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: StoryFlagsValues.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: StoryFlagsDescriptions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: 'StoryFlagsDescriptions.Array.data[0]'
+      value: asd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -532,22 +543,6 @@ PrefabInstance:
     - target: {fileID: 6918472571170664008, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
       propertyPath: m_Name
       value: Dialogue UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 8946164756955643180, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8946164756955643180, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8946164756955643180, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 30178714}
-    - target: {fileID: 8946164756955643180, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
