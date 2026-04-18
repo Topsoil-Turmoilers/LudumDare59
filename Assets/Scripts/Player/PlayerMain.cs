@@ -132,7 +132,7 @@ public class PlayerMain : MonoBehaviour
     //Helpers
 
     //Flips the Sprite
-    public void FlipSprite(float hVelocity)
+  /*  public void FlipSprite(float hVelocity)
     {
         if (Mathf.Abs(hVelocity) > 0.1f)
         {
@@ -142,7 +142,7 @@ public class PlayerMain : MonoBehaviour
             newScale.x = direction;
             anim.transform.localScale = newScale;
         }
-    }
+    }*/
 
     //Regenerates Stamina
     public void StaminaRegen()
