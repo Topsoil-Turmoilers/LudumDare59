@@ -13,6 +13,9 @@ public class RadioUIManager : MonoBehaviour
     [SerializeField] private Slider horizontalPositionSlider;
     [SerializeField] private Slider verticalPositionSlider;
 
+    [SerializeField] private Sprite ToggleFalse;
+    [SerializeField] private Sprite ToggleTrue;
+
     [SerializeField] private Toggle[] Toggles;
     public bool[] ToggleValues { get
         {
@@ -47,6 +50,8 @@ public class RadioUIManager : MonoBehaviour
             {
                 t.ToggleValue();
                 RadioState.toggles = ToggleValues;
+                //jank but we take those
+                t.toggleButton.GetComponent<Image>().sprite = t.value ? ToggleTrue : ToggleFalse;
                 Debug.Log(RadioState.frequency);
             });
         }
@@ -75,6 +80,7 @@ public class RadioUIManager : MonoBehaviour
         public void ToggleValue()
         {
             value = !value;
+
             SetLight();
         }
         public void SetLight()
