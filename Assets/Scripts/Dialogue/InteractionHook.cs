@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class InteractionHook : MonoBehaviour
+public class InteractionHook : MonoBehaviour, IInteractable
 {
     [SerializeField] private DialogueObject defaultDialogue;
     [SerializeField] public List<ConditionalDialogue> conditionalDialogue;

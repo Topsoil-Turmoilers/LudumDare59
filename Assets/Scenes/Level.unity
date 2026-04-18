@@ -484,26 +484,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 514325213890818525, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
-      propertyPath: m_fontSize
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 514325213890818525, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 514325213890818525, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
-      propertyPath: m_enableAutoSizing
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 514325213890818525, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
-      propertyPath: m_TextStyleHashCode
-      value: -1183493901
-      objectReference: {fileID: 0}
-    - target: {fileID: 514325213890818525, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 256
-      objectReference: {fileID: 0}
     - target: {fileID: 4898628677870946118, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
