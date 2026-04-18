@@ -8,7 +8,7 @@ public class DialogueObjectEditor : Editor
     public override void OnInspectorGUI()
     {
         DialogueObject obj = target as DialogueObject;
-
+        if (obj == null) return;
         for(int i=0; i<obj.lines.Length; i++)
         {
             

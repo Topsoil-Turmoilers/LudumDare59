@@ -18,6 +18,14 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextScroller textScroller;
     [SerializeField] private Canvas dialogueCanvas;
 
+    public static event OnDialogueFinished onDialogueFinished;
+    public delegate void OnDialogueFinished();
+
+    private void Start()
+    {
+        dialogueCanvas.gameObject.SetActive(false);
+    }
+
     public void StartDialogue(DialogueObject dialogue)
     {
         dialogueCanvas.gameObject.SetActive(true);
@@ -28,6 +36,7 @@ public class DialogueManager : MonoBehaviour
         if (!textScroller.Continue())
         {
             dialogueCanvas.gameObject.SetActive(false);
+            onDialogueFinished?.Invoke();
         }
     }
 }

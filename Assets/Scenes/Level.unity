@@ -340,6 +340,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1455814339 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5752455005958155752, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+  m_PrefabInstance: {fileID: 4704951344666287659}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1455814345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455814339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be489d4fbc7a15c46aa56fffc7056e13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StoryFlagTrigger
+  TriggerFlag: 0
 --- !u!1 &1893057542
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,22 +489,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
-      propertyPath: StoryFlags.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
-      propertyPath: StoryFlagsValues.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
-      propertyPath: StoryFlagsDescriptions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
-      propertyPath: 'StoryFlagsDescriptions.Array.data[0]'
-      value: asd
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -500,6 +502,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 318338575250611687, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: currentDialogue
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4898628677870946118, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -540,6 +546,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5145905638019296657, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: conditionalDialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145905638019296657, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: conditionalDialogue.Array.data[0].dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: e1fa79690e0b26040bb894e303f27075, type: 2}
+    - target: {fileID: 5145905638019296657, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: OnDefaultDialogueFinished.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145905638019296657, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: OnDefaultDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145905638019296657, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: OnDefaultDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1455814345}
+    - target: {fileID: 5145905638019296657, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: OnDefaultDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145905638019296657, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: OnDefaultDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Activate
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145905638019296657, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: OnDefaultDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: StoryFlagTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145905638019296657, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: OnDefaultDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6918472571170664008, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
       propertyPath: m_Name
       value: Dialogue UI
@@ -547,7 +589,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5752455005958155752, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1455814345}
   m_SourcePrefab: {fileID: 100100000, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
 --- !u!1001 &5625983005975580760
 PrefabInstance:

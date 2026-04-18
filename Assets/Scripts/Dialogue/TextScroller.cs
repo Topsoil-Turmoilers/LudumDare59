@@ -16,7 +16,7 @@ public class TextScroller : MonoBehaviour
 
     private void Start()
     {
-        StartDialogue(currentDialogue);
+
     }
 
     public void StartDialogue(DialogueObject dialogue)
