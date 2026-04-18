@@ -17,13 +17,15 @@ public class AudioPlaylist : ScriptableObject
 
     [Header("Inside SFX")]
     public AudioClip walkInside;
-    public AudioClip windowHit01;
-    public AudioClip windowHit02;
+    public AudioClip windowHit;
     public AudioClip windowKnock;
     public AudioClip windowSingleTap;
-    public AudioClip windowTap01;
-    public AudioClip windowTap02;
+    public AudioClip windowTap;
 
     [Header("Outside SFX")]
     public AudioClip walkOutside;
+    public AudioClip flashlightOn;
+    public AudioClip flashlightOff;
+    public AudioClip flashlightRattle;
+    public AudioClip flashlightHit;
 }
