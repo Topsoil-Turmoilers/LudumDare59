@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: Radio_Leader
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
   _currentLine: 0
-  lines: []
+  lines:
+  - The team was all separated. You'll have to contact them
+  - Be careful though! It reacts to the sound-
+  - (The message was cut off)

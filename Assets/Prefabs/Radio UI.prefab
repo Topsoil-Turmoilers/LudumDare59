@@ -379,6 +379,7 @@ MonoBehaviour:
     horizontalPosition: 0.2
     verticalPosition: 0.3
     toggles: 0000000000
+  hasConnected: 
   InteractionHooks:
   - {fileID: 6046081489244355539}
 --- !u!1 &833116334682433609
@@ -3889,7 +3890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 371aaaebd86225847b1f887bd29a4a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractionHook
-  defaultDialogue: {fileID: 0}
+  defaultDialogue: {fileID: 11400000, guid: 81540d2599f45f74ba5df3c0acae8766, type: 2}
   conditionalDialogue: []
   OnDefaultDialogueFinished:
     m_PersistentCalls:

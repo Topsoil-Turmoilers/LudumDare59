@@ -7,34 +7,25 @@ public class DialogueObjectEditor : Editor
 {
     public override void OnInspectorGUI()
     {
-        DialogueObject obj = target as DialogueObject;
-        if (obj == null) return;
-        if (obj.lines == null) obj.lines = new string[0];
-        for(int i=0; i<obj.lines.Length; i++)
+        serializedObject.Update();
+        SerializedProperty DialogueList = serializedObject.FindProperty("lines");
+        for (int i = 0; i < DialogueList.arraySize; i++)
         {
-            obj.lines[i] = GUILayout.TextArea(obj.lines[i]);
+            DialogueList.GetArrayElementAtIndex(i).stringValue = GUILayout.TextArea(DialogueList.GetArrayElementAtIndex(i).stringValue);
         }
+
+
         EditorGUILayout.BeginHorizontal();
         if (GUILayout.Button("+"))
         {
-            string[] lines = new string[obj.lines.Length + 1];
-            for (int i = 0; i < obj.lines.Length; i++)
-            {
-                lines[i] = obj.lines[i];
-            }
-            obj.lines = lines;
+            DialogueList.InsertArrayElementAtIndex(DialogueList.arraySize);
         }
         if (GUILayout.Button("-", GUILayout.MaxWidth(20f)))
         {
-            string[] lines = new string[obj.lines.Length - 1];
-            for (int i = 0; i < lines.Length; i++)
-            {
-                lines[i] = obj.lines[i];
-            }
-            obj.lines = lines;
+            DialogueList.DeleteArrayElementAtIndex(DialogueList.arraySize - 1);
         }
         EditorGUILayout.EndHorizontal();
-
+        serializedObject.ApplyModifiedProperties();
     }
 }
 #endif
