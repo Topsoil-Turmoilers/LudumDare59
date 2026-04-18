@@ -10,6 +10,9 @@ public class PlayerStateSprint : PlayerBaseState
     {
         //Setting Timer to current stamina
         runStaminaTimer = player.RunStamina;
+
+        //Making Animation faster
+        player.anim.speed = 2;
     }
 
     //When Update Runs in a State
@@ -45,7 +48,8 @@ public class PlayerStateSprint : PlayerBaseState
     //When a State is Exited
     public override void ExitState(PlayerMain player)
     {
-        
+        //Returning Animation to previous speed
+        player.anim.speed = 1;
     }
 
     public override void OnSprint(InputAction.CallbackContext context, PlayerMain player)
