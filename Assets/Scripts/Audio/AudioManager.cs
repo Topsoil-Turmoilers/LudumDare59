@@ -31,8 +31,8 @@ public class AudioManager : MonoBehaviour
     }
 
     private void Start()
-    {
-        //Safety check
+    { 
+            //Safety check -> Plays Menu Music by Default
         if (playlist != null && playlist.menuTheme != null)
         {
             PlayMenuMusic();
@@ -46,8 +46,26 @@ public class AudioManager : MonoBehaviour
 
     // SFX =============================================================
 
+        // RADIO SFX
+    public void PlayRadioButton01SFX() => sfxSource.PlayOneShot(playlist.radioButton01);
+    public void PlayRadioButton02SFX() => sfxSource.PlayOneShot(playlist.radioButton02);
+    public void PlayRadioHighfqSFX() => sfxSource.PlayOneShot(playlist.radioPlayingHighFQ);
+    public void PlayRadioLowfqSFX() => sfxSource.PlayOneShot(playlist.radioPlayingLowFQ);
+    public void PlayRadioOffKeyfqSFX() => sfxSource.PlayOneShot(playlist.radioPlayingOffKeyFQ);
+
+        // INSIDE SFX
     public void PlayWalkInsideSFX() => sfxSource.PlayOneShot(playlist.walkInside);
+    public void PlayWindowHitSFX() => sfxSource.PlayOneShot(playlist.windowHit);
+    public void PlayWindowKnockSFX() => sfxSource.PlayOneShot(playlist.windowKnock);
+    public void PlayWindowSingleTapSFX() => sfxSource.PlayOneShot(playlist.windowSingleTap);
+    public void PlayWindowTapSFX() => sfxSource.PlayOneShot(playlist.windowTap);
+
+    // OUTSIDE SFX
     public void PlayWalkOutsideSFX() => sfxSource.PlayOneShot(playlist.walkOutside);
+    public void PlayFlashlightOnSFX() => sfxSource.PlayOneShot(playlist.flashlightOn);
+    public void PlayFlashlightOffSFX() => sfxSource.PlayOneShot(playlist.flashlightOff);
+    public void PlayFlashlightRattleSFX() => sfxSource.PlayOneShot(playlist.flashlightRattle);
+    public void PlayFlashlightHitSFX() => sfxSource.PlayOneShot(playlist.flashlightHit);
 
     //==================================================================
     private void PlayMusic(AudioClip clip)
