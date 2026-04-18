@@ -16,11 +16,13 @@ public class PlayerMain : MonoBehaviour
     public PlayerBaseState currentState;
     public PlayerStateWalk WalkState = new PlayerStateWalk();
     public PlayerStateSprint SprintState = new PlayerStateSprint();
+    public PlayerStateInteract InteractState = new PlayerStateInteract();
 
     [Header("Stats")]
     public Vector2 moveInput;
     public float RunStamina; //Done here so it can change with a stamina bar
     public bool canSprint;
+    public bool isInteracting;
 
     //Main
 
@@ -38,6 +40,7 @@ public class PlayerMain : MonoBehaviour
     private void Start()
     {
         SwitchState(WalkState);
+        DialogueManager.onDialogueFinished += DialogueManager_onDialogueFinished;
     }
 
     private void Update()
@@ -81,14 +84,30 @@ public class PlayerMain : MonoBehaviour
 
     public void OnSprint(InputAction.CallbackContext context)
     {
-        if (canSprint && context.performed) //Only Sprint if you can and if held
-        {
-            SwitchState(SprintState);
-        }
+        currentState.OnSprint(context, this);
+    }
 
-        if (context.canceled) //If sprint is let go early, go back to walk
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        if (context.started) { isInteracting = true; }
+        if (context.canceled) { isInteracting = false; }
+    }
+
+    //Collision Interaction Check
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (isInteracting) //If the player is trying to interact
         {
-            SwitchState(WalkState);
+            //Looking for any IInteractable script
+            IInteractable interact = collision.gameObject.GetComponent<IInteractable>();
+
+            if (interact != null) //If there is an IInteractable script
+            {
+                //Interact
+                interact.OnInteract();
+                Debug.Log("Interacting with " + collision);
+                SwitchState(InteractState);
+            }
         }
     }
 
@@ -122,5 +141,10 @@ public class PlayerMain : MonoBehaviour
         {
             canSprint = true;
         }
+    }
+
+    private void DialogueManager_onDialogueFinished()
+    {
+        SwitchState(WalkState);
     }
 }
