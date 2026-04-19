@@ -5,13 +5,8 @@ using System.Collections;
 
 public class AnimatorAudioTriggers : MonoBehaviour
 {
-    public void TriggerWalkSFX()
+    public void TriggerMovementSFX()
     {
-        
-    }
 
-    public void TriggerRunSFX()
-    {
-        
     }
 }
