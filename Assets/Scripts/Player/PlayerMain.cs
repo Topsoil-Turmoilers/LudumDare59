@@ -78,6 +78,10 @@ public class PlayerMain : MonoBehaviour
         //Entering State
         currentState.EnterState(this);
     }
+    public void EnterMoveState()
+    {
+        SwitchState(WalkState);
+    }
 
     //Event System
     public void OnMove(InputAction.CallbackContext context)
