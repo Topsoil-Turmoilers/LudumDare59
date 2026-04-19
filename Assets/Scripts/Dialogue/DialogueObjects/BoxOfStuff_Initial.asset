@@ -19,4 +19,5 @@ MonoBehaviour:
   lines:
   - There's so much stuff here. It would take forever to sort through.
   - There are more pressing things to worry about for now.
-  lineSFX: 0000000000000000
+  lineSFX: 0600000000000000
+  flag: 0

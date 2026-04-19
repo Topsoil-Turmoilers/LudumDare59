@@ -44,9 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c0e735946286bd44b243f02994ed1d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StoryFlagManager
-  StoryFlags: 00000000010000000200000003000000
-  StoryFlagsValues: 00000000
+  StoryFlags: 0000000001000000020000000300000004000000
+  StoryFlagsValues: 0000000000
   StoryFlagsDescriptions:
+  - Is ignored by the entire game. Used to not flip other flags
   - True after checking the Radio for the first time
   - True after tuning into the Leader's frequency
   - True after Leader tells you about 'The Monster'

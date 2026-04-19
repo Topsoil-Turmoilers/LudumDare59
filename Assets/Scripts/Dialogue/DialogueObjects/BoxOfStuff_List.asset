@@ -24,4 +24,5 @@ MonoBehaviour:
   - '...It seems someone spilled their coffee all over it though. There''s only 2
     notes:'
   - 'Captain E. Sharp: Freq 0. Long 0. Latt 0.'
-  lineSFX: 00000000000000000000000000000000
+  lineSFX: 00000000000000000500000000000000
+  flag: 5

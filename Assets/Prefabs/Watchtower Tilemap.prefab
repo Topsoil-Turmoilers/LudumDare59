@@ -640,6 +640,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1597863995532966652}
   - component: {fileID: 3951752553123545885}
+  - component: {fileID: 8351940155093979863}
+  - component: {fileID: 457671400721230641}
   m_Layer: 0
   m_Name: BoxOfStuff
   m_TagString: Untagged
@@ -720,6 +722,69 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8351940155093979863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919708885914475374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371aaaebd86225847b1f887bd29a4a9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractionHook
+  defaultDialogue: {fileID: 11400000, guid: 40ae6e50229b7bd4eb2323cfcc75aa65, type: 2}
+  conditionalDialogue:
+  - requiredStoryFlag: 1
+    dialogue: {fileID: 11400000, guid: 558ae2661d778ae46b08cfea5b011441, type: 2}
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - requiredStoryFlag: 5
+    dialogue: {fileID: 11400000, guid: c59a322f709632242aa1da856b9713d9, type: 2}
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  OnDefaultDialogueFinished:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!58 &457671400721230641
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919708885914475374}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.3
 --- !u!1 &2257320217079218864
 GameObject:
   m_ObjectHideFlags: 0

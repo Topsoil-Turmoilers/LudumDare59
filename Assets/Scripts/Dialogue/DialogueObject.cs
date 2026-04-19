@@ -40,7 +40,7 @@ public class DialogueObject : ScriptableObject
         _currentLine++;
         if (_currentLine >= lines.Length)
         {
-
+            StoryFlagManager.instance.setFlag(flag, true);
             return "";
         }
         else return lines[_currentLine];
