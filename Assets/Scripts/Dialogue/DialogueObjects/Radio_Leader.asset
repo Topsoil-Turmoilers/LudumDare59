@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: Radio_Leader
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
   _currentLine: 3
+  names:
+  - 
   lines:
   - The channel remains silent.
+  lineSFX: 00000000

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum SFX { Static1, Static2, Static3, Flashlight1, Flashlight2, Flashlight3, Flashlight4, WindowHit, WindowTap, WindowTwotaps, WindowKnock}
+public enum SFX { No_Sound, Static1, Static2, Static3, Flashlight1, Flashlight2, Flashlight3, Flashlight4, WindowHit, WindowTap, WindowTwotaps, WindowKnock}
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
@@ -108,6 +108,7 @@ public class AudioManager : MonoBehaviour
     private void PlayDialogueSFX(SFX soundEffect, AudioSource source) {
         switch (soundEffect)
         {
+            case SFX.No_Sound: return;
             case SFX.Static1: source.PlayOneShot(playlist.radioPlayingLowFQ); break;
             case SFX.Static2: source.PlayOneShot(playlist.radioPlayingHighFQ); break;
             case SFX.Static3: source.PlayOneShot(playlist.radioPlayingOffKeyFQ); break;

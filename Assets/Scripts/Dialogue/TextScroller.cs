@@ -49,7 +49,7 @@ public class TextScroller : MonoBehaviour
     {
         textDisplay.text = "";
         scrollLine = line;
-        displayName = currentDialogue.CurrentName;
+        nameDisplay.text = currentDialogue.CurrentName;
         AudioManager.instance?.PlayDialogueSFX(currentDialogue.CurrentSFX);
     }
 

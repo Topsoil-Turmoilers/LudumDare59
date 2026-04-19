@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: BoxOfStuff_List
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
   _currentLine: 0
+  names:
+  - 
+  - 
+  - 
+  - 
   lines:
   - You check for a List of codes in the Box.
   - Surprisingly, you find it near the top.
   - '...It seems someone spilled their coffee all over it though. There''s only 2
     notes:'
   - 'Captain E. Sharp: Freq 0. Long 0. Latt 0.'
+  lineSFX: 00000000000000000000000000000000

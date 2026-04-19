@@ -13,6 +13,15 @@ MonoBehaviour:
   m_Name: Radio_Initial
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
   _currentLine: 2
+  names:
+  - 
+  - --Unknown Speaker--
+  - You
+  - --Unknown Speaker--
+  - --Unknown Speaker--
+  - Captain Sharp
+  - Captain Sharp
+  - Captain Sharp
   lines:
   - '*The radio seems to transmitting audio already. Curious*'
   - "\u2014porting again. It has been 2 days, 7 hours, and 24 minutes since losing
@@ -25,3 +34,4 @@ MonoBehaviour:
   - "It\u2019s getting closer. \r\nIt\u2019s too late for me, save the others. The
     channel list is in the desk drawer."
   - '*A scream can just barely be made out as the channel is flooded with static.*'
+  lineSFX: 0000000001000000000000000200000000000000000000000900000003000000
