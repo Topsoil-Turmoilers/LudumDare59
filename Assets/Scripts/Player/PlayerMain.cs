@@ -25,6 +25,11 @@ public class PlayerMain : MonoBehaviour
     public bool isInteracting;
     public float playerWidth;
 
+    [Header("Animation Trigger Checks")]
+    public bool isWalking;
+    public bool isRunning;
+    public bool isInside;
+
     //Main
 
     private void Awake()
@@ -93,7 +98,7 @@ public class PlayerMain : MonoBehaviour
             anim.SetFloat("LastInputX", moveInput.x);
             anim.SetFloat("LastInputY", moveInput.y);
 
-            Debug.Log("LastInputX is " + moveInput.x + "| LastInputY is " + moveInput.y);
+            //Debug.Log("LastInputX is " + moveInput.x + "| LastInputY is " + moveInput.y);
         }
 
         moveInput = context.ReadValue<Vector2>();

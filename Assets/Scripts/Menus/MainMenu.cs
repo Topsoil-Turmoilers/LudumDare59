@@ -18,6 +18,9 @@ public class MainMenu : MonoBehaviour
     //Button Functionality
     public void OnButtonStart()
     {
+        //Play the prologue track upon starting the game
+        AudioManager.instance.PlayPrologueMusic();
+
         //Switch Scene to Level 1?
         //Ideally would switch to a cutscene then level 1's start, etc
         SceneManager.LoadScene("Level");
@@ -25,12 +28,20 @@ public class MainMenu : MonoBehaviour
 
     public void OnButtonOptions()
     {
+        //Opens Options
         OptionsCanvas.gameObject.SetActive(!OptionsCanvas.activeInHierarchy);
+
+        //Makes sure Credits is closed
+        CreditsCanvas.gameObject.SetActive(false);
     }
 
     public void OnButtonCredits()
     {
+        //Opens Credits
         CreditsCanvas.gameObject.SetActive(!CreditsCanvas.activeInHierarchy);
+
+        //Makes sure Options is closed
+        OptionsCanvas.gameObject.SetActive(false);
     }
 
     public void OnButtonExit()
