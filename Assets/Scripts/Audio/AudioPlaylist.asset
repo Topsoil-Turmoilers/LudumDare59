@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: AudioPlaylist
   m_EditorClassIdentifier: Assembly-CSharp::AudioPlaylist
   menuTheme: {fileID: 8300000, guid: 5d7a3c6a1e3ced641bf00619d7152e48, type: 3}
+  prologueTheme: {fileID: 8300000, guid: 4600da7158e82474bbbf7def80ea4c12, type: 3}
   insideTheme: {fileID: 0}
   outsideTheme: {fileID: 0}
   radioButton01: {fileID: 8300000, guid: e3ad4f3e21736354ebb751afe6fc1f87, type: 3}

@@ -41,6 +41,7 @@ public class AudioManager : MonoBehaviour
 
     // MUSIC ===========================================================
     public void PlayMenuMusic() => PlayMusic(playlist.menuTheme);
+    public void PlayPrologueMusic() => PlayMusic(playlist.prologueTheme);
     public void PlayInsideMusic() => PlayMusic(playlist.insideTheme);
     public void PlayOutsideMusic() => PlayMusic(playlist.outsideTheme);
 
