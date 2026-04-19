@@ -8,6 +8,7 @@ public class DialogueObject : ScriptableObject
     [SerializeField] public string[] names;
     [SerializeField] public string[] lines;
     [SerializeField] public SFX[] lineSFX;
+    [SerializeField] public StoryFlagManager.StoryFlag flag;
     //[SerializeField] public AudioEnum[] lineSFX;
     public string CurrentLine { 
         get { 
@@ -39,8 +40,10 @@ public class DialogueObject : ScriptableObject
         _currentLine++;
         if (_currentLine >= lines.Length)
         {
+
             return "";
-        }else return lines[_currentLine];
+        }
+        else return lines[_currentLine];
     }
 
 }

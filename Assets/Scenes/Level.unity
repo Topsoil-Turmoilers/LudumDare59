@@ -629,6 +629,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: StoryFlags.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: 'StoryFlags.Array.data[4]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: StoryFlagsValues.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: StoryFlagsDescriptions.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: 'StoryFlagsDescriptions.Array.data[0]'
+      value: Is ignored by the entire game. Used to not flip other flags
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: 'StoryFlagsDescriptions.Array.data[1]'
+      value: True after checking the Radio for the first time
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: 'StoryFlagsDescriptions.Array.data[2]'
+      value: True after tuning into the Leader's frequency
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: 'StoryFlagsDescriptions.Array.data[3]'
+      value: True after Leader tells you about 'The Monster'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: 'StoryFlagsDescriptions.Array.data[4]'
+      value: True after turning into the Medic's frequency
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

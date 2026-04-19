@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ff3f978cf0add4da59dee2ad7804ad, type: 3}
   m_Name: Radio_Initial
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
-  _currentLine: 2
+  _currentLine: 8
   names:
   - 
   - --Unknown Speaker--
@@ -34,4 +34,5 @@ MonoBehaviour:
   - "It\u2019s getting closer. \r\nIt\u2019s too late for me, save the others. The
     channel list is in the desk drawer."
   - '*A scream can just barely be made out as the channel is flooded with static.*'
-  lineSFX: 0000000001000000000000000200000000000000000000000900000003000000
+  lineSFX: 0000000001000000000000000200000007000000000000000900000003000000
+  flag: 0
