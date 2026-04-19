@@ -118,10 +118,10 @@ public class RadioUIManager : MonoBehaviour
         Debug.Log("Opening the Radio UI");
         radioUICanvas.gameObject.SetActive(true);
 
-        if (!StoryFlagManager.instance.checkFlag(StoryFlagManager.StoryFlag.CheckRadio))
+        if (!StoryFlagManager.instance.checkFlag(StoryFlagManager.StoryFlag.CheckedRadio))
         {
             DialogueManager.instance.StartDialogue(OnFirstRadioVisit);
-            StoryFlagManager.instance.setFlag(StoryFlagManager.StoryFlag.CheckRadio, true);
+            StoryFlagManager.instance.setFlag(StoryFlagManager.StoryFlag.CheckedRadio, true);
         }
     }
     public void CloseRadioUI()
