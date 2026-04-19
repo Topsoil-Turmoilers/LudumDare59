@@ -25,6 +25,8 @@ public class PlayerMain : MonoBehaviour
     public bool canSprint;
     public bool isInteracting;
     public float playerWidth;
+    public GameObject interactionText;
+    
     private float playerHealth = 5f;
     public float PlayerHealth {  
         get { 
@@ -133,7 +135,7 @@ public class PlayerMain : MonoBehaviour
         if (context.canceled) { isInteracting = false; }
     }
 
-    //Collision Interaction Check
+    //Collision Interaction Check (To Interact)
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (isInteracting) //If the player is trying to interact
@@ -148,6 +150,23 @@ public class PlayerMain : MonoBehaviour
                 Debug.Log("Interacting with " + collision);
                 SwitchState(InteractState);
             }
+        }
+    }
+
+    //Collision Interaction Checks (For Prompt)
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<IInteractable>() != null)
+        {
+            interactionText.SetActive(true);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<IInteractable>() != null)
+        {
+            interactionText.SetActive(false);
         }
     }
 
