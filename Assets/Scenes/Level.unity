@@ -351,6 +351,126 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1118635224 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 167049686319818170, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
+  m_PrefabInstance: {fileID: 5625983005975580760}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acfeeba0a58542649aaa7a2d5fbfbb2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMain
+--- !u!1 &1147200985 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1919708885914475374, guid: d72fb933b30489843a349c2c780fde06, type: 3}
+  m_PrefabInstance: {fileID: 8432149651696021862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &1147200991
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147200985}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.3
+--- !u!114 &1513646923 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 984402834930604497, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+  m_PrefabInstance: {fileID: 7864030351636057458}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0cd8efe3a949e4286154e1b0d21a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RadioManager
+--- !u!1001 &1747684485
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6967794713599802410, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967794713599802410, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967794713599802410, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967794713599802410, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967794713599802410, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967794713599802410, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967794713599802410, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967794713599802410, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967794713599802410, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967794713599802410, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7802089512731729901, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
 --- !u!1 &1893057542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,6 +1146,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6543269403241496465, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1118635224}
     - target: {fileID: 6606557063358357887, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1083,6 +1207,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 195920683088798368, guid: d72fb933b30489843a349c2c780fde06, type: 3}
+      propertyPath: radioUIManager
+      value: 
+      objectReference: {fileID: 1513646923}
     - target: {fileID: 814732444450824089, guid: d72fb933b30489843a349c2c780fde06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1130,7 +1258,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1919708885914475374, guid: d72fb933b30489843a349c2c780fde06, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1147200991}
   m_SourcePrefab: {fileID: 100100000, guid: d72fb933b30489843a349c2c780fde06, type: 3}
 --- !u!1001 &8958716389946562372
 PrefabInstance:
@@ -1203,6 +1334,7 @@ SceneRoots:
   - {fileID: 7632603293600293815}
   - {fileID: 1893057545}
   - {fileID: 6573669151889975200}
+  - {fileID: 1747684485}
   - {fileID: 4907592718265169651}
   - {fileID: 3209756967974649833}
   - {fileID: 6624892561096129977}

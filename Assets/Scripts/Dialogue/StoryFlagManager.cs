@@ -19,7 +19,7 @@ public class StoryFlagManager : MonoBehaviour
         SetupStoryFlagDictionary();
     }
 
-    public enum StoryFlag {CheckRadio, TalkLeader, LeaderDead, TalkMedic};
+    public enum StoryFlag {None, CheckRadio, TalkLeader, LeaderDead, TalkMedic, FoundList};
 
     //public Dictionary<StoryFlag, string> StoryFlagDescription;
 
@@ -28,11 +28,12 @@ public class StoryFlagManager : MonoBehaviour
     public List<string> StoryFlagsDescriptions;
 
     private Dictionary<StoryFlag, bool> StoryFlagValues;
+    public Dictionary<StoryFlag, bool> StoryFlagValuesReadonly { get {  return StoryFlagValues; } }
 
     private void SetupStoryFlagDictionary()
     {
         StoryFlagValues = new Dictionary<StoryFlag, bool>();
-        for (int i = 0; i < StoryFlagValues.Count; i++)
+        for (int i = 0; i < StoryFlagsValues.Count; i++)
         {
             StoryFlagValues.Add(StoryFlags[i], StoryFlagsValues[i]);
         }

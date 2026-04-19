@@ -113,11 +113,14 @@ Shader "Custom/RadioMapShader"
 
                 float2 uvScaled = frac(uv * _Sections);
                 //pattern
-                float4 texColor = float4(0.1, 0.1, 0.1, 1.0);
+                float dSegment = min(step(0.01, abs(uvScaled.x - 0.01)), step(0.01, abs(uvScaled.y - 0.01)));
+                float4 texColor = lerp(float4(0.1, 0.1, 0.1, 1.0), float4(0.0, 0.0, 0.0, 1.0), 1.0 - dSegment);
                 //Marker
                 
                 float dMarkerX = step(0.01, abs(uv.x - _MarkerPositionX));
                 float dMarkerY = step(0.01, abs(uv.y - _MarkerPositionY));
+
+                
 
                 texColor = lerp(texColor, float4(1.0, 0.0, 0.0, 1.0), 1.0 - dMarkerX);
                 texColor = lerp(texColor, float4(1.0, 0.0, 0.0, 1.0), 1.0 - dMarkerY);

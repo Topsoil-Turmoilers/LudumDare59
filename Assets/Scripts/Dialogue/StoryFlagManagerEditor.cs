@@ -1,10 +1,11 @@
 #if UNITY_EDITOR
 using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
-using UnityEngine;
 using UnityEditor.Rendering;
+using UnityEngine;
+using static StoryFlagManager;
 
 [CustomEditor(typeof(StoryFlagManager))]
 public class StoryFlagManagerEditor : Editor
@@ -12,6 +13,12 @@ public class StoryFlagManagerEditor : Editor
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
+        if (Application.isPlaying)
+        {
+            DisplayAtRuntime((StoryFlagManager)target);
+            return;
+        }
+        
         serializedObject.Update();
         SerializedProperty FlagList = serializedObject.FindProperty("StoryFlags");
         SerializedProperty BoolList = serializedObject.FindProperty("StoryFlagsValues");
@@ -53,6 +60,26 @@ public class StoryFlagManagerEditor : Editor
 
         }
         serializedObject.ApplyModifiedProperties();
+    }
+    private void DisplayAtRuntime(StoryFlagManager sfm)
+    {
+        EditorGUILayout.LabelField("The StoryFlagManager becomes Readonly at Runime. You have been warned");
+        for (int i = 0; i < sfm.StoryFlagValuesReadonly.Count; i++)
+        {
+            EditorGUILayout.BeginVertical();
+            EditorGUILayout.BeginHorizontal();
+
+            //InternalFlag.Flag = (StoryFlagManager.StoryFlag) StoryFlags.GetValue(i);
+            EditorGUILayout.Toggle(sfm.StoryFlagValuesReadonly.Values.ToArray()[i]);
+            //InternalFlag.value = EditorGUILayout.Toggle(StoryManager.StoryFlags[i].value);
+            EditorGUILayout.LabelField(sfm.StoryFlagValuesReadonly.Keys.ToArray()[i].ToString());
+            //GUILayout.Label(InternalFlag.Flag.ToString());
+            EditorGUILayout.EndHorizontal();
+            EditorGUILayout.TextField(sfm.StoryFlagsDescriptions[i]);
+            //InternalFlag.description = GUILayout.TextField(StoryManager.StoryFlags[i].description);
+            EditorGUILayout.EndVertical();
+        }
+        return;
     }
 }
 #endif
