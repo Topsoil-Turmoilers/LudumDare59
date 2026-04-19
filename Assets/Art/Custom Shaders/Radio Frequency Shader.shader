@@ -122,7 +122,7 @@ Shader "Custom/RadioFrequencyShader"
 
                 float2 uvScaled = frac(uv * _Sections);
                 //pattern
-                float4 texColor = lerp(float4(0.0, 0.1, 0.1, 1.0), float4(0.0, 1.0, 0.0, 1.0), sin(uv.x * 2 * 3.141 * _Sections));
+                float4 texColor = lerp(float4(0.0, 0.35, 0.0, 1.0), float4(0.1, 0.1, 0.1, 1.0),  cos((uv.x) * 2 * 3.141 * _Sections) * 0.5 + 0.5);
                 //Marker
                 float dTriangle = sdTriangleIsosceles(uv - float2(_MarkerPosition, 0.5), float2(0.025, -0.5));
                 float dTriangleBorder = abs(dTriangle);
@@ -130,7 +130,7 @@ Shader "Custom/RadioFrequencyShader"
                 dTriangle = step(0.0, dTriangle);
                 dTriangleBorder = step(0.001, dTriangleBorder);
 
-                texColor = lerp(texColor, float4(1.0, 0.0, 0.0, 1.0), 1.0 - dTriangle);
+                texColor = lerp(texColor, float4(0.8, 0.0, 0.0, 1.0), 1.0 - dTriangle);
                 texColor = lerp(texColor, float4(0.0, 0.0, 0.0, 1.0), 1.0 - dTriangleBorder);
 
                 color *= texColor;
