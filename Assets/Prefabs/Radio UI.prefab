@@ -375,9 +375,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RadioDialogue
   RequiredRadioData:
-  - frequency: 0.1
-    horizontalPosition: 0.2
-    verticalPosition: 0.3
+  - frequency: 0
+    horizontalPosition: 0
+    verticalPosition: 0
     toggles: 0000000000
   hasConnected: 
   InteractionHooks:
@@ -3914,7 +3914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 371aaaebd86225847b1f887bd29a4a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractionHook
-  defaultDialogue: {fileID: 11400000, guid: 81540d2599f45f74ba5df3c0acae8766, type: 2}
+  defaultDialogue: {fileID: 11400000, guid: e1fa79690e0b26040bb894e303f27075, type: 2}
   conditionalDialogue: []
   OnDefaultDialogueFinished:
     m_PersistentCalls:
@@ -5287,6 +5287,7 @@ MonoBehaviour:
   WavesMaterial: {fileID: 2100000, guid: 2daccf0fc9a734b4da1f5755ffb2d166, type: 2}
   waveHeight: 0
   waveSpeedMultiplier: 5
+  OnFirstRadioVisit: {fileID: 11400000, guid: 81540d2599f45f74ba5df3c0acae8766, type: 2}
 --- !u!1 &7289736923783537730
 GameObject:
   m_ObjectHideFlags: 0

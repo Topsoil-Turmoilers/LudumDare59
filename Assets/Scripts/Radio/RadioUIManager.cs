@@ -42,6 +42,8 @@ public class RadioUIManager : MonoBehaviour
     [SerializeField] private float waveHeight;
     [SerializeField] private float waveSpeedMultiplier = 5.0f;
 
+    [SerializeField] private DialogueObject OnFirstRadioVisit;
+
     private RadioDialogue.RadioData RadioState;
 
     private void Awake()
@@ -115,6 +117,12 @@ public class RadioUIManager : MonoBehaviour
     {
         Debug.Log("Opening the Radio UI");
         radioUICanvas.gameObject.SetActive(true);
+
+        if (!StoryFlagManager.instance.checkFlag(StoryFlagManager.StoryFlag.CheckRadio))
+        {
+            DialogueManager.instance.StartDialogue(OnFirstRadioVisit);
+            StoryFlagManager.instance.setFlag(StoryFlagManager.StoryFlag.CheckRadio, true);
+        }
     }
     public void CloseRadioUI()
     {
