@@ -89,7 +89,7 @@ public class PlayerMain : MonoBehaviour
             anim.SetFloat("LastInputX", moveInput.x);
             anim.SetFloat("LastInputY", moveInput.y);
 
-            Debug.Log("LastInputX is " + moveInput.x + "| LastInputY is " + moveInput.y);
+            //Debug.Log("LastInputX is " + moveInput.x + "| LastInputY is " + moveInput.y);
         }
 
         moveInput = context.ReadValue<Vector2>();
