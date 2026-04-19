@@ -13,6 +13,9 @@ public class RadioUIManager : MonoBehaviour
     [SerializeField] private Slider horizontalPositionSlider;
     [SerializeField] private Slider verticalPositionSlider;
 
+    [SerializeField] private Sprite ToggleFalse;
+    [SerializeField] private Sprite ToggleTrue;
+
     [SerializeField] private Toggle[] Toggles;
     public bool[] ToggleValues { get
         {
@@ -30,16 +33,35 @@ public class RadioUIManager : MonoBehaviour
     [SerializeField] private Button CallbackButton4;
     [SerializeField] private Button CallbackButton5;
 
-    private RadioData RadioState;
+    [SerializeField] private Material FrequencyMaterial;
+    [SerializeField] private Material MapMaterial;
+    [SerializeField] private Material WavesMaterial;
+    private float wavesTime;
+    [SerializeField] private float waveHeight;
+    [SerializeField] private float waveSpeedMultiplier = 5.0f;
+
+    private RadioDialogue.RadioData RadioState;
 
     private void Awake()
     {
-        frequencySlider.onValueChanged.AddListener(value => { RadioState.frequency = frequencySlider.value; });
+        frequencySlider.onValueChanged.AddListener(value => { 
+            RadioState.frequency = frequencySlider.value;
+            FrequencyMaterial.SetFloat("_MarkerPosition", RadioState.frequency);
+        });
+        FrequencyMaterial.SetFloat("_MarkerPosition", RadioState.frequency);
 
-        horizontalPositionSlider.onValueChanged.AddListener(value => { RadioState.horizontalPosition = value; });
-        verticalPositionSlider.onValueChanged.AddListener(value => { RadioState.verticalPosition = value; });
+        horizontalPositionSlider.onValueChanged.AddListener(value => { 
+            RadioState.horizontalPosition = value;
+            MapMaterial.SetFloat("_MarkerPositionX", RadioState.horizontalPosition);
+        });
+        MapMaterial.SetFloat("_MarkerPositionX", RadioState.horizontalPosition);
+        verticalPositionSlider.onValueChanged.AddListener(value => { 
+            RadioState.verticalPosition = value;
+            MapMaterial.SetFloat("_MarkerPositionY", RadioState.verticalPosition);
+        });
+        MapMaterial.SetFloat("_MarkerPositionY", RadioState.verticalPosition);
 
-        for(int i = 0; i < Toggles.Length; i++)
+        for (int i = 0; i < Toggles.Length; i++)
         {
             Toggle t = Toggles[i];
             Toggles[i].SetLight();
@@ -47,17 +69,44 @@ public class RadioUIManager : MonoBehaviour
             {
                 t.ToggleValue();
                 RadioState.toggles = ToggleValues;
+                //jank but we take those
+                t.toggleButton.GetComponent<Image>().sprite = t.value ? ToggleTrue : ToggleFalse;
                 Debug.Log(RadioState.frequency);
             });
         }
 
         RadioState.toggles = new bool[Toggles.Length];
+
+        PlaceCallButton.onClick.AddListener(() => { radioDialogue.MakeCall(RadioState); });
+
+        CallbackButton1.onClick.AddListener(() => { radioDialogue.MakeCallBack(0); });
+        CallbackButton2.onClick.AddListener(() => { radioDialogue.MakeCallBack(1); });
+        CallbackButton3.onClick.AddListener(() => { radioDialogue.MakeCallBack(2); });
+        CallbackButton4.onClick.AddListener(() => { radioDialogue.MakeCallBack(3); });
+        CallbackButton5.onClick.AddListener(() => { radioDialogue.MakeCallBack(4); });
     }
 
     private void OnEnable()
     {
         EventSystem.current.SetSelectedGameObject(PlaceCallButton.gameObject);
     }
+
+    private void Update()
+    {
+        wavesTime += Time.deltaTime * waveSpeedMultiplier;
+        wavesTime %= 8;
+        WavesMaterial.SetFloat("_iTime", wavesTime);
+
+        //normalize it into a 0.0 to 1.0 wave
+        waveHeight = (Mathf.Cos(wavesTime / 4f * Mathf.PI) * 0.5f + 0.5f);
+        //then modify it into a 0-4 height wave
+        waveHeight *= 1.5f;
+        waveHeight += 1f;
+        
+        waveHeight = Mathf.Clamp(waveHeight, 0.1f, 4f);
+        WavesMaterial.SetFloat("_WaveHeight", waveHeight);
+    }
+
     [System.Serializable]
     public struct Toggle
     {
@@ -67,21 +116,12 @@ public class RadioUIManager : MonoBehaviour
         public void ToggleValue()
         {
             value = !value;
+
             SetLight();
         }
         public void SetLight()
         {
             toggleDisplay.color = value ? Color.green : Color.red;
         }
-    }
-
-    [System.Serializable]
-    public struct RadioData
-    {
-        public float frequency;
-        public float horizontalPosition;
-        public float verticalPosition;
-
-        public bool[] toggles;
     }
 }

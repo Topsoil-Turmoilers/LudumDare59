@@ -22,5 +22,6 @@ public class RoofHider : MonoBehaviour
     {
         //layer mask 1 = everything
         roofRenderer.renderingLayerMask = 1;
+        Debug.Log($"{collision.name} exited with the {roofRenderer.name} and made it show (RoofHider.cs)");
     }
 }

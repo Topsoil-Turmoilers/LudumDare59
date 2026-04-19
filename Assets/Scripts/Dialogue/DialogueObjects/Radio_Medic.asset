@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Radio_Medic
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
   _currentLine: 0
-  lines: []
+  lines:
+  - Medic Edgar Moss checking in. Howdy Doody
