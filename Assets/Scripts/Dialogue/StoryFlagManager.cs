@@ -19,7 +19,7 @@ public class StoryFlagManager : MonoBehaviour
         SetupStoryFlagDictionary();
     }
 
-    public enum StoryFlag {None, GameStarted, CheckedRadio, ReportedSharpsDeath, ListFound, MossContacted};
+    public enum StoryFlag {None, GameStarted, CheckedRadio, ReportedSharpsDeath, ListFound, MossContacted, MossRescued};
 
     //public Dictionary<StoryFlag, string> StoryFlagDescription;
 
