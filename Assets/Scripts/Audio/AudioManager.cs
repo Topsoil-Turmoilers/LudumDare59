@@ -46,6 +46,12 @@ public class AudioManager : MonoBehaviour
 
     // SFX =============================================================
 
+        //PLAYER MOVEMENT
+    public void PlayInsideWalkSFX() => sfxSource.PlayOneShot(playlist.insideWalk);
+    public void PlayOutsideWalkSFX() => sfxSource.PlayOneShot(playlist.outsideWalk);
+    public void PlayInsideRunSFX() => sfxSource.PlayOneShot(playlist.insideRun);
+    public void PlayOutsideRunSFX() => sfxSource.PlayOneShot(playlist.outsideRun);
+
         // RADIO SFX
     public void PlayRadioButton01SFX() => sfxSource.PlayOneShot(playlist.radioButton01);
     public void PlayRadioButton02SFX() => sfxSource.PlayOneShot(playlist.radioButton02);
@@ -54,16 +60,12 @@ public class AudioManager : MonoBehaviour
     public void PlayRadioOffKeyfqSFX() => sfxSource.PlayOneShot(playlist.radioPlayingOffKeyFQ);
 
         // INSIDE SFX
-    public void PlayWalkInsideSFX() => sfxSource.PlayOneShot(playlist.walkInside);
-    public void PlayRunInsideSFX() => sfxSource.PlayOneShot(playlist.runInside);
     public void PlayWindowHitSFX() => sfxSource.PlayOneShot(playlist.windowHit);
     public void PlayWindowKnockSFX() => sfxSource.PlayOneShot(playlist.windowKnock);
     public void PlayWindowSingleTapSFX() => sfxSource.PlayOneShot(playlist.windowSingleTap);
     public void PlayWindowTapSFX() => sfxSource.PlayOneShot(playlist.windowTap);
 
-    // OUTSIDE SFX
-    public void PlayWalkOutsideSFX() => sfxSource.PlayOneShot(playlist.walkOutside);
-    public void PlayRunOutsideSFX() => sfxSource.PlayOneShot(playlist.runOutside);
+        // OUTSIDE SFX
     public void PlayFlashlightOnSFX() => sfxSource.PlayOneShot(playlist.flashlightOn);
     public void PlayFlashlightOffSFX() => sfxSource.PlayOneShot(playlist.flashlightOff);
     public void PlayFlashlightRattleSFX() => sfxSource.PlayOneShot(playlist.flashlightRattle);

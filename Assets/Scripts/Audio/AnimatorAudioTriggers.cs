@@ -5,13 +5,13 @@ using System.Collections;
 
 public class AnimatorAudioTriggers : MonoBehaviour
 {
-    public void TriggerWalkInsideSFX()
+    public void TriggerWalkSFX()
     {
-        AudioManager.instance.PlayWalkInsideSFX();
+        
     }
 
-    public void TriggerWalkOutsideSFX()
+    public void TriggerRunSFX()
     {
-        AudioManager.instance.PlayRunInsideSFX();
+        
     }
 }
