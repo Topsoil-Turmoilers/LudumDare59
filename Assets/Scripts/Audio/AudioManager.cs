@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -32,10 +33,26 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     { 
-            //Safety check -> Plays Menu Music by Default
+        //Safety check -> Plays Menu Music by Default
         if (playlist != null && playlist.menuTheme != null)
         {
             PlayMenuMusic();
+        }
+        //this gets called every time a scene transition happens
+        SceneManager.activeSceneChanged += LoadBGMOnSceneChange;
+    }
+
+    private void LoadBGMOnSceneChange(Scene formerScene, Scene newScene)
+    {
+        //0 is the title scene
+        if(newScene.buildIndex == 0)
+        {
+            PlayMenuMusic();
+        }
+        //and we will never have more than 1 scene
+        else
+        {
+            PlayOutsideMusic();
         }
     }
 

@@ -73,7 +73,9 @@ public class RadioUIManager : MonoBehaviour
                 RadioState.toggles = ToggleValues;
                 //jank but we take those
                 t.toggleButton.GetComponent<Image>().sprite = t.value ? ToggleTrue : ToggleFalse;
-                Debug.Log(RadioState.frequency);
+
+                if (t.value) AudioManager.instance?.PlayRadioButton01SFX();
+                else AudioManager.instance?.PlayRadioButton02SFX();
             });
         }
 
