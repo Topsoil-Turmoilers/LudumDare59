@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ff3f978cf0add4da59dee2ad7804ad, type: 3}
+  m_Name: Prologue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
+  _currentLine: 0
+  names:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  lines:
+  - 3 Months ago, we discovered signs of life on planet Lingas-249.
+  - This discovery could be a breakthrough in our research.
+  - It's been almost a month now since our Expedition Team set out to explore the
+    planet.
+  - We've been in contact the whole time, but this morning we lost their signal.
+  - "We put together a rescue team who is on route now to the signal\u2019s last
+    known location."
+  - It's up to us to find the crew members, and get them back safe.
+  lineSFX: 000000000000000000000000000000000000000000000000
+  flag: 0
