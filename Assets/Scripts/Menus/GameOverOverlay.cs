@@ -3,6 +3,19 @@ using UnityEngine.SceneManagement;
 
 public class GameOverOverlay : MonoBehaviour
 {
+    public static GameOverOverlay Instance;
+    private void Awake()
+    {
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
+
     [SerializeField] private GameObject GOScreen;
 
     //Use this when a Game Over is triggered
@@ -15,6 +28,9 @@ public class GameOverOverlay : MonoBehaviour
     {
         //put reset level code here? but like to where they just were idk
         GOScreen.SetActive(false);
+        //hard-resets the level
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
     }
 
     public void ToMainMenu()
