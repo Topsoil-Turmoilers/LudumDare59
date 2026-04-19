@@ -8,6 +8,9 @@ public class PlayerStateSprint : PlayerBaseState
     //When a State is Entered
     public override void EnterState(PlayerMain player)
     {
+        player.isRunning = true;
+        player.isWalking = false;
+        
         //Setting Timer to current stamina
         runStaminaTimer = player.RunStamina;
 
@@ -48,6 +51,8 @@ public class PlayerStateSprint : PlayerBaseState
     //When a State is Exited
     public override void ExitState(PlayerMain player)
     {
+        player.isRunning = false;
+        
         //Returning Animation to previous speed
         player.anim.speed = 1;
     }
