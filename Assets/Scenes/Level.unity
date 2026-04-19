@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &271300024 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1021430238243410347, guid: ac5110b3d8f965448b2284166c8f9c62, type: 3}
+  m_PrefabInstance: {fileID: 6624892561096129977}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fefea3c9520ab254c993f0d9c61cfc93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +785,22 @@ PrefabInstance:
     - target: {fileID: 587856383576914959, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253354008648131750, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[19].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 271300024}
+    - target: {fileID: 8253354008648131750, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[19].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnPause
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253354008648131750, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[19].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253354008648131750, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[19].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8701032081410655235, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
       propertyPath: m_LocalPosition.x

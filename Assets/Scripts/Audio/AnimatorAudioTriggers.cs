@@ -9,25 +9,27 @@ public class AnimatorAudioTriggers : MonoBehaviour
 
     public void TriggerMovementSFX()
     {
-        Debug.Log("Here!!!");
-        if(player.isWalking && player.isInside)
+        if (AudioManager.instance != null) //I added a safety check :)
         {
-            AudioManager.instance.PlayInsideWalkSFX();
-        }
+            if (player.isWalking && player.isInside)
+            {
+                AudioManager.instance.PlayInsideWalkSFX();
+            }
 
-        if (player.isWalking && !player.isInside)
-        {
-            AudioManager.instance.PlayOutsideWalkSFX();
-        }
+            if (player.isWalking && !player.isInside)
+            {
+                AudioManager.instance.PlayOutsideWalkSFX();
+            }
 
-        if(player.isRunning && player.isInside)
-        {
-            AudioManager.instance.PlayInsideRunSFX();
-        }
+            if (player.isRunning && player.isInside)
+            {
+                AudioManager.instance.PlayInsideRunSFX();
+            }
 
-        if(player.isRunning && !player.isInside)
-        {
-            AudioManager.instance.PlayOutsideRunSFX();
+            if (player.isRunning && !player.isInside)
+            {
+                AudioManager.instance.PlayOutsideRunSFX();
+            }
         }
 
         // Yes, I repeated myself over and over... woops. Has to be a better way to do this
