@@ -113,7 +113,7 @@ public class AudioManager : MonoBehaviour
             case SFX.StaticHFQ: source.PlayOneShot(playlist.radioPlayingHighFQ); break;
             case SFX.StaticIt: source.PlayOneShot(playlist.radioPlayingOffKeyFQ); break;
             case SFX.RadioButton1: source.PlayOneShot(playlist.radioButton01); break;
-            case SFX.RadioButton2: source.PlayOneShot(playlist.radioButton01); break;
+            case SFX.RadioButton2: source.PlayOneShot(playlist.radioButton02); break;
             case SFX.Flashlight1: source.PlayOneShot(playlist.flashlightOn); break;
             case SFX.Flashlight2: source.PlayOneShot(playlist.flashlightOff); break;
             case SFX.Flashlight3: source.PlayOneShot(playlist.flashlightRattle); break;
