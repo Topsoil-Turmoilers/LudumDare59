@@ -55,6 +55,7 @@ public class AudioManager : MonoBehaviour
 
         // INSIDE SFX
     public void PlayWalkInsideSFX() => sfxSource.PlayOneShot(playlist.walkInside);
+    public void PlayRunInsideSFX() => sfxSource.PlayOneShot(playlist.runInside);
     public void PlayWindowHitSFX() => sfxSource.PlayOneShot(playlist.windowHit);
     public void PlayWindowKnockSFX() => sfxSource.PlayOneShot(playlist.windowKnock);
     public void PlayWindowSingleTapSFX() => sfxSource.PlayOneShot(playlist.windowSingleTap);
@@ -62,6 +63,7 @@ public class AudioManager : MonoBehaviour
 
     // OUTSIDE SFX
     public void PlayWalkOutsideSFX() => sfxSource.PlayOneShot(playlist.walkOutside);
+    public void PlayRunOutsideSFX() => sfxSource.PlayOneShot(playlist.runOutside);
     public void PlayFlashlightOnSFX() => sfxSource.PlayOneShot(playlist.flashlightOn);
     public void PlayFlashlightOffSFX() => sfxSource.PlayOneShot(playlist.flashlightOff);
     public void PlayFlashlightRattleSFX() => sfxSource.PlayOneShot(playlist.flashlightRattle);

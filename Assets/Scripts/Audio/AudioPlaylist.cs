@@ -17,6 +17,7 @@ public class AudioPlaylist : ScriptableObject
 
     [Header("Inside SFX")]
     public AudioClip walkInside;
+    public AudioClip runInside;
     public AudioClip windowHit;
     public AudioClip windowKnock;
     public AudioClip windowSingleTap;
@@ -24,6 +25,7 @@ public class AudioPlaylist : ScriptableObject
 
     [Header("Outside SFX")]
     public AudioClip walkOutside;
+    public AudioClip runOutside;
     public AudioClip flashlightOn;
     public AudioClip flashlightOff;
     public AudioClip flashlightRattle;
