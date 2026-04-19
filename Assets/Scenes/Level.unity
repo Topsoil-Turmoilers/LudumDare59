@@ -1010,11 +1010,23 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598885078}
     m_Modifications:
-    - target: {fileID: 3795430802868269495, guid: ac5110b3d8f965448b2284166c8f9c62, type: 3}
+    - target: {fileID: 1191970693097051249, guid: ac5110b3d8f965448b2284166c8f9c62, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5564861359603711663, guid: ac5110b3d8f965448b2284166c8f9c62, type: 3}
+    - target: {fileID: 2339820743132787639, guid: ac5110b3d8f965448b2284166c8f9c62, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3247432529676558320, guid: ac5110b3d8f965448b2284166c8f9c62, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270344181865297089, guid: ac5110b3d8f965448b2284166c8f9c62, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4814754182066152457, guid: ac5110b3d8f965448b2284166c8f9c62, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
@@ -1061,14 +1073,6 @@ PrefabInstance:
     - target: {fileID: 7317989757797146737, guid: ac5110b3d8f965448b2284166c8f9c62, type: 3}
       propertyPath: m_Name
       value: PauseMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 8027958851738448480, guid: ac5110b3d8f965448b2284166c8f9c62, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8755707230224149048, guid: ac5110b3d8f965448b2284166c8f9c62, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1228,10 +1232,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3788532882344418142, guid: d72fb933b30489843a349c2c780fde06, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8770968835073107227, guid: d72fb933b30489843a349c2c780fde06, type: 3}
       propertyPath: m_Name
       value: Watchtower Tilemap
@@ -1249,22 +1249,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598885078}
     m_Modifications:
-    - target: {fileID: 1456199454413006789, guid: 88c0651bafecbdb4b82de459508a07aa, type: 3}
-      propertyPath: m_text
-      value: '- SIGNAL LOST -'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456199454413006789, guid: 88c0651bafecbdb4b82de459508a07aa, type: 3}
-      propertyPath: m_fontSize
-      value: 147.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456199454413006789, guid: 88c0651bafecbdb4b82de459508a07aa, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 4454758812649339143, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
-    - target: {fileID: 1456199454413006789, guid: 88c0651bafecbdb4b82de459508a07aa, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1766975902085889371, guid: 88c0651bafecbdb4b82de459508a07aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 925.2661

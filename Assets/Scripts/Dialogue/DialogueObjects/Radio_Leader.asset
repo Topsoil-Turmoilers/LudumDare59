@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ff3f978cf0add4da59dee2ad7804ad, type: 3}
   m_Name: Radio_Leader
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
-  _currentLine: 3
+  _currentLine: 1
   names:
   - 
   lines:
   - The channel remains silent.
-  lineSFX: 00000000
+  lineSFX: 05000000
+  flag: 0

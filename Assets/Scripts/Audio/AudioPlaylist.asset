@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioPlaylist
   menuTheme: {fileID: 8300000, guid: 5d7a3c6a1e3ced641bf00619d7152e48, type: 3}
   prologueTheme: {fileID: 8300000, guid: 1e768037f71614a488f926e8d7f3cc06, type: 3}
-  insideTheme: {fileID: 0}
-  outsideTheme: {fileID: 0}
+  levelTheme: {fileID: 8300000, guid: 5241d356f32c3cc47b1f33090dea6b68, type: 3}
+  monsterTimeTheme: {fileID: 8300000, guid: 9ea177e6d286e2a4f99210fcb64090ce, type: 3}
   insideWalk: {fileID: 8300000, guid: 6c67d36904998324c8eaad4c3c7f25bb, type: 3}
   insideRun: {fileID: 8300000, guid: f4c55f4f1e3184d4ebdb2d53e22ad338, type: 3}
   outsideWalk: {fileID: 8300000, guid: 3ae89973c5240a3489a96a7873955a98, type: 3}
