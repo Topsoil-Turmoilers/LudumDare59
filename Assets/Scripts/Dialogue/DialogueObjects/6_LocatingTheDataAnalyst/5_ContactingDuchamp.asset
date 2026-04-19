@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ff3f978cf0add4da59dee2ad7804ad, type: 3}
+  m_Name: 5_ContactingDuchamp
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
+  _currentLine: 0
+  names:
+  - You
+  - A. Duchamp
+  - You
+  - You
+  - A. Duchamp
+  - You
+  - A. Duchamp
+  - A. Duchamp
+  lines:
+  - Duchamp? Are you there?
+  - "Yes, hello? It was just here, it\u2019s coming to get me."
+  - "Don\u2019t worry, I\u2019ve lured it to the ravine with music thanks to your
+    notes."
+  - "I\u2019m sending a rescue team to your location."
+  - Thank you so much. Are the others safe?
+  - "Unfortunately, it was too late for captain Sharp, but we\u2019ve got everyone
+    else."
+  - Ellie...
+  - Ok. Please hurry.
+  lineSFX: 0400000001000000040000000000000001000000040000000100000001000000
+  flag: 15
