@@ -54,15 +54,15 @@ public class AudioManager : MonoBehaviour
         //and we will never have more than 1 scene
         else
         {
-            PlayOutsideMusic();
+            PlayLevelMusic();
         }
     }
 
     // MUSIC ===========================================================
     public void PlayMenuMusic() => PlayMusic(playlist.menuTheme);
     public void PlayPrologueMusic() => PlayMusic(playlist.prologueTheme);
-    public void PlayInsideMusic() => PlayMusic(playlist.insideTheme);
-    public void PlayOutsideMusic() => PlayMusic(playlist.outsideTheme);
+    public void PlayLevelMusic() => PlayMusic(playlist.levelTheme);
+    public void PlayMonsterTimeMusic() => PlayMusic(playlist.monsterTimeTheme);
 
     // SFX =============================================================
 
