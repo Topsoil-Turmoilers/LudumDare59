@@ -34,6 +34,11 @@ public class RadioUIManager : MonoBehaviour
     [SerializeField] private Button CallbackButton5;
 
     [SerializeField] private Material FrequencyMaterial;
+    [SerializeField] private Material MapMaterial;
+    [SerializeField] private Material WavesMaterial;
+    private float wavesTime;
+    [SerializeField] private float waveHeight;
+    [SerializeField] private float waveSpeedMultiplier = 5.0f;
 
     private RadioDialogue.RadioData RadioState;
 
@@ -45,10 +50,18 @@ public class RadioUIManager : MonoBehaviour
         });
         FrequencyMaterial.SetFloat("_MarkerPosition", RadioState.frequency);
 
-        horizontalPositionSlider.onValueChanged.AddListener(value => { RadioState.horizontalPosition = value; });
-        verticalPositionSlider.onValueChanged.AddListener(value => { RadioState.verticalPosition = value; });
+        horizontalPositionSlider.onValueChanged.AddListener(value => { 
+            RadioState.horizontalPosition = value;
+            MapMaterial.SetFloat("_MarkerPositionX", RadioState.horizontalPosition);
+        });
+        MapMaterial.SetFloat("_MarkerPositionX", RadioState.horizontalPosition);
+        verticalPositionSlider.onValueChanged.AddListener(value => { 
+            RadioState.verticalPosition = value;
+            MapMaterial.SetFloat("_MarkerPositionY", RadioState.verticalPosition);
+        });
+        MapMaterial.SetFloat("_MarkerPositionY", RadioState.verticalPosition);
 
-        for(int i = 0; i < Toggles.Length; i++)
+        for (int i = 0; i < Toggles.Length; i++)
         {
             Toggle t = Toggles[i];
             Toggles[i].SetLight();
@@ -77,6 +90,23 @@ public class RadioUIManager : MonoBehaviour
     {
         EventSystem.current.SetSelectedGameObject(PlaceCallButton.gameObject);
     }
+
+    private void Update()
+    {
+        wavesTime += Time.deltaTime * waveSpeedMultiplier;
+        wavesTime %= 8;
+        WavesMaterial.SetFloat("_iTime", wavesTime);
+
+        //normalize it into a 0.0 to 1.0 wave
+        waveHeight = (Mathf.Cos(wavesTime / 4f * Mathf.PI) * 0.5f + 0.5f);
+        //then modify it into a 0-4 height wave
+        waveHeight *= 1.5f;
+        waveHeight += 1f;
+        
+        waveHeight = Mathf.Clamp(waveHeight, 0.1f, 4f);
+        WavesMaterial.SetFloat("_WaveHeight", waveHeight);
+    }
+
     [System.Serializable]
     public struct Toggle
     {

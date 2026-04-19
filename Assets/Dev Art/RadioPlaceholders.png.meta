@@ -135,7 +135,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -157,7 +157,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -179,7 +179,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -201,7 +201,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -223,7 +223,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -245,7 +245,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -267,7 +267,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -280,6 +280,50 @@ TextureImporter:
       bones: []
       spriteID: 3495fb2778c06cdb0800000000000000
       internalID: -4772112979267200701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RadioPlaceholders_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7781f8d1af101fd40867eb7439213d41
+      internalID: -1699125878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RadioPlaceholders_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38695f1a9300dda48ac74656eedfc0b6
+      internalID: 1595656120
       vertices: []
       indices: 
       edges: []
@@ -307,6 +351,8 @@ TextureImporter:
       RadioPlaceholders_4: -6406941348612408794
       RadioPlaceholders_5: -5887401282879244351
       RadioPlaceholders_6: -4772112979267200701
+      RadioPlaceholders_7: -1699125878
+      RadioPlaceholders_8: 1595656120
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

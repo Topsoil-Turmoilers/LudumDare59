@@ -1997,7 +1997,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 9082046588277903676, guid: 5c907acba0a0e1d429683166feff1670, type: 3}
+  m_Sprite: {fileID: -1699125878, guid: 5c907acba0a0e1d429683166feff1670, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4160,8 +4160,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 4528281633599724034}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.05, y: 0.05}
-  m_AnchorMax: {x: 0.9, y: 0.9}
+  m_AnchorMin: {x: 0.08, y: 0.08}
+  m_AnchorMax: {x: 0.87, y: 0.87}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4185,15 +4185,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.4669811, b: 0.4669811, a: 1}
+  m_Material: {fileID: 2100000, guid: 14efc2753a587fa4ea6bae77b19de000, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 4804446361586417100, guid: 60313c9e1ea90bb4bb6d701887d1fc98, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4567,7 +4567,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.25, y: 0}
   m_AnchorMax: {x: 0.75, y: 1}
-  m_AnchoredPosition: {x: 0, y: 5}
+  m_AnchoredPosition: {x: 0, y: -5}
   m_SizeDelta: {x: 0, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6453614335829828915
@@ -5259,6 +5259,8 @@ MonoBehaviour:
   CallbackButton4: {fileID: 8231204222929911991}
   CallbackButton5: {fileID: 5013106116925856571}
   FrequencyMaterial: {fileID: 2100000, guid: a116414b369358745bc1d484f7e522c4, type: 2}
+  MapMaterial: {fileID: 2100000, guid: 14efc2753a587fa4ea6bae77b19de000, type: 2}
+  WavesMaterial: {fileID: 2100000, guid: 2daccf0fc9a734b4da1f5755ffb2d166, type: 2}
 --- !u!1 &7289736923783537730
 GameObject:
   m_ObjectHideFlags: 0
@@ -5428,8 +5430,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.09575987, a: 1}
+  m_Material: {fileID: 2100000, guid: 2daccf0fc9a734b4da1f5755ffb2d166, type: 2}
+  m_Color: {r: 0, g: 0.23584908, b: 0.012809152, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6501,7 +6503,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6361126092679695938}
   m_FillRect: {fileID: 1109599850704766084}
   m_HandleRect: {fileID: 2230474645788061961}
-  m_Direction: 3
+  m_Direction: 2
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
