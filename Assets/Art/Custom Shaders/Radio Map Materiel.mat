@@ -47,8 +47,8 @@ Material:
     m_Floats:
     - _ColorMask: 15
     - _EnableExternalAlpha: 0
-    - _MarkerPositionX: 0.18766658
-    - _MarkerPositionY: 0.11985668
+    - _MarkerPositionX: 0
+    - _MarkerPositionY: 0
     - _Sections: 4
     - _Stencil: 0
     - _StencilComp: 8
