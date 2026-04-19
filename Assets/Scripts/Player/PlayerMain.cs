@@ -25,6 +25,11 @@ public class PlayerMain : MonoBehaviour
     public bool isInteracting;
     public float playerWidth;
 
+    [Header("Animation Trigger Checks")]
+    public bool isWalking;
+    public bool isRunning;
+    public bool isInside;
+
     //Main
 
     private void Awake()
