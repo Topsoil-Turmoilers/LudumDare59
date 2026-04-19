@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: Radio_2-ReportingAboutSharpsDeath
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
   _currentLine: 0
-  names: []
-  lines: []
-  lineSFX: 
+  names:
+  - You
+  - Rescue Team
+  lines:
+  - Captain Sharp has been located and is deceased. Nothing else to report yet.
+  - Understood
+  lineSFX: 0000000001000000
   flag: 0
