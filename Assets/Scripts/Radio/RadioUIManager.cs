@@ -6,6 +6,8 @@ public class RadioUIManager : MonoBehaviour
 {
     [SerializeField] private RadioDialogue radioDialogue;
 
+    private Canvas radioUICanvas;
+
     [SerializeField] private Button PlaceCallButton;
 
     [SerializeField] private Slider frequencySlider;
@@ -40,6 +42,8 @@ public class RadioUIManager : MonoBehaviour
     [SerializeField] private float waveHeight;
     [SerializeField] private float waveSpeedMultiplier = 5.0f;
 
+    [SerializeField] private DialogueObject OnFirstRadioVisit;
+
     private RadioDialogue.RadioData RadioState;
 
     private void Awake()
@@ -71,7 +75,9 @@ public class RadioUIManager : MonoBehaviour
                 RadioState.toggles = ToggleValues;
                 //jank but we take those
                 t.toggleButton.GetComponent<Image>().sprite = t.value ? ToggleTrue : ToggleFalse;
-                Debug.Log(RadioState.frequency);
+
+                if (t.value) AudioManager.instance?.PlayRadioButton01SFX();
+                else AudioManager.instance?.PlayRadioButton02SFX();
             });
         }
 
@@ -84,13 +90,13 @@ public class RadioUIManager : MonoBehaviour
         CallbackButton3.onClick.AddListener(() => { radioDialogue.MakeCallBack(2); });
         CallbackButton4.onClick.AddListener(() => { radioDialogue.MakeCallBack(3); });
         CallbackButton5.onClick.AddListener(() => { radioDialogue.MakeCallBack(4); });
-    }
 
+        radioUICanvas = GetComponentInChildren<Canvas>(true);
+    }
     private void OnEnable()
     {
         EventSystem.current.SetSelectedGameObject(PlaceCallButton.gameObject);
     }
-
     private void Update()
     {
         wavesTime += Time.deltaTime * waveSpeedMultiplier;
@@ -105,6 +111,23 @@ public class RadioUIManager : MonoBehaviour
         
         waveHeight = Mathf.Clamp(waveHeight, 0.1f, 4f);
         WavesMaterial.SetFloat("_WaveHeight", waveHeight);
+    }
+
+    public void OpenRadioUI()
+    {
+        Debug.Log("Opening the Radio UI");
+        radioUICanvas.gameObject.SetActive(true);
+
+        if (!StoryFlagManager.instance.checkFlag(StoryFlagManager.StoryFlag.CheckedRadio))
+        {
+            DialogueManager.instance.StartDialogue(OnFirstRadioVisit);
+            StoryFlagManager.instance.setFlag(StoryFlagManager.StoryFlag.CheckedRadio, true);
+        }
+    }
+    public void CloseRadioUI()
+    {
+        Debug.Log("Closing the Radio UI");
+        radioUICanvas.gameObject.SetActive(false);
     }
 
     [System.Serializable]

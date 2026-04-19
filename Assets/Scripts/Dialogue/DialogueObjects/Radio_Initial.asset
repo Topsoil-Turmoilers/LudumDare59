@@ -12,9 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ff3f978cf0add4da59dee2ad7804ad, type: 3}
   m_Name: Radio_Initial
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
-  _currentLine: 0
+  _currentLine: 8
+  names:
+  - 
+  - --Unknown Speaker--
+  - You
+  - --Unknown Speaker--
+  - --Unknown Speaker--
+  - Captain Sharp
+  - Captain Sharp
+  - Captain Sharp
   lines:
-  - This is simply a test.
-  - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia
-    lorem eget lacus blandit fringilla. Suspendisse ac volutpat felis. Pellentesque
-    eget tellus in massa lacinia.
+  - '*The radio seems to transmitting audio already. Curious*'
+  - "\u2014porting again. It has been 2 days, 7 hours, and 24 minutes since losing
+    contact\u2014..."
+  - '*Hello? Can you hear me?*'
+  - "Hello? Oh thank goodness you\u2019re here."
+  - "This is Captain Sharp speaking. Listen, I don\u2019t have much time left."
+  - "This planet, there\u2019s something connected to it. It woke up and that\u2019s
+    when we lost signal."
+  - "It\u2019s getting closer. \r\nIt\u2019s too late for me, save the others. The
+    channel list is in the desk drawer."
+  - '*A scream can just barely be made out as the channel is flooded with static.*'
+  lineSFX: 0100000001000000040000000100000002000000020000000300000003000000
+  flag: 0
