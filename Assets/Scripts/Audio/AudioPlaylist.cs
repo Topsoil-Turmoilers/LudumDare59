@@ -5,6 +5,7 @@ public class AudioPlaylist : ScriptableObject
 {
     [Header("Music Tracks")]
     public AudioClip menuTheme;
+    public AudioClip prologueTheme;
     public AudioClip insideTheme;
     public AudioClip outsideTheme;
 
