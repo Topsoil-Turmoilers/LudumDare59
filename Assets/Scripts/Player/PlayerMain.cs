@@ -82,7 +82,24 @@ public class PlayerMain : MonoBehaviour
     //Event System
     public void OnMove(InputAction.CallbackContext context)
     {
+        //Feeding movement data to Animator
+        if (context.canceled)
+        {
+            anim.SetBool("isWalking", false);
+            anim.SetFloat("LastInputX", moveInput.x);
+            anim.SetFloat("LastInputY", moveInput.y);
+
+            Debug.Log("LastInputX is " + moveInput.x + "| LastInputY is " + moveInput.y);
+        }
+
         moveInput = context.ReadValue<Vector2>();
+
+        if (context.performed)
+        {
+            anim.SetBool("isWalking", true);
+            anim.SetFloat("InputX", moveInput.x);
+            anim.SetFloat("InputY", moveInput.y);
+        }
     }
 
     public void OnSprint(InputAction.CallbackContext context)
@@ -115,19 +132,6 @@ public class PlayerMain : MonoBehaviour
     }
 
     //Helpers
-
-    //Flips the Sprite
-    public void FlipSprite(float hVelocity)
-    {
-        if (Mathf.Abs(hVelocity) > 0.1f)
-        {
-            float direction = hVelocity > 0 ? 1f : -1f;
-            Vector3 newScale = anim.transform.localScale;
-            direction = direction > 0 ? playerWidth : -playerWidth;
-            newScale.x = direction;
-            anim.transform.localScale = newScale;
-        }
-    }
 
     //Regenerates Stamina
     public void StaminaRegen()
