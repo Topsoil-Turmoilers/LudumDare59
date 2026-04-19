@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ac0afbb98d7d3214c867820918b277ce
+guid: 971d82a500246564cbe7a2f2c4e555c5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1235240328373228537
-    second: Menu_ArrowDial_0
+      213: 4398326782110530573
+    second: Menu_ArrowDial 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,8 +49,8 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: 0.13765433, y: 0.4757576}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Menu_ArrowDial_0
+      name: Menu_ArrowDial 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 36
+        y: 35
         width: 36
-        height: 11
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f35ce8b884742110800000000000000
-      internalID: 1235240328373228537
+      spriteID: d0cf8cda7eef90d30800000000000000
+      internalID: 4398326782110530573
       vertices: []
       indices: 
       edges: []
@@ -126,7 +126,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Menu_ArrowDial_0: 1235240328373228537
+      Menu_ArrowDial 1_0: 4398326782110530573
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
