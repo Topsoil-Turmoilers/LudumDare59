@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -10, y: -10}
+  m_AnchoredPosition: {x: 45.323, y: -32.7332}
+  m_SizeDelta: {x: -100.646, y: -75.4665}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &591001558911064950
 CanvasRenderer:
@@ -597,8 +597,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -10, y: -10}
+  m_AnchoredPosition: {x: 113.69562, y: -17}
+  m_SizeDelta: {x: 57.4977, y: -53.3913}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7762869579422491434
 CanvasRenderer:
@@ -628,9 +628,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'E. Sharp
-
-    Captain'
+  m_text: E. Sharp, <i>Captain</i>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -857,9 +855,9 @@ RectTransform:
   m_Father: {fileID: 3730632681972369066}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1, y: 0.05}
-  m_AnchorMax: {x: 0.9, y: 0.25}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.1, y: 0.05}
+  m_AnchoredPosition: {x: 532.49664, y: 107.18323}
+  m_SizeDelta: {x: 1448.9983, y: 322.3715}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5325355292350010383
 CanvasRenderer:
@@ -889,8 +887,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 03a74317215d0784c8d188e714f94d22, type: 3}
-  m_Type: 2
+  m_Sprite: {fileID: 21300000, guid: bd6ee28c15cdf9d4cb1121ca04b93baa, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -898,7 +896,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 3
+  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &6426137332456535225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1123,8 +1121,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.15, y: 0.2462}
   m_AnchorMax: {x: 0.3, y: 0.35}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -162.1, y: 37}
+  m_SizeDelta: {x: 251.7942, y: 30.2153}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3156545629672188110
 CanvasRenderer:
@@ -1154,9 +1152,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 03a74317215d0784c8d188e714f94d22, type: 3}
-  m_Type: 2
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 21300000, guid: ed9a7224c8bcc3c48add020dd933da76, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
