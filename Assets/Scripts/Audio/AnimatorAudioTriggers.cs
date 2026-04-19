@@ -5,14 +5,17 @@ using System.Collections;
 
 public class AnimatorAudioTriggers : MonoBehaviour
 {
-    public void TriggerMovementSFX(PlayerMain player)
+    public PlayerMain player;
+
+    public void TriggerMovementSFX()
     {
+        Debug.Log("Here!!!");
         if(player.isWalking && player.isInside)
         {
             AudioManager.instance.PlayInsideWalkSFX();
         }
 
-        if (player.isWalking && player.isOutside)
+        if (player.isWalking && !player.isInside)
         {
             AudioManager.instance.PlayOutsideWalkSFX();
         }
@@ -22,7 +25,7 @@ public class AnimatorAudioTriggers : MonoBehaviour
             AudioManager.instance.PlayInsideRunSFX();
         }
 
-        if(player.isRunning && player.isOutside)
+        if(player.isRunning && !player.isInside)
         {
             AudioManager.instance.PlayOutsideRunSFX();
         }

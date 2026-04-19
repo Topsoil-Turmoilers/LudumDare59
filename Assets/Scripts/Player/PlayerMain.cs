@@ -29,7 +29,6 @@ public class PlayerMain : MonoBehaviour
     public bool isWalking;
     public bool isRunning;
     public bool isInside;
-    public bool isOutside;
 
     //Main
 

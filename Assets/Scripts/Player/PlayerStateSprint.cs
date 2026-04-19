@@ -9,7 +9,6 @@ public class PlayerStateSprint : PlayerBaseState
     public override void EnterState(PlayerMain player)
     {
         player.isRunning = true;
-        player.isWalking = false;
         
         //Setting Timer to current stamina
         runStaminaTimer = player.RunStamina;

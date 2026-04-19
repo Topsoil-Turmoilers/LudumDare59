@@ -308,6 +308,10 @@ MonoBehaviour:
   canSprint: 0
   isInteracting: 0
   playerWidth: 0
+  isWalking: 0
+  isRunning: 0
+  isInside: 0
+  isOutside: 0
 --- !u!70 &4322488222073576465
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -357,3 +361,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 690ccc5c13a6251418d4e3ca2d39afd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimatorAudioTriggers
+  player: {fileID: 167049686319818170}

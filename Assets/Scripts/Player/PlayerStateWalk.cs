@@ -7,7 +7,6 @@ public class PlayerStateWalk : PlayerBaseState
     public override void EnterState(PlayerMain player)
     {
         player.isWalking = true;
-        player.isRunning = false;
     }
 
     //When Update Runs in a State
