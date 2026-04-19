@@ -7,6 +7,6 @@ public class AnimatorAudioTriggers : MonoBehaviour
 {
     public void TriggerMovementSFX()
     {
-
+        
     }
 }
