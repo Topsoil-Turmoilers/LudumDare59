@@ -24,6 +24,8 @@ public class PlayerMain : MonoBehaviour
     public bool canSprint;
     public bool isInteracting;
     public float playerWidth;
+    private float playerHealth = 5f;
+    public float PlayerHealth {  get { return playerHealth; } set { playerHealth = Mathf.Clamp(value, 0f, 5f); } }
 
     [Header("Animation Trigger Checks")]
     public bool isWalking;
