@@ -761,6 +761,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1935882265 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 514325213890818525, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+  m_PrefabInstance: {fileID: 4704951344666287659}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &1984680051 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3286489433766463472, guid: d72fb933b30489843a349c2c780fde06, type: 3}
@@ -863,6 +874,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: StoryFlags.Array.size
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: 'StoryFlags.Array.data[20]'
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: StoryFlagsValues.Array.size
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: StoryFlagsDescriptions.Array.size
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: 'StoryFlagsDescriptions.Array.data[20]'
+      value: True after turning into the Medic's frequency
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -876,6 +907,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598885078}
     m_Modifications:
+    - target: {fileID: 514325213890818525, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 515354983081133039, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: m_Name
+      value: Actual Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 1600246271259475428, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: m_Name
+      value: Jank Text
+      objectReference: {fileID: 0}
     - target: {fileID: 4898628677870946118, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.879
@@ -916,6 +959,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6019064855468497026, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: textDisplay
+      value: 
+      objectReference: {fileID: 4704951344666287660}
+    - target: {fileID: 6019064855468497026, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: textDisplayJank
+      value: 
+      objectReference: {fileID: 1935882265}
+    - target: {fileID: 6397156070020221910, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397156070020221910, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6918472571170664008, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
       propertyPath: m_Name
       value: Dialogue UI
@@ -925,6 +984,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+--- !u!114 &4704951344666287660 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6397156070020221910, guid: 3f76e70a968309045b7f46bbbe7a4c50, type: 3}
+  m_PrefabInstance: {fileID: 4704951344666287659}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &4907592718265169651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1195,6 +1265,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598885078}
     m_Modifications:
+    - target: {fileID: 1021430238243410347, guid: ac5110b3d8f965448b2284166c8f9c62, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1118635224}
     - target: {fileID: 1333838713669066454, guid: ac5110b3d8f965448b2284166c8f9c62, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1280,6 +1354,38 @@ PrefabInstance:
       propertyPath: conditionalDialogue.Array.data[0].onDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1747684486}
+    - target: {fileID: 5061332794260475660, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: conditionalDialogue.Array.data[0].onDialogueStarted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061332794260475660, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: conditionalDialogue.Array.data[0].onDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Stop
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061332794260475660, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: conditionalDialogue.Array.data[0].onDialogueStarted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061332794260475660, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: conditionalDialogue.Array.data[0].onDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061332794260475660, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: conditionalDialogue.Array.data[0].onDialogueStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061332794260475660, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: conditionalDialogue.Array.data[0].onDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263619902394200519, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_text
+      value: 'Dropped Radio just east of the Quarry. FQ: 240'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6046081489244355539, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: defaultDialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: ab7be8604d137b041844b8eee134fc80, type: 2}
     - target: {fileID: 6543269403241496465, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -1332,6 +1438,10 @@ PrefabInstance:
       propertyPath: OnDefaultDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 70151932}
+    - target: {fileID: 8221803379309226158, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_text
+      value: Went South-West far from Tower. Frequency in Drawer?
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
