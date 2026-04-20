@@ -29,17 +29,20 @@ public class RadioDialogue : MonoBehaviour
             DialogueManager.instance?.StartDialogue(channelNotOpen);
         }
     }
-    public void MakeCall(RadioData incomingSettings)
+    public float MakeCall(RadioData incomingSettings)
     {
+        float similarity = 0f;
         for (int i = 0; i < RequiredRadioData.Length; i++)
         {
-            if (Similarity(incomingSettings, RequiredRadioData[i]) >= 2f){
+            similarity = Mathf.Max(similarity, Similarity(incomingSettings, RequiredRadioData[i]));
+            if (similarity >= 2f){
                 Debug.Log("Match Found!");
                 hasConnected[i] = true;
                 InteractionHooks[i].OnInteract();
-                return;
+                return similarity;
             }
         }
+        return similarity;
     }
 
     private float Similarity(RadioData input, RadioData comparison)

@@ -54,9 +54,9 @@ Material:
     - _StencilReadMask: 255
     - _StencilWriteMask: 255
     - _UseUIAlphaClip: 0
-    - _WaveHeight: 2.4999683
+    - _WaveHeight: 3.5542092
     - _ZWrite: 0
-    - _iTime: 0.011706352
+    - _iTime: 3.7395108
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}

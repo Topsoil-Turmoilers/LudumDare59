@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ff3f978cf0add4da59dee2ad7804ad, type: 3}
   m_Name: Radio_AntennaBroken
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
-  _currentLine: 0
+  _currentLine: 2
   names:
   - You
   - You
   lines:
-  - I can't use this right now
-  - I'll have to fix that Antenna first
+  - I can't seem to get a signal.
+  - Did something break outside?
   lineSFX: 0000000000000000
   flag: 0
