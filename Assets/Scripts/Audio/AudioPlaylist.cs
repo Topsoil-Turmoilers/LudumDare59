@@ -44,4 +44,9 @@ public class AudioPlaylist : ScriptableObject
     public AudioClip flashlightHit;
     public AudioClip towerFall;
     public AudioClip rescueTeamComms;
+
+    [Header("Waterfall SFX")]
+    public AudioClip waterfallHighFQ;
+    public AudioClip waterfallLowFQ;
+    public AudioClip waterfallOffKeyFQ;
 }
