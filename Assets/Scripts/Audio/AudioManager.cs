@@ -124,8 +124,8 @@ private void PlayDialogueSFX(SFX soundEffect, AudioSource source) {
             case SFX.StaticLFQ: source.PlayOneShot(playlist.radioPlayingLowFQ); break;
             case SFX.StaticHFQ: source.PlayOneShot(playlist.radioPlayingHighFQ); break;
             case SFX.StaticIt: source.PlayOneShot(playlist.radioPlayingOffKeyFQ); break;
-            case SFX.RescueTeamComms: source.PlayOneShot(playlist.radioPlayingOffKeyFQ); break;
-            case SFX.PaperRustle: source.PlayOneShot(playlist.radioPlayingOffKeyFQ); break;
+            case SFX.RescueTeamComms: source.PlayOneShot(playlist.rescueTeamComms); break;
+            case SFX.PaperRustle: source.PlayOneShot(playlist.paperRustle); break;
             case SFX.RadioButton1: source.PlayOneShot(playlist.radioButton01); break;
             case SFX.RadioButton2: source.PlayOneShot(playlist.radioButton02); break;
             case SFX.RadioButton3: source.PlayOneShot(playlist.radioButton03); break;
