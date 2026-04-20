@@ -1232,10 +1232,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3092827842887110598, guid: d72fb933b30489843a349c2c780fde06, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8770968835073107227, guid: d72fb933b30489843a349c2c780fde06, type: 3}
       propertyPath: m_Name
       value: Watchtower Tilemap

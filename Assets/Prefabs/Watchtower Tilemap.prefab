@@ -1131,6 +1131,69 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 0.994092}
   m_EdgeRadius: 0
+--- !u!1 &2253447198695923186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5729524131991358036}
+  - component: {fileID: 3207523256874669086}
+  - component: {fileID: 8881338704278132947}
+  m_Layer: 0
+  m_Name: SignalTower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5729524131991358036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2253447198695923186}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.09099, y: -2.4256601, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8419332136531554760}
+  - {fileID: 3490413966371170705}
+  m_Father: {fileID: 4023137462769266496}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3207523256874669086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2253447198695923186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb3c8bebcca5bf346a70a43d29ea8b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Antenna
+  AntennaFine: {fileID: 8845662726624326952}
+  AntennaFallen: {fileID: 3092827842887110598}
+--- !u!114 &8881338704278132947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2253447198695923186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb3c8bebcca5bf346a70a43d29ea8b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Antenna
+  AntennaFine: {fileID: 0}
+  AntennaFallen: {fileID: 0}
 --- !u!1 &2257320217079218864
 GameObject:
   m_ObjectHideFlags: 0
@@ -22308,7 +22371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3490413966371170705
 Transform:
   m_ObjectHideFlags: 0
@@ -22318,13 +22381,13 @@ Transform:
   m_GameObject: {fileID: 3092827842887110598}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.18361, y: 1.4170399, z: 0}
+  m_LocalPosition: {x: 7.2746, y: 3.8427, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4210776581472999680}
   - {fileID: 3659108845322438160}
-  m_Father: {fileID: 4023137462769266496}
+  m_Father: {fileID: 5729524131991358036}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3434102106922931680
 GameObject:
@@ -22358,8 +22421,7 @@ Transform:
   - {fileID: 8521250675841319273}
   - {fileID: 1124650883690594456}
   - {fileID: 8995762834556519791}
-  - {fileID: 8419332136531554760}
-  - {fileID: 3490413966371170705}
+  - {fileID: 5729524131991358036}
   - {fileID: 9136205794540759091}
   - {fileID: 4134037800586683291}
   - {fileID: 1597863995532966652}
@@ -24733,7 +24795,7 @@ GameObject:
   - component: {fileID: 1228757975809259938}
   - component: {fileID: 2908854779589824752}
   m_Layer: 0
-  m_Name: SignalTower
+  m_Name: SignalTower_Fine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24748,11 +24810,11 @@ Transform:
   m_GameObject: {fileID: 8845662726624326952}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.82, y: 3.77, z: 0}
+  m_LocalPosition: {x: 11.91099, y: 6.1956596, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4023137462769266496}
+  m_Father: {fileID: 5729524131991358036}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1228757975809259938
 SpriteRenderer:
