@@ -58,19 +58,19 @@ public class RadioDialogue : MonoBehaviour
         }
 
         //this code currently assumes values between 0 and 1 for each slider
-        if(Mathf.Abs(input.horizontalPosition - comparison.horizontalPosition) <= 0.1f)
+        if(Mathf.Abs(input.horizontalPosition - comparison.horizontalPosition) <= 0.35f)
         {
             similarity += 1;
         }
 
         //this code currently assumes values between 0 and 1 for each slider
-        if (Mathf.Abs(input.verticalPosition - comparison.verticalPosition) <= 0.1f)
+        if (Mathf.Abs(input.verticalPosition - comparison.verticalPosition) <= 0.35f)
         {
             similarity += 1;
         }
 
         //this code currently assumes values between 0 and 1 for each slider
-        if (Mathf.Abs(input.frequency - comparison.frequency) <= 0.1f)
+        if (Mathf.Abs(input.frequency - comparison.frequency) <= 25f)
         {
             similarity += 1;
         }
