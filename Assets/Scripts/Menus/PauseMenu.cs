@@ -18,7 +18,7 @@ public class PauseMenu : MonoBehaviour
     //Pausing
     public void OnPause()
     {
-        if (PauseCanOpen)
+        if (PauseCanOpen && !DialogueManager.isDialogueRunning)
         {
             PauseScreen.SetActive(true);
             player.SwitchState(player.InteractState);
