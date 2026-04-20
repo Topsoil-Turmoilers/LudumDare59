@@ -43,16 +43,16 @@ Material:
     m_Floats:
     - _ColorMask: 15
     - _EnableExternalAlpha: 0
-    - _Frequency: 0.25
+    - _Frequency: 0.4656425
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
     - _StencilReadMask: 255
     - _StencilWriteMask: 255
     - _UseUIAlphaClip: 0
-    - _WaveHeight: 2
+    - _WaveHeight: -0.41228998
     - _ZWrite: 0
-    - _iTime: 1.0395762
+    - _iTime: 0.9569583
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
