@@ -44,3 +44,6 @@ MonoBehaviour:
   flashlightHit: {fileID: 8300000, guid: 335170c0058141d4383b9e84aad3368a, type: 3}
   towerFall: {fileID: 8300000, guid: ef71512310f82a3429d829e509a629d0, type: 3}
   rescueTeamComms: {fileID: 8300000, guid: e32104e05564d684686e0055640a1f5c, type: 3}
+  waterfallHighFQ: {fileID: 8300000, guid: f84078a00fe5d7346917e88653433b92, type: 3}
+  waterfallLowFQ: {fileID: 8300000, guid: eb7b777aede4d5e478820318c8f977ae, type: 3}
+  waterfallOffKeyFQ: {fileID: 8300000, guid: 145e497e3dc4a4e40870a556ad402410, type: 3}

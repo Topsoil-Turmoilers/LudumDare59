@@ -105,7 +105,7 @@ public class AudioManager : MonoBehaviour
     public void PlayRescueTeamCommsSFX() => sfxSource.PlayOneShot(playlist.rescueTeamComms);
 
         // WATERFALL SFX
-    public void PlayWaterfallHighFQSFX() => sfxSource.PlayOneShot(playlist.waterFallHighFQ);
+    public void PlayWaterfallHighFQSFX() => sfxSource.PlayOneShot(playlist.waterfallHighFQ);
     public void PlayWaterfallLowFQSFX() => sfxSource.PlayOneShot(playlist.waterfallLowFQ);
     public void PlayWaterfallOffKeyFQSFX() => sfxSource.PlayOneShot(playlist.waterfallOffKeyFQ);
 
