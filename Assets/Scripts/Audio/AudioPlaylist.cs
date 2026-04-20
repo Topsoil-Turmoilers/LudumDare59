@@ -35,6 +35,7 @@ public class AudioPlaylist : ScriptableObject
     public AudioClip windowKnock;
     public AudioClip windowSingleTap;
     public AudioClip windowTap;
+    public AudioClip paperRustle;
 
     [Header("Outside SFX")]
     public AudioClip flashlightOn;
@@ -42,4 +43,5 @@ public class AudioPlaylist : ScriptableObject
     public AudioClip flashlightRattle;
     public AudioClip flashlightHit;
     public AudioClip towerFall;
+    public AudioClip rescueTeamComms;
 }

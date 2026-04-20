@@ -1,8 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum SFX { No_Sound, StaticHFQ, StaticLFQ, StaticIt, RadioButton1, RadioButton2, RadioButton3, RadioButton4, RadioButton5, RadioButton6, RadioSwitch1, RadioSwitch2, RadioTuning,
-                    Flashlight1, Flashlight2, Flashlight3, Flashlight4, WindowHit, WindowTap, WindowTwotaps, WindowKnock, TowerFall,}
+public enum SFX { No_Sound, StaticHFQ, StaticLFQ, StaticIt, RescueTeamComms, PaperRustle, RadioButton1, RadioButton2, RadioButton3, RadioButton4, RadioButton5, RadioButton6, RadioSwitch1, RadioSwitch2, RadioTuning,
+                    Flashlight1, Flashlight2, Flashlight3, Flashlight4, WindowHit, WindowTap, WindowTwotaps, WindowKnock, TowerFall}
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
@@ -93,13 +93,15 @@ public class AudioManager : MonoBehaviour
     public void PlayWindowKnockSFX() => sfxSource.PlayOneShot(playlist.windowKnock);
     public void PlayWindowSingleTapSFX() => sfxSource.PlayOneShot(playlist.windowSingleTap);
     public void PlayWindowTapSFX() => sfxSource.PlayOneShot(playlist.windowTap);
+    public void PlayPaperRustleSFX() => sfxSource.PlayOneShot(playlist.paperRustle);
 
-        // OUTSIDE SFX
+    // OUTSIDE SFX
     public void PlayFlashlightOnSFX() => sfxSource.PlayOneShot(playlist.flashlightOn);
     public void PlayFlashlightOffSFX() => sfxSource.PlayOneShot(playlist.flashlightOff);
     public void PlayFlashlightRattleSFX() => sfxSource.PlayOneShot(playlist.flashlightRattle);
     public void PlayFlashlightHitSFX() => sfxSource.PlayOneShot(playlist.flashlightHit);
     public void PlayTowerFallSFX() => sfxSource.PlayOneShot(playlist.towerFall);
+    public void PlayRescueTeamCommsSFX() => sfxSource.PlayOneShot(playlist.rescueTeamComms);
 
     //==================================================================
     private void PlayMusic(AudioClip clip)
@@ -122,6 +124,8 @@ private void PlayDialogueSFX(SFX soundEffect, AudioSource source) {
             case SFX.StaticLFQ: source.PlayOneShot(playlist.radioPlayingLowFQ); break;
             case SFX.StaticHFQ: source.PlayOneShot(playlist.radioPlayingHighFQ); break;
             case SFX.StaticIt: source.PlayOneShot(playlist.radioPlayingOffKeyFQ); break;
+            case SFX.RescueTeamComms: source.PlayOneShot(playlist.radioPlayingOffKeyFQ); break;
+            case SFX.PaperRustle: source.PlayOneShot(playlist.radioPlayingOffKeyFQ); break;
             case SFX.RadioButton1: source.PlayOneShot(playlist.radioButton01); break;
             case SFX.RadioButton2: source.PlayOneShot(playlist.radioButton02); break;
             case SFX.RadioButton3: source.PlayOneShot(playlist.radioButton03); break;
