@@ -141,7 +141,7 @@ public class RadioUIManager : MonoBehaviour
     }
     public void OpenRadioUI()
     {
-        Debug.Log("Opening the Radio UI");
+        //Debug.Log("Opening the Radio UI");
         radioUICanvas.gameObject.SetActive(true);
 
         if (!StoryFlagManager.instance.checkFlag(StoryFlagManager.StoryFlag.CheckedRadio))
@@ -152,7 +152,7 @@ public class RadioUIManager : MonoBehaviour
     }
     public void CloseRadioUI()
     {
-        Debug.Log("Closing the Radio UI");
+        //Debug.Log("Closing the Radio UI");
         radioUICanvas.gameObject.SetActive(false);
     }
 

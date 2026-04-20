@@ -29,6 +29,7 @@ AudioMixerGroupController:
   m_GroupID: 1c4c08b58500dca4abf50c058680d440
   m_Children:
   - {fileID: 4947601229721620077}
+  - {fileID: -2257385074850013964}
   m_Volume: 3b4cdda3034cd4640b2bd389d73a343c
   m_Pitch: 56846ad20e5d67c489e8d6ac1fcf6394
   m_Send: 00000000000000000000000000000000
@@ -56,6 +57,39 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!244 &-5072930250196610870
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 02f1c8eb53571d64cbe4d03b7327b875
+  m_EffectName: Attenuation
+  m_MixLevel: c02923c71228c1940a4968e8ab5928e4
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &-2257385074850013964
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RadioMusic
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: e2d2a4c399f298e4d839fdea67653786
+  m_Children: []
+  m_Volume: aee100d2a15c2b14081b36622d4fd47b
+  m_Pitch: c50f2f6a8f0d9af4983dc14a15680dfb
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -5072930250196610870}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!243 &-1737395115003438433
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -159,6 +193,7 @@ AudioMixerController:
     - e6d56b6465facb2458200cef820e4261
     - 1c4c08b58500dca4abf50c058680d440
     - 158f7bf85548ddb4f9c2bbee4a5caff7
+    - e2d2a4c399f298e4d839fdea67653786
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}

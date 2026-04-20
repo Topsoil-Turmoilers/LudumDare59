@@ -77,7 +77,7 @@ public class RadioDialogue : MonoBehaviour
 
         //for every 25 frequency units away (scale 100-500), lose 1 point of similarity
         similarity -= (Mathf.Abs(input.frequency - comparison.frequency)) / 25f;
-        Debug.Log(similarity);
+        //Debug.Log(similarity);
 
         int numToggles = Mathf.Min(input.toggles.Length, comparison.toggles.Length);
         for (int i = 0; i < numToggles; i++)
@@ -86,7 +86,7 @@ public class RadioDialogue : MonoBehaviour
             {
                 //we need all toggles to match before doing a similarity comparison
                 //so if the toggles are wrong, it can never match
-                Debug.LogWarning("A toggle did not match!");
+                //Debug.LogWarning("A toggle did not match!");
 
                 if(similarity >= 2f)
                 {

@@ -97,7 +97,7 @@ public class FakePlayer : MonoBehaviour
 
     public void ShakyLeftRight()
     {
-        Debug.Log(shakyTimer);
+        //Debug.Log(shakyTimer);
 
         //Flippy direction
         if (shakyTimer >= 10) { direction = false; }
