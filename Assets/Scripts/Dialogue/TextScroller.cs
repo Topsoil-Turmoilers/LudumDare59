@@ -64,6 +64,8 @@ public class TextScroller : MonoBehaviour
             textDisplay.text += scrollLine[0];
             scrollLine = scrollLine.Substring(1, scrollLine.Length - 1);
         }
+
+        Debug.Log(textDisplay.rectTransform.rect.y);
     }
 
 
