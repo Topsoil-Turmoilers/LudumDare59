@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ff3f978cf0add4da59dee2ad7804ad, type: 3}
   m_Name: 3_FindingResearchNotes
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
-  _currentLine: 0
+  _currentLine: 4
   names:
   - 
   - 
-  - You
+  - 
   - You
   lines:
   - 'There are many jot notes scribbled around on a page:'
