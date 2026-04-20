@@ -13,6 +13,7 @@ public class FakePlayer : MonoBehaviour
 
     [SerializeField] private GameObject shuttle;
     private Rigidbody2D shuttleRBody;
+    private ParticleSystem shuttleParticles;
 
     [SerializeField] private BlackScreenFades blackScreen;
 
@@ -33,6 +34,7 @@ public class FakePlayer : MonoBehaviour
         sRend = GetComponent<SpriteRenderer>();
 
         shuttleRBody = shuttle.GetComponent<Rigidbody2D>();
+        shuttleParticles = shuttle.GetComponent<ParticleSystem>();
     }
 
     private void Update()
@@ -45,11 +47,12 @@ public class FakePlayer : MonoBehaviour
         if (!walkToShuttleDone) { blackScreen.FadeOut(); WalkIntoShuttle(); return; } //FadeOut Black Screen and Walk into Shuttle
 
         //Shuttle Movement
+        shuttleParticles.Play();
         if (!shuttleGone) { ShakyLeftRight(); } //Shaky left right :)
         if (!BackNShakeDone) { SmallPushBackwards(); return; } //Goes down first
         if (!shuttleGone && shuttleStart) { ShuttleTakeOff(); return; } //Then shoots up
 
-        if (shuttleGone) { blackScreen.FadeIn(); } //Shuttle is gone, so FadeIn Black Screen
+        if (shuttleGone) { shuttleParticles.Stop(); blackScreen.FadeIn(); } //Shuttle is gone, so FadeIn Black Screen
     }
 
     public void WalkIntoShuttle()
@@ -124,7 +127,7 @@ public class FakePlayer : MonoBehaviour
     public void ShuttleTakeOff()
     {
         shuttleSpeed += 1;
-        if (shuttle.transform.position.y < 10)
+        if (shuttle.transform.position.y < 20)
         {
             rBody.linearVelocity = new Vector2(0, shuttleSpeed);
             shuttleRBody.linearVelocity = new Vector2(0, shuttleSpeed);
