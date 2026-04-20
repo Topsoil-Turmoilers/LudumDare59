@@ -76,9 +76,16 @@ public class AudioManager : MonoBehaviour
         // RADIO SFX
     public void PlayRadioButton01SFX() => sfxSource.PlayOneShot(playlist.radioButton01);
     public void PlayRadioButton02SFX() => sfxSource.PlayOneShot(playlist.radioButton02);
+    public void PlayRadioButton03SFX() => sfxSource.PlayOneShot(playlist.radioButton03);
+    public void PlayRadioButton04SFX() => sfxSource.PlayOneShot(playlist.radioButton04);
+    public void PlayRadioButton05SFX() => sfxSource.PlayOneShot(playlist.radioButton05);
+    public void PlayRadioButton06SFX() => sfxSource.PlayOneShot(playlist.radioButton06);
+    public void PlayRadioSwitch01SFX() => sfxSource.PlayOneShot(playlist.radioSwitch01);
+    public void PlayRadioSwitch02SFX() => sfxSource.PlayOneShot(playlist.radioSwitch02);
     public void PlayRadioHighfqSFX() => sfxSource.PlayOneShot(playlist.radioPlayingHighFQ);
     public void PlayRadioLowfqSFX() => sfxSource.PlayOneShot(playlist.radioPlayingLowFQ);
     public void PlayRadioOffKeyfqSFX() => sfxSource.PlayOneShot(playlist.radioPlayingOffKeyFQ);
+    public void PlayRadioTuningSFX() => sfxSource.PlayOneShot(playlist.radioTuning);
 
         // INSIDE SFX
     public void PlayWindowHitSFX() => sfxSource.PlayOneShot(playlist.windowHit);
