@@ -478,6 +478,7 @@ MonoBehaviour:
   - {fileID: 5061332794260475660}
   - {fileID: 826432937166859131}
   channelNotOpen: {fileID: 11400000, guid: 66f7d49c680172b4894156208f8966d2, type: 2}
+  missingToggle: {fileID: 11400000, guid: 2ae2359b0f76bbf4a82cfb849987b5b9, type: 2}
 --- !u!1 &833116334682433609
 GameObject:
   m_ObjectHideFlags: 0
