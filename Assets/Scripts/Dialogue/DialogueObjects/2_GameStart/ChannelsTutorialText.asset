@@ -19,5 +19,5 @@ MonoBehaviour:
   lines:
   - This channel has been disconnected.
   - Locating and contacting signals will allow you to reconnect the other channels.
-  lineSFX: 0500000000000000
+  lineSFX: 0000000000000000
   flag: 0
