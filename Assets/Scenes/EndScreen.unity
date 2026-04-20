@@ -538,7 +538,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4190016618511647814, guid: ac379be8c046fe040ba08abbd1373ab2, type: 3}
       propertyPath: m_Name
-      value: BlackScreen
+      value: FullScreenOverlay
       objectReference: {fileID: 0}
     - target: {fileID: 4318485282215071086, guid: ac379be8c046fe040ba08abbd1373ab2, type: 3}
       propertyPath: m_LocalPosition.x

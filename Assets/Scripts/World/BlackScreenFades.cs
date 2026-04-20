@@ -6,6 +6,8 @@ public class BlackScreenFades : MonoBehaviour
     [SerializeField] private GameObject blackScreen;
     [SerializeField] private float alphaColor;
 
+    [SerializeField] private GameObject EndCanvas;
+
     private void Awake()
     {
         alphaColor = blackScreen.GetComponent<Image>().color.a;
@@ -34,6 +36,7 @@ public class BlackScreenFades : MonoBehaviour
         else
         {
             blackScreen.GetComponent<Image>().color = new Vector4(0, 0, 0, 1);
+            EndCanvas.SetActive(true);
         }
     }
 }
