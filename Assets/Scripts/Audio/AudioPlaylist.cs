@@ -41,4 +41,5 @@ public class AudioPlaylist : ScriptableObject
     public AudioClip flashlightOff;
     public AudioClip flashlightRattle;
     public AudioClip flashlightHit;
+    public AudioClip towerFall;
 }
