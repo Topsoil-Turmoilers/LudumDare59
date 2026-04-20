@@ -462,11 +462,21 @@ MonoBehaviour:
     horizontalPosition: 2.5
     verticalPosition: 4.5
     toggles: 0100000000
+  - frequency: 240
+    horizontalPosition: 4
+    verticalPosition: 4
+    toggles: 0000000000
+  - frequency: 446
+    horizontalPosition: 4
+    verticalPosition: 3
+    toggles: 0001000000
   hasConnected: 0100000000
   InteractionHooks:
   - {fileID: 6046081489244355539}
   - {fileID: 7400570110462843623}
   - {fileID: 2487698020980845066}
+  - {fileID: 5061332794260475660}
+  - {fileID: 826432937166859131}
   channelNotOpen: {fileID: 11400000, guid: 66f7d49c680172b4894156208f8966d2, type: 2}
 --- !u!1 &833116334682433609
 GameObject:
@@ -2218,7 +2228,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractionHook
   defaultDialogue: {fileID: 11400000, guid: 102a1f6f8a2057946ae7f424bfd97b4e, type: 2}
-  conditionalDialogue: []
+  conditionalDialogue:
+  - requiredStoryFlag: 13
+    dialogue: {fileID: 11400000, guid: 50dd01fa344780942b1e186f315d110d, type: 2}
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
   OnDefaultDialogueFinished:
     m_PersistentCalls:
       m_Calls: []
@@ -7885,7 +7900,7 @@ GameObject:
   - component: {fileID: 4003277065965129877}
   - component: {fileID: 826432937166859131}
   m_Layer: 0
-  m_Name: Analyst (Dr Duchamp
+  m_Name: Analyst (Dr Duchamp)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7919,7 +7934,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractionHook
   defaultDialogue: {fileID: 11400000, guid: f7794653cedf17140928e9a5a4a2af8a, type: 2}
-  conditionalDialogue: []
+  conditionalDialogue:
+  - requiredStoryFlag: 12
+    dialogue: {fileID: 11400000, guid: dc239b1de7cb20a489e9e82cfaf6d0b6, type: 2}
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - requiredStoryFlag: 14
+    dialogue: {fileID: 11400000, guid: 2d32dafb94c18704a993e2ffd72d64ea, type: 2}
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
   OnDefaultDialogueFinished:
     m_PersistentCalls:
       m_Calls: []

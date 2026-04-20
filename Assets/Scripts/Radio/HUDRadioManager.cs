@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HUDRadioManager : MonoBehaviour
 {
@@ -50,5 +51,9 @@ public class HUDRadioManager : MonoBehaviour
             WaveMaterial.SetFloat("_WaveHeight", Mathf.Min(2, waveHeight));
             WaveMaterial.SetFloat("_Frequency", 0.25f);
         }
+    }
+    public void EndGame()
+    {
+        SceneManager.LoadScene(2);
     }
 }
