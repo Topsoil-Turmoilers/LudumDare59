@@ -458,10 +458,15 @@ MonoBehaviour:
     horizontalPosition: 0.5
     verticalPosition: 0.5
     toggles: 0000000000
-  hasConnected: 
+  - frequency: 343
+    horizontalPosition: 2.5
+    verticalPosition: 4.5
+    toggles: 0100000000
+  hasConnected: 0100000000
   InteractionHooks:
   - {fileID: 6046081489244355539}
   - {fileID: 7400570110462843623}
+  - {fileID: 2487698020980845066}
   channelNotOpen: {fileID: 11400000, guid: 66f7d49c680172b4894156208f8966d2, type: 2}
 --- !u!1 &833116334682433609
 GameObject:
@@ -944,7 +949,7 @@ GameObject:
   - component: {fileID: 2868334767080008890}
   - component: {fileID: 2487698020980845066}
   m_Layer: 0
-  m_Name: Geologist
+  m_Name: Geologist (Dr Bancroft)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -977,11 +982,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 371aaaebd86225847b1f887bd29a4a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractionHook
-  defaultDialogue: {fileID: 0}
-  conditionalDialogue: []
+  defaultDialogue: {fileID: 11400000, guid: 3a94a738451677c469fadfdd63f6a744, type: 2}
+  conditionalDialogue:
+  - requiredStoryFlag: 18
+    dialogue: {fileID: 11400000, guid: 2372554710291fd419f43ee7e6a22482, type: 2}
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
   OnDefaultDialogueFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1169957346950382008
 GameObject:
   m_ObjectHideFlags: 0
@@ -2150,7 +2184,7 @@ GameObject:
   - component: {fileID: 1849761245469656072}
   - component: {fileID: 5061332794260475660}
   m_Layer: 0
-  m_Name: Biologist
+  m_Name: Biologist (Dr Leblanc, Abandonned)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2183,7 +2217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 371aaaebd86225847b1f887bd29a4a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractionHook
-  defaultDialogue: {fileID: 0}
+  defaultDialogue: {fileID: 11400000, guid: 102a1f6f8a2057946ae7f424bfd97b4e, type: 2}
   conditionalDialogue: []
   OnDefaultDialogueFinished:
     m_PersistentCalls:
@@ -7179,7 +7213,19 @@ MonoBehaviour:
         m_Calls: []
   OnDefaultDialogueFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &8401882683223714012
 GameObject:
   m_ObjectHideFlags: 0
@@ -7839,7 +7885,7 @@ GameObject:
   - component: {fileID: 4003277065965129877}
   - component: {fileID: 826432937166859131}
   m_Layer: 0
-  m_Name: Analyst
+  m_Name: Analyst (Dr Duchamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7872,7 +7918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 371aaaebd86225847b1f887bd29a4a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractionHook
-  defaultDialogue: {fileID: 0}
+  defaultDialogue: {fileID: 11400000, guid: f7794653cedf17140928e9a5a4a2af8a, type: 2}
   conditionalDialogue: []
   OnDefaultDialogueFinished:
     m_PersistentCalls:

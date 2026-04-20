@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ff3f978cf0add4da59dee2ad7804ad, type: 3}
+  m_Name: 2_AntennaBreaks
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
+  _currentLine: 0
+  names:
+  - You
+  - Unknown Voice
+  - Dennis?
+  - 
+  - You
+  lines:
+  - Hello? Is anyone there?
+  - "Dennis! Someone\u2019s on the other line! They\u2019re here!"
+  - Oh thank goodness! Yes h-
+  - You hear a loud <b>SNAP</b> outside.
+  - What was that?
+  lineSFX: 0000000001000000020000000000000000000000
+  flag: 17
