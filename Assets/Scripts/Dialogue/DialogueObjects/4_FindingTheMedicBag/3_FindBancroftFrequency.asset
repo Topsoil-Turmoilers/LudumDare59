@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ff3f978cf0add4da59dee2ad7804ad, type: 3}
   m_Name: 3_FindBancroftFrequency
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
-  _currentLine: 0
+  _currentLine: 2
   names:
   - 
   - 
   lines:
   - 'It''s crumpled piece of paper that reads: '
-  - '"In case you need me: FQ 343 - D"'
-  lineSFX: 0800000000000000
-  flag: 0
+  - '"In case you need me: FQ 343 - DB"'
+  lineSFX: 0500000000000000
+  flag: 20

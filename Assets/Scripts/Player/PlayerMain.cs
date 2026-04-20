@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Animator), typeof(Rigidbody2D), typeof(SpriteRenderer))]
 public class PlayerMain : MonoBehaviour
@@ -25,7 +26,10 @@ public class PlayerMain : MonoBehaviour
     public bool canSprint;
     public bool isInteracting;
     public float playerWidth;
+
+    [Header("Other")]
     public GameObject interactionText;
+    public Slider staminaSlider;
     
     private float playerHealth = 5f;
     public float PlayerHealth {  
@@ -147,7 +151,7 @@ public class PlayerMain : MonoBehaviour
             {
                 //Interact
                 interact.OnInteract();
-                Debug.Log("Interacting with " + collision);
+                //Debug.Log("Interacting with " + collision);
                 SwitchState(InteractState);
             }
         }

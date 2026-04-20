@@ -83,7 +83,7 @@ public class RadioUIManager : MonoBehaviour
 
         PlaceCallButton.onClick.AddListener(() => {
             RadioState.toggles = ToggleValues;
-            radioDialogue.MakeCall(RadioState); 
+            waveHeight = radioDialogue.MakeCall(RadioState); 
         });
 
         CallbackButton1.onClick.AddListener(() => { radioDialogue.MakeCallBack(0); });
@@ -104,13 +104,14 @@ public class RadioUIManager : MonoBehaviour
         wavesTime %= 8;
         WavesMaterial.SetFloat("_iTime", wavesTime);
 
-        //normalize it into a 0.0 to 1.0 wave
-        waveHeight = (Mathf.Cos(wavesTime / 4f * Mathf.PI) * 0.5f + 0.5f);
-        //then modify it into a 0-4 height wave
-        waveHeight *= 1.5f;
-        waveHeight += 1f;
+        //make the wave height respond to your strongest signal
+        ////normalize it into a 0.0 to 1.0 wave
+        //waveHeight = (Mathf.Cos(wavesTime / 4f * Mathf.PI) * 0.5f + 0.5f);
+        ////then modify it into a 0-4 height wave
+        //waveHeight *= 1.5f;
+        //waveHeight += 1f;
         
-        waveHeight = Mathf.Clamp(waveHeight, 0.1f, 4f);
+        //waveHeight = Mathf.Clamp(waveHeight, 0.1f, 4f);
         WavesMaterial.SetFloat("_WaveHeight", waveHeight);
     }
     private void PressToggle(Toggle t, out Toggle t0)
@@ -123,8 +124,8 @@ public class RadioUIManager : MonoBehaviour
         t.toggleButton.transform.GetChild(0).GetComponent<RectTransform>()
             .anchoredPosition = t.value ? new Vector2(0, 30) : new Vector2(0, 0);
 
-        if (t.value) AudioManager.instance?.PlayRadioButton01SFX();
-        else AudioManager.instance?.PlayRadioButton02SFX();
+        if (t.value) AudioManager.instance?.PlayRadioSwitch01SFX();
+        else AudioManager.instance?.PlayRadioSwitch02SFX();
 
         t0 = t;
     }
@@ -140,7 +141,7 @@ public class RadioUIManager : MonoBehaviour
     }
     public void OpenRadioUI()
     {
-        Debug.Log("Opening the Radio UI");
+        //Debug.Log("Opening the Radio UI");
         radioUICanvas.gameObject.SetActive(true);
 
         if (!StoryFlagManager.instance.checkFlag(StoryFlagManager.StoryFlag.CheckedRadio))
@@ -151,7 +152,7 @@ public class RadioUIManager : MonoBehaviour
     }
     public void CloseRadioUI()
     {
-        Debug.Log("Closing the Radio UI");
+        //Debug.Log("Closing the Radio UI");
         radioUICanvas.gameObject.SetActive(false);
     }
 

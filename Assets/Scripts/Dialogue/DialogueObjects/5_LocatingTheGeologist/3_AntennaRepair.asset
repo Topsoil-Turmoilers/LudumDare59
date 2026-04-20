@@ -24,8 +24,8 @@ MonoBehaviour:
   - ...What made you fall off?
   - Was it the wind? Or did that... It damage you?
   - Damage looks superficial though...
-  - -A few minutes pass-
+  - You managed to get the antenna back up
   - Finished
-  - ...What was that?
-  lineSFX: 0b0000000000000000000000000000000300000000000000
+  - ...Sounds like it's coming back, I should hurry back inside.
+  lineSFX: 000000000000000000000000170000000300000000000000
   flag: 18

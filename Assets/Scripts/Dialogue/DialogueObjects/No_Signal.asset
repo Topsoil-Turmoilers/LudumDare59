@@ -18,6 +18,6 @@ MonoBehaviour:
   - You
   lines:
   - I can't get a good signal.
-  - Maybe if I got away from the big radio...
-  lineSFX: 0200000000000000
+  - Maybe if I get away from the big radio...
+  lineSFX: 1200000000000000
   flag: 0

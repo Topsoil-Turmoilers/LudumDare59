@@ -20,7 +20,7 @@ public class StoryFlagManager : MonoBehaviour
     }
 
     public enum StoryFlag {None, GameStarted, CheckedRadio, ReportedSharpsDeath, ListFound, MossContacted, MossRescued, LeftToFindBag, BagFound, ScientistsContacted,
-                             ScientistsRescued, LeblancWalkieLocated, DuchampLocated, ResearchNotesFound, ItLuredAway, DuchampContacted, DuchampRescued, AntennaBroken, AntennaRepaired, AllRescued};
+                             ScientistsRescued, LeblancWalkieLocated, DuchampLocated, ResearchNotesFound, ItLuredAway, DuchampContacted, DuchampRescued, AntennaBroken, AntennaRepaired, AllRescued, CrumpledNoteFound};
 
     //public Dictionary<StoryFlag, string> StoryFlagDescription;
 

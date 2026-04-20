@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BlackScreenFades : MonoBehaviour
@@ -37,6 +39,18 @@ public class BlackScreenFades : MonoBehaviour
         {
             blackScreen.GetComponent<Image>().color = new Vector4(0, 0, 0, 1);
             EndCanvas.SetActive(true);
+            StartCoroutine(WaitThenMenu());
         }
+    }
+
+    public IEnumerator WaitThenMenu()
+    {
+        yield return new WaitForSeconds(5);
+        BackToMenu();
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

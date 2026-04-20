@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
   _currentLine: 0
   names:
+  - Rescue Team
   - You
   lines:
-  - I don't have anything to report right now.
-  lineSFX: 00000000
+  - Keep up the Good Work, and Keep in Contact.
+  - Of Course!
+  lineSFX: 0200000000000000
   flag: 0

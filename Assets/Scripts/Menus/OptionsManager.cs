@@ -13,12 +13,12 @@ public class OptionsManager : MonoBehaviour
     //Different Volumes
     [SerializeField] private float musicVolume;
     [SerializeField] private float sfxVolume;
-    [SerializeField] private float voicesVolume;
+    [SerializeField] private float masterVolume;
 
     //Different Sliders
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider sfxSlider;
-    [SerializeField] private Slider voicesSlider;
+    [SerializeField] private Slider masterSlider;
 
     private void Awake()
     {
@@ -36,12 +36,12 @@ public class OptionsManager : MonoBehaviour
         //Getting Starting Volumes
         mainAudioMixer.GetFloat("BGMVolume", out musicVolume);
         mainAudioMixer.GetFloat("SFXVolume", out sfxVolume);
-        mainAudioMixer.GetFloat("VoicesVolume", out voicesVolume);
+        mainAudioMixer.GetFloat("MasterVolume", out masterVolume);
 
         //Setting Sliders to Starting Volumes
         musicSlider.value = DecibelToFloat(musicVolume) * 100;
         sfxSlider.value = DecibelToFloat(sfxVolume) * 100;
-        voicesSlider.value = DecibelToFloat(voicesVolume) * 100;
+        masterSlider.value = DecibelToFloat(masterVolume) * 100;
     }
 
     //Changing Volumes When Sliders Move
@@ -63,13 +63,13 @@ public class OptionsManager : MonoBehaviour
         mainAudioMixer.SetFloat("SFXVolume", sfxVolume);
     }
 
-    public void ChangeVoicesVolume(System.Single volume)
+    public void ChangeMasterVolume(System.Single volume)
     {
-        //Changing Voices Volume to Slider Setting
+        //Changing Master Volume to Slider Setting
         volume = volume / 100;
         volume = FloatToDB(volume);
-        voicesVolume = volume;
-        mainAudioMixer.SetFloat("VoicesVolume", voicesVolume);
+        masterVolume = volume;
+        mainAudioMixer.SetFloat("MasterVolume", masterVolume);
     }
 
     //Helper Functions

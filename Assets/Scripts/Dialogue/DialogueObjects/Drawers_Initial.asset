@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ff3f978cf0add4da59dee2ad7804ad, type: 3}
   m_Name: Drawers_Initial
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
-  _currentLine: 0
+  _currentLine: 2
   names:
   - You
   - You
   lines:
   - Seems like someone very organized kept a long list of records. Theres too much
     to go through.
-  - ...The drawer also smells like coffee. Did the former owners spill something
-    here?
-  lineSFX: 0000000000000000
+  - ...The drawer also smells like coffee for some reason...
+  lineSFX: 1100000000000000
   flag: 0

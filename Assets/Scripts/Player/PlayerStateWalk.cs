@@ -25,7 +25,7 @@ public class PlayerStateWalk : PlayerBaseState
     //When LateUpdate Runs in a State
     public override void LateUpdateState(PlayerMain player)
     {
-        
+        player.staminaSlider.value = player.RunStamina / 5;
     }
 
     //When a State is Exited
