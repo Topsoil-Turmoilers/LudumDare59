@@ -23,6 +23,6 @@ MonoBehaviour:
     in the daytime. Must be sensitive to light. Definitely more reactive to sound
     at night. Easier to hear in the dark? Light affects vision? Light level is directly
     connected to its senses.\u201D"
-  - It reacts to sound huh?
-  lineSFX: 000000000000000000000000
+  - It reacts to sound huh? Maybe I can lure it away using Leblanc's walkie...
+  lineSFX: 050000000000000000000000
   flag: 13
