@@ -884,8 +884,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -463, y: -167.5}
-  m_SizeDelta: {x: -1014, y: -405}
+  m_AnchoredPosition: {x: -423.5, y: -157.25}
+  m_SizeDelta: {x: -1093, y: -465.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &584574506604466188
 CanvasRenderer:
@@ -2474,7 +2474,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -100}
+  m_AnchoredPosition: {x: 0, y: -130}
   m_SizeDelta: {x: 300, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8513244791123918296
@@ -2821,8 +2821,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -437.5}
-  m_SizeDelta: {x: 906, y: 475}
+  m_AnchoredPosition: {x: 0, y: -355}
+  m_SizeDelta: {x: 811.5996, y: 521}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8549303980219725939
 CanvasRenderer:
@@ -2852,11 +2852,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'placeholder text
+  m_text: 'Programmer - Connor Hadley
 
-    we made it :)
 
-    weeeeeeeeeeeeeeee'
+    Programmer - Samuel E.H.
+
+
+    Writer/Sound
+    Designer - Shayla Nye
+
+
+    Artist - Natalie Chenard'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
   m_sharedMaterial: {fileID: 4454758812649339143, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
@@ -2883,7 +2889,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 35.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2899,7 +2905,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -3493,6 +3499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1848601435290024443, guid: eb12f028280094d479b1766e1807fb86, type: 3}
       propertyPath: m_AnchorMax.x
+<<<<<<< audio-tweaks
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1848601435290024443, guid: eb12f028280094d479b1766e1807fb86, type: 3}
@@ -3522,6 +3529,37 @@ PrefabInstance:
     - target: {fileID: 4280736568379900691, guid: eb12f028280094d479b1766e1807fb86, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+=======
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848601435290024443, guid: eb12f028280094d479b1766e1807fb86, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1848601435290024443, guid: eb12f028280094d479b1766e1807fb86, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273442869922395311, guid: eb12f028280094d479b1766e1807fb86, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273442869922395311, guid: eb12f028280094d479b1766e1807fb86, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4280736568379900691, guid: eb12f028280094d479b1766e1807fb86, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4280736568379900691, guid: eb12f028280094d479b1766e1807fb86, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4280736568379900691, guid: eb12f028280094d479b1766e1807fb86, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+>>>>>>> dev
       objectReference: {fileID: 0}
     - target: {fileID: 5572504978354613604, guid: eb12f028280094d479b1766e1807fb86, type: 3}
       propertyPath: m_Name
@@ -3535,6 +3573,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainMenuOptionsCanvasSEH
       objectReference: {fileID: 0}
+<<<<<<< audio-tweaks
     - target: {fileID: 6123006092850297316, guid: eb12f028280094d479b1766e1807fb86, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -3546,6 +3585,23 @@ PrefabInstance:
     - target: {fileID: 6123006092850297316, guid: eb12f028280094d479b1766e1807fb86, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+=======
+    - target: {fileID: 6031296127454999526, guid: eb12f028280094d479b1766e1807fb86, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123006092850297316, guid: eb12f028280094d479b1766e1807fb86, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123006092850297316, guid: eb12f028280094d479b1766e1807fb86, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123006092850297316, guid: eb12f028280094d479b1766e1807fb86, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+>>>>>>> dev
       objectReference: {fileID: 0}
     - target: {fileID: 6136120934724866421, guid: eb12f028280094d479b1766e1807fb86, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3553,6 +3609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6876281161072156410, guid: eb12f028280094d479b1766e1807fb86, type: 3}
       propertyPath: m_AnchorMax.x
+<<<<<<< audio-tweaks
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6876281161072156410, guid: eb12f028280094d479b1766e1807fb86, type: 3}
@@ -3566,6 +3623,21 @@ PrefabInstance:
     - target: {fileID: 7030177977674036950, guid: eb12f028280094d479b1766e1807fb86, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+=======
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876281161072156410, guid: eb12f028280094d479b1766e1807fb86, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030177977674036950, guid: eb12f028280094d479b1766e1807fb86, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030177977674036950, guid: eb12f028280094d479b1766e1807fb86, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+>>>>>>> dev
       objectReference: {fileID: 0}
     - target: {fileID: 7370998112550343405, guid: eb12f028280094d479b1766e1807fb86, type: 3}
       propertyPath: m_text

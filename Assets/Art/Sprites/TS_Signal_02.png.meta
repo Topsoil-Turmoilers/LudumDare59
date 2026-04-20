@@ -488,9 +488,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 161
+        y: 160
         width: 32
-        height: 31
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,10 +509,10 @@ TextureImporter:
       name: TS_Signal_02_6
       rect:
         serializedVersion: 2
-        x: 95
-        y: 128
-        width: 31
-        height: 32
+        x: 96
+        y: 127
+        width: 32
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -571,6 +571,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: TS_Signal_02_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57379b526a311d4681bab6f6d128afa
+      internalID: 1209245075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -603,6 +625,7 @@ TextureImporter:
       TS_Signal_02_4: 2140472249842086432
       TS_Signal_02_5: -1263972748091796109
       TS_Signal_02_6: -4807974632850259856
+      TS_Signal_02_7: 1209245075
       TS_Signal_02_8: -6349418332527573916
       TS_Signal_02_9: -738744477605904401
       TS_Signal_02_Bottom: 1091010412655227120
