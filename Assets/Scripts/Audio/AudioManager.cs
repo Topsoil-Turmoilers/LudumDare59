@@ -98,6 +98,7 @@ public class AudioManager : MonoBehaviour
     public void PlayFlashlightOffSFX() => sfxSource.PlayOneShot(playlist.flashlightOff);
     public void PlayFlashlightRattleSFX() => sfxSource.PlayOneShot(playlist.flashlightRattle);
     public void PlayFlashlightHitSFX() => sfxSource.PlayOneShot(playlist.flashlightHit);
+    public void PlayTowerFallSFX() => sfxSource.PlayOneShot(playlist.towerFall);
 
     //==================================================================
     private void PlayMusic(AudioClip clip)
