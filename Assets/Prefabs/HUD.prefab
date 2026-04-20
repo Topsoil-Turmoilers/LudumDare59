@@ -816,8 +816,18 @@ MonoBehaviour:
     onDialogueFinished:
       m_PersistentCalls:
         m_Calls: []
+  - requiredStoryFlag: 3
+    dialogue: {fileID: 11400000, guid: 0c9c08779db562b42ab310d0d6f12814, type: 2}
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
   - requiredStoryFlag: 5
     dialogue: {fileID: 11400000, guid: 9bfc9df2de328e84db054909dd74f937, type: 2}
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - requiredStoryFlag: 6
+    dialogue: {fileID: 11400000, guid: 0c9c08779db562b42ab310d0d6f12814, type: 2}
     onDialogueFinished:
       m_PersistentCalls:
         m_Calls: []
