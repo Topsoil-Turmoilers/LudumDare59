@@ -527,6 +527,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: TS_Signal_02_Top
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 169
+        width: 32
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1041360084c0af147bb4afbb2194fb9f
+      internalID: 130618796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TS_Signal_02_Bottom
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b46ba5c2184df0489885f6518b8d328
+      internalID: 1091010412655227120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -559,9 +603,10 @@ TextureImporter:
       TS_Signal_02_4: 2140472249842086432
       TS_Signal_02_5: -1263972748091796109
       TS_Signal_02_6: -4807974632850259856
-      TS_Signal_02_7: 1091010412655227120
       TS_Signal_02_8: -6349418332527573916
       TS_Signal_02_9: -738744477605904401
+      TS_Signal_02_Bottom: 1091010412655227120
+      TS_Signal_02_Top: 1091010412655227120
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
