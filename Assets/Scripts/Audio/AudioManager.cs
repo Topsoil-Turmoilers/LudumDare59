@@ -63,6 +63,7 @@ public class AudioManager : MonoBehaviour
     public void PlayPrologueMusic() => PlayMusic(playlist.prologueTheme);
     public void PlayLevelMusic() => PlayMusic(playlist.levelTheme);
     public void PlayMonsterTimeMusic() => PlayMusic(playlist.monsterTimeTheme);
+    public void PlayRadioToggleMusic() => PlayMusic(playlist.radioToggleMusic);
 
     // SFX =============================================================
 

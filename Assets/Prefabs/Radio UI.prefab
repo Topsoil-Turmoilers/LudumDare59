@@ -450,9 +450,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RadioDialogue
   RequiredRadioData:
-  - frequency: 0
-    horizontalPosition: 0
-    verticalPosition: 0
+  - frequency: 186
+    horizontalPosition: 0.5
+    verticalPosition: 2.3
     toggles: 0000000000
   hasConnected: 
   InteractionHooks:
@@ -5109,7 +5109,7 @@ MonoBehaviour:
   m_MinValue: 100
   m_MaxValue: 500
   m_WholeNumbers: 1
-  m_Value: 150
+  m_Value: 186
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5826,7 +5826,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 5
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8086,7 +8086,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 5
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 2.3
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

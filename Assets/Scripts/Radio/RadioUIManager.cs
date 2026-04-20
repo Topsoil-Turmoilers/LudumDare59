@@ -51,16 +51,21 @@ public class RadioUIManager : MonoBehaviour
         frequencySlider.onValueChanged.AddListener(value => SetFrequency());
         SetFrequency();
 
+        //defaults for the horizontal position, using 5f as thats the map size
         horizontalPositionSlider.onValueChanged.AddListener(value => { 
             RadioState.horizontalPosition = value;
-            MapMaterial.SetFloat("_MarkerPositionX", RadioState.horizontalPosition);
+            MapMaterial.SetFloat("_MarkerPositionX", RadioState.horizontalPosition / 5f);
         });
-        MapMaterial.SetFloat("_MarkerPositionX", RadioState.horizontalPosition);
+        RadioState.horizontalPosition = horizontalPositionSlider.value;
+        MapMaterial.SetFloat("_MarkerPositionX", RadioState.horizontalPosition / 5f);
+
+        //defaults for the vertical position, using 5f as thats the map size
         verticalPositionSlider.onValueChanged.AddListener(value => { 
             RadioState.verticalPosition = value;
-            MapMaterial.SetFloat("_MarkerPositionY", RadioState.verticalPosition);
+            MapMaterial.SetFloat("_MarkerPositionY", RadioState.verticalPosition / 5f);
         });
-        MapMaterial.SetFloat("_MarkerPositionY", RadioState.verticalPosition);
+        RadioState.verticalPosition = verticalPositionSlider.value;
+        MapMaterial.SetFloat("_MarkerPositionY", RadioState.verticalPosition / 5f);
 
         //evil connor follows the WET principle
         Toggles[0].SetLight();

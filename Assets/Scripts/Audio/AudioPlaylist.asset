@@ -16,6 +16,7 @@ MonoBehaviour:
   prologueTheme: {fileID: 8300000, guid: 1e768037f71614a488f926e8d7f3cc06, type: 3}
   levelTheme: {fileID: 8300000, guid: 5241d356f32c3cc47b1f33090dea6b68, type: 3}
   monsterTimeTheme: {fileID: 8300000, guid: 9ea177e6d286e2a4f99210fcb64090ce, type: 3}
+  radioToggleMusic: {fileID: 8300000, guid: a685eb148d5f432449d2481bb7852485, type: 3}
   insideWalk: {fileID: 8300000, guid: 4040996dd2aa9ef41b86b2e4b9ce5f45, type: 3}
   insideRun: {fileID: 8300000, guid: c449e406a67b6fd4887a51c658bcce13, type: 3}
   outsideWalk: {fileID: 8300000, guid: 186f8bb1298266541972c4d7bacff97c, type: 3}
