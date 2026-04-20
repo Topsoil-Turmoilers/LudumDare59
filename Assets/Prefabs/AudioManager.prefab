@@ -268,7 +268,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1678552330399931519}
   - component: {fileID: 2255550593217354423}
-  - component: {fileID: 3836050472434522662}
   m_Layer: 0
   m_Name: RadioMusic
   m_TagString: Untagged
@@ -388,18 +387,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &3836050472434522662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6280042858727723274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2467a986b1278d44988356450d9d86e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RadioMusic
 --- !u!1 &7802089512731729901
 GameObject:
   m_ObjectHideFlags: 0

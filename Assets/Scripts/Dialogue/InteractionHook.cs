@@ -16,6 +16,7 @@ public class InteractionHook : MonoBehaviour, IInteractable
             ConditionalDialogue cd = conditionalDialogue[i];
             if (StoryFlagManager.instance.checkFlag(cd.requiredStoryFlag)){
                 DialogueManager.instance.StartDialogue(cd.dialogue);
+                cd.onDialogueStarted?.Invoke();
                 DialogueManager.onDialogueFinished += cd.DialogueManager_onDialogueFinished;
                 return;
             }
@@ -36,6 +37,7 @@ public class InteractionHook : MonoBehaviour, IInteractable
         public StoryFlagManager.StoryFlag requiredStoryFlag;
         public DialogueObject dialogue;
 
+        public UnityEvent onDialogueStarted;
         public UnityEvent onDialogueFinished;
         public void DialogueManager_onDialogueFinished()
         {
