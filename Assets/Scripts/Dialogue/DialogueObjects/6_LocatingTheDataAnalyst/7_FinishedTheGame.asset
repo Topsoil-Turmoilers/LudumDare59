@@ -18,6 +18,6 @@ MonoBehaviour:
   - Rescue Team
   lines:
   - All survivors accounted for and on board. You can return to the ship now.
-  - Good work.
+  - Good work- *Static*
   lineSFX: 0400000004000000
   flag: 16
