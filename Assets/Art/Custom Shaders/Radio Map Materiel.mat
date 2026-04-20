@@ -49,7 +49,7 @@ Material:
     - _EnableExternalAlpha: 0
     - _MarkerPositionX: 0
     - _MarkerPositionY: 0
-    - _Sections: 4
+    - _Sections: 5
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0

@@ -48,11 +48,8 @@ public class RadioUIManager : MonoBehaviour
 
     private void Awake()
     {
-        frequencySlider.onValueChanged.AddListener(value => { 
-            RadioState.frequency = frequencySlider.value;
-            FrequencyMaterial.SetFloat("_MarkerPosition", RadioState.frequency);
-        });
-        FrequencyMaterial.SetFloat("_MarkerPosition", RadioState.frequency);
+        frequencySlider.onValueChanged.AddListener(value => SetFrequency());
+        SetFrequency();
 
         horizontalPositionSlider.onValueChanged.AddListener(value => { 
             RadioState.horizontalPosition = value;
@@ -113,6 +110,16 @@ public class RadioUIManager : MonoBehaviour
         WavesMaterial.SetFloat("_WaveHeight", waveHeight);
     }
 
+    private void SetFrequency()
+    {
+        RadioState.frequency = frequencySlider.value;
+        //this converts 100-500 into 0-1
+        float shaderValue = 
+            ((float)RadioState.frequency - (float)frequencySlider.minValue) / 
+            ((float)frequencySlider.maxValue - (float)frequencySlider.minValue);
+        Debug.Log(shaderValue);
+        FrequencyMaterial.SetFloat("_MarkerPosition", shaderValue);
+    }
     public void OpenRadioUI()
     {
         Debug.Log("Opening the Radio UI");
