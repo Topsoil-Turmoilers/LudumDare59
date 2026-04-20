@@ -7,6 +7,8 @@ public class RadioDialogue : MonoBehaviour
     [SerializeField] private bool[] hasConnected;
     [SerializeField] private InteractionHook[] InteractionHooks;
 
+    [SerializeField] private DialogueObject channelNotOpen;
+
     private void Awake()
     {
         hasConnected = new bool[RequiredRadioData.Length];
@@ -20,6 +22,10 @@ public class RadioDialogue : MonoBehaviour
         if (hasConnected[callIndex])
         {
             InteractionHooks[callIndex].OnInteract();
+        }
+        else
+        {
+            DialogueManager.instance?.StartDialogue(channelNotOpen);
         }
     }
     public void MakeCall(RadioData incomingSettings)
