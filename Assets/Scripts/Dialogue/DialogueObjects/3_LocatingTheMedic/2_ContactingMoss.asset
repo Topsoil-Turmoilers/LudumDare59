@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ff3f978cf0add4da59dee2ad7804ad, type: 3}
+  m_Name: 2_ContactingMoss
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
+  _currentLine: 0
+  names:
+  - You
+  - Doctor E. Moss
+  - Doctor E. Moss
+  - Doctor E. Moss
+  - You
+  - You
+  - 
+  - You
+  - Doctor E. Moss
+  - Doctor E. Moss
+  - You
+  - You
+  lines:
+  - "Doctor Moss? Are you there?\r\nWe\u2019re the rescue team sent to save your
+    crew."
+  - Yes I am here.
+  - "I\u2019ve found a good spot to hide from it in a small cave. I believe it\u2019s
+    south west of the radio tower."
+  - Have you found any of the others yet?
+  - 'No not yet. The channel list here only has you and Captain Sharp on it. '
+  - "But I\u2019m afraid it was too late for her\u2026"
+  - He doesn't respond, but his silence is loud.
+  - Do you have any information on the others that could help?
+  - "Right. My medical records that I\u2019ve been keeping are in my bag. I dropped
+    it on the way here though."
+  - It could still be by the tower somewhere.
+  - Ok thank you. I am sending people your way.
+  lineSFX: 040000000100000001000000010000000400000000000000010000000400000001000000010000000500000005000000
+  flag: 5

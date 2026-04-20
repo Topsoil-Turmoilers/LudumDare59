@@ -17,6 +17,7 @@ public class PlayerMain : MonoBehaviour
     public PlayerStateWalk WalkState = new PlayerStateWalk();
     public PlayerStateSprint SprintState = new PlayerStateSprint();
     public PlayerStateInteract InteractState = new PlayerStateInteract();
+    public PlayerDeadState DeadState = new PlayerDeadState();
 
     [Header("Stats")]
     public Vector2 moveInput;
@@ -24,6 +25,18 @@ public class PlayerMain : MonoBehaviour
     public bool canSprint;
     public bool isInteracting;
     public float playerWidth;
+    public GameObject interactionText;
+    
+    private float playerHealth = 5f;
+    public float PlayerHealth {  
+        get { 
+            return playerHealth; 
+        } 
+        set { 
+            playerHealth = Mathf.Clamp(value, 0f, 5f);
+            if (playerHealth <= 0f && currentState != DeadState) SwitchState(DeadState);
+        } 
+    }
 
     [Header("Animation Trigger Checks")]
     public bool isWalking;
@@ -122,7 +135,7 @@ public class PlayerMain : MonoBehaviour
         if (context.canceled) { isInteracting = false; }
     }
 
-    //Collision Interaction Check
+    //Collision Interaction Check (To Interact)
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (isInteracting) //If the player is trying to interact
@@ -137,6 +150,23 @@ public class PlayerMain : MonoBehaviour
                 Debug.Log("Interacting with " + collision);
                 SwitchState(InteractState);
             }
+        }
+    }
+
+    //Collision Interaction Checks (For Prompt)
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<IInteractable>() != null)
+        {
+            interactionText.SetActive(true);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<IInteractable>() != null)
+        {
+            interactionText.SetActive(false);
         }
     }
 

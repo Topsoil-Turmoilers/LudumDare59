@@ -19,7 +19,8 @@ public class StoryFlagManager : MonoBehaviour
         SetupStoryFlagDictionary();
     }
 
-    public enum StoryFlag {None, CheckRadio, TalkLeader, LeaderDead, TalkMedic, FoundList};
+    public enum StoryFlag {None, GameStarted, CheckedRadio, ReportedSharpsDeath, ListFound, MossContacted, MossRescued, LeftToFindBag, BagFound, ScientistsContacted, 
+                             ScientistsRescued, LeblancWalkieLocated, DuchampLocated, ResearchNotesFound, ItLuredAway, DuchampContacted, DuchampRescued};
 
     //public Dictionary<StoryFlag, string> StoryFlagDescription;
 

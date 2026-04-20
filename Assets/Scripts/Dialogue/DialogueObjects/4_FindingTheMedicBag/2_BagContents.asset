@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ff3f978cf0add4da59dee2ad7804ad, type: 3}
+  m_Name: 2_BagContents
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
+  _currentLine: 0
+  names:
+  - 
+  - 
+  - You
+  lines:
+  - Inside the Bag are the medical records of all the expedition team members. Basic
+    stuff about small injuries and mental sanity statuses. Except for the Geologist
+    who has a note written about him.
+  - "\u201CDoctor Bancroft takes his studies way too seriously. It\u2019s been very
+    difficult for me to pull him away from that quarry. I am afraid he may injure
+    himself if I don\u2019t keep an eye on him.\u201D"
+  - "Well, it\u2019s worth a shot."
+  lineSFX: 080000000000000000000000
+  flag: 8
