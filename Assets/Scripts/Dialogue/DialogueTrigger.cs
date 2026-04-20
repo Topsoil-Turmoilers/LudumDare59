@@ -1,8 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DialogueTrigger : MonoBehaviour
 {
     [SerializeField] private DialogueObject dialogue;
+
+    public UnityEvent OnDialogueFinished;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -11,7 +14,14 @@ public class DialogueTrigger : MonoBehaviour
         {
             player.SwitchState(player.InteractState);
             DialogueManager.instance.StartDialogue(dialogue);
+            DialogueManager.onDialogueFinished += DialogueManager_onDialogueFinished; 
             this.enabled = false;
         }
+    }
+
+    private void DialogueManager_onDialogueFinished()
+    {
+        OnDialogueFinished.Invoke();
+        DialogueManager.onDialogueFinished -= DialogueManager_onDialogueFinished;
     }
 }

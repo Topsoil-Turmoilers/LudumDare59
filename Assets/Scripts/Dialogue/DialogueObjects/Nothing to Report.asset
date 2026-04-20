@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Nothing to Report
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
   _currentLine: 0
-  names: []
-  lines: []
-  lineSFX: 
+  names:
+  - You
+  lines:
+  - I don't have anything to report right now.
+  lineSFX: 00000000
   flag: 0
