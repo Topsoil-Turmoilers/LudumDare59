@@ -562,17 +562,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
---- !u!114 &1513646923 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 984402834930604497, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
-  m_PrefabInstance: {fileID: 7864030351636057458}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d0cd8efe3a949e4286154e1b0d21a34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RadioManager
 --- !u!4 &1513646924 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6606557063358357887, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
@@ -1328,10 +1317,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 195920683088798368, guid: d72fb933b30489843a349c2c780fde06, type: 3}
-      propertyPath: radioUIManager
-      value: 
-      objectReference: {fileID: 1513646923}
     - target: {fileID: 814732444450824089, guid: d72fb933b30489843a349c2c780fde06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
