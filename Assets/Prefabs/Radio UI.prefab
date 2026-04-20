@@ -873,8 +873,8 @@ MonoBehaviour:
     verticalPosition: 4
     toggles: 0000000000
   - frequency: 446
-    horizontalPosition: 4
-    verticalPosition: 3
+    horizontalPosition: 4.5
+    verticalPosition: 2
     toggles: 0001000000
   hasConnected: 0100000000
   InteractionHooks:
