@@ -16,8 +16,10 @@ MonoBehaviour:
   names:
   - 
   - You
+  - You
   lines:
   - You can hear faint sounds of running water.
   - Running water... I know where that is!
-  lineSFX: 0100000000000000
+  - This leaves only one location that Duchamp could be in.
+  lineSFX: 180000001800000007000000
   flag: 0

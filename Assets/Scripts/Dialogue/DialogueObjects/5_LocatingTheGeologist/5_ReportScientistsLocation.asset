@@ -22,5 +22,5 @@ MonoBehaviour:
     injured and needs medical attention immediately.
   - On our way with Doctor Moss now.
   - I should try to find Leblanc's walkie on frequency 240, east of the quarry...
-  lineSFX: 040000000100000005000000
+  lineSFX: 090000000400000000000000
   flag: 10

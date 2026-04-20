@@ -32,13 +32,18 @@ MonoBehaviour:
   radioPlayingHighFQ: {fileID: 8300000, guid: 6843db0cc8497c742a10d5d8af3bff95, type: 3}
   radioPlayingLowFQ: {fileID: 8300000, guid: 38ad5212edd81154e965c185962e418a, type: 3}
   radioPlayingOffKeyFQ: {fileID: 8300000, guid: 0b1555a99f65e0742ab70a776196dac3, type: 3}
-  radioTuning: {fileID: 8300000, guid: 8706fae1a072399488974886fff9c2e2, type: 3}
+  radioTuning: {fileID: 8300000, guid: fd8b98c6d1917a4449f33606b037b682, type: 3}
   windowHit: {fileID: 8300000, guid: 0b6ba66432184b842b24ffba6fb47c4e, type: 3}
   windowKnock: {fileID: 8300000, guid: 50c64bc86370b1e44b0f61be16b012c3, type: 3}
   windowSingleTap: {fileID: 8300000, guid: ee962cf972472d845bba4df601d6fd37, type: 3}
   windowTap: {fileID: 8300000, guid: 4c18956a7ecdfda4aad5856721ec9b08, type: 3}
+  paperRustle: {fileID: 8300000, guid: 13144a537bd211843b17a7f6fa34d2d7, type: 3}
   flashlightOn: {fileID: 8300000, guid: 946f0c0ed5237ad47bde3fedce2587e0, type: 3}
   flashlightOff: {fileID: 8300000, guid: ecb3cfd67e3319b46bdefc1ee8465315, type: 3}
   flashlightRattle: {fileID: 8300000, guid: bb159272a929890468760b598ab83c72, type: 3}
   flashlightHit: {fileID: 8300000, guid: 335170c0058141d4383b9e84aad3368a, type: 3}
   towerFall: {fileID: 8300000, guid: ef71512310f82a3429d829e509a629d0, type: 3}
+  rescueTeamComms: {fileID: 8300000, guid: e32104e05564d684686e0055640a1f5c, type: 3}
+  waterfallHighFQ: {fileID: 8300000, guid: f84078a00fe5d7346917e88653433b92, type: 3}
+  waterfallLowFQ: {fileID: 8300000, guid: eb7b777aede4d5e478820318c8f977ae, type: 3}
+  waterfallOffKeyFQ: {fileID: 8300000, guid: 145e497e3dc4a4e40870a556ad402410, type: 3}

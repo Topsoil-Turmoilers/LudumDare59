@@ -19,5 +19,5 @@ MonoBehaviour:
   lines:
   - All survivors accounted for and on board. You can return to the ship now.
   - Good work.
-  lineSFX: 0100000000000000
+  lineSFX: 0400000004000000
   flag: 16
