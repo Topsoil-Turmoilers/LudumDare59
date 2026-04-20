@@ -56,7 +56,7 @@ Material:
     - _UseUIAlphaClip: 0
     - _WaveHeight: 0
     - _ZWrite: 0
-    - _iTime: 7.0247436
+    - _iTime: 4.4289875
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
