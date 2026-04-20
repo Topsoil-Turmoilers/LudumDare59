@@ -16,8 +16,10 @@ MonoBehaviour:
   names:
   - You
   - Rescue Team
+  - You
   lines:
   - Duchamp has been located by the mountain in the south-east region.
-  - "Ok, we\u2019re on our way to that location."
-  lineSFX: 0900000004000000
+  - "Ok, we\u2019r-"
+  - It's coming
+  lineSFX: 090000000400000000000000
   flag: 19
