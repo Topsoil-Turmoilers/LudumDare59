@@ -60,12 +60,14 @@ public class MonsterTimer : MonoBehaviour
         isMonsterTime = true;
         transitionTimer = 5f;
         AudioManager.instance?.PlayRadioOffKeyfqSFX();
+        AudioManager.instance?.PlayMonsterTimeMusic();
     }
     private void EndMonsterTime()
     {
         monsterTimeTimer = Random.Range(60f, 180f);
         isMonsterTime = false;
         transitionTimer = 3f;
+        AudioManager.instance?.PlayLevelMusic();
     }
     private void TryHurtPlayer()
     {
