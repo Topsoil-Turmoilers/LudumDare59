@@ -8,6 +8,7 @@ public class AudioPlaylist : ScriptableObject
     public AudioClip prologueTheme;
     public AudioClip levelTheme;
     public AudioClip monsterTimeTheme;
+    public AudioClip radioToggleMusic;
 
     [Header("Player Movement SFX")]
     public AudioClip insideWalk;
