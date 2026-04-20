@@ -19,11 +19,13 @@ MonoBehaviour:
   - Dennis?
   - 
   - You
+  - You
   lines:
   - Hello? Is anyone there?
   - "Dennis! Someone\u2019s on the other line! They\u2019re here!"
   - Oh thank goodness! Yes h-
   - You hear a loud SNAP outside.
   - What was that?
-  lineSFX: 0000000001000000020000001500000000000000
+  - It sounds like it came from outside...
+  lineSFX: 060000000100000003000000170000000000000000000000
   flag: 17
