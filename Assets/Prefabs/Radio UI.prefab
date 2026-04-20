@@ -996,6 +996,9 @@ MonoBehaviour:
   conditionalDialogue:
   - requiredStoryFlag: 18
     dialogue: {fileID: 11400000, guid: 2372554710291fd419f43ee7e6a22482, type: 2}
+    onDialogueStarted:
+      m_PersistentCalls:
+        m_Calls: []
     onDialogueFinished:
       m_PersistentCalls:
         m_Calls: []
@@ -2231,9 +2234,36 @@ MonoBehaviour:
   conditionalDialogue:
   - requiredStoryFlag: 13
     dialogue: {fileID: 11400000, guid: 50dd01fa344780942b1e186f315d110d, type: 2}
+    onDialogueStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     onDialogueFinished:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   OnDefaultDialogueFinished:
     m_PersistentCalls:
       m_Calls: []
@@ -7223,6 +7253,9 @@ MonoBehaviour:
   conditionalDialogue:
   - requiredStoryFlag: 5
     dialogue: {fileID: 11400000, guid: 2bbcbf4f055fb774ca9dcc2583e4d102, type: 2}
+    onDialogueStarted:
+      m_PersistentCalls:
+        m_Calls: []
     onDialogueFinished:
       m_PersistentCalls:
         m_Calls: []
@@ -7937,11 +7970,17 @@ MonoBehaviour:
   conditionalDialogue:
   - requiredStoryFlag: 12
     dialogue: {fileID: 11400000, guid: dc239b1de7cb20a489e9e82cfaf6d0b6, type: 2}
+    onDialogueStarted:
+      m_PersistentCalls:
+        m_Calls: []
     onDialogueFinished:
       m_PersistentCalls:
         m_Calls: []
   - requiredStoryFlag: 14
     dialogue: {fileID: 11400000, guid: 2d32dafb94c18704a993e2ffd72d64ea, type: 2}
+    onDialogueStarted:
+      m_PersistentCalls:
+        m_Calls: []
     onDialogueFinished:
       m_PersistentCalls:
         m_Calls: []
