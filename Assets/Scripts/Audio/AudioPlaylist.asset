@@ -32,7 +32,7 @@ MonoBehaviour:
   radioPlayingHighFQ: {fileID: 8300000, guid: 6843db0cc8497c742a10d5d8af3bff95, type: 3}
   radioPlayingLowFQ: {fileID: 8300000, guid: 38ad5212edd81154e965c185962e418a, type: 3}
   radioPlayingOffKeyFQ: {fileID: 8300000, guid: 0b1555a99f65e0742ab70a776196dac3, type: 3}
-  radioTuning: {fileID: 8300000, guid: fd8b98c6d1917a4449f33606b037b682, type: 3}
+  radioTuning: {fileID: 8300000, guid: dc9e2dcd0e9b12e4eab6af902a8d6a44, type: 3}
   windowHit: {fileID: 8300000, guid: 0b6ba66432184b842b24ffba6fb47c4e, type: 3}
   windowKnock: {fileID: 8300000, guid: 50c64bc86370b1e44b0f61be16b012c3, type: 3}
   windowSingleTap: {fileID: 8300000, guid: ee962cf972472d845bba4df601d6fd37, type: 3}
