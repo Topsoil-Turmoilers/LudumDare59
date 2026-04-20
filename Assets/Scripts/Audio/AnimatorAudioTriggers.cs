@@ -9,6 +9,8 @@ public class AnimatorAudioTriggers : MonoBehaviour
 
     public void TriggerMovementSFX()
     {
+        if (player == null) { return; }
+
         if (AudioManager.instance != null) //I added a safety check :)
         {
             if (player.isWalking && player.isInside)
