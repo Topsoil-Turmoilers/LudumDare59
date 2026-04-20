@@ -863,6 +863,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: StoryFlags.Array.size
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: 'StoryFlags.Array.data[20]'
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: StoryFlagsValues.Array.size
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: StoryFlagsDescriptions.Array.size
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948831563584865092, guid: 0956bc0b959b18948a00056ce296b48e, type: 3}
+      propertyPath: 'StoryFlagsDescriptions.Array.data[20]'
+      value: True after turning into the Medic's frequency
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1404,6 +1424,10 @@ PrefabInstance:
       propertyPath: OnDefaultDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 70151932}
+    - target: {fileID: 8221803379309226158, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_text
+      value: Went South-West far from Tower. Frequency in Drawer?
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

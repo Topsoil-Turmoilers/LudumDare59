@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ff3f978cf0add4da59dee2ad7804ad, type: 3}
   m_Name: 2_CheckRadio
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
-  _currentLine: 0
+  _currentLine: 2
   names:
   - 
   - ???
@@ -45,7 +45,7 @@ MonoBehaviour:
   - "It\u2019s getting closer. \r\nIt\u2019s too late for me, save the others."
   - What is your location? Are there any others with you?
   - The channel list is in the desk drawer. I think I saw Doctor Moss go south west
-    from the tower.
+    from the tower. He's probably made it really far by now.
   - 'A scream can just barely be made out as the channel is flooded with static. '
   - This goes on for a few seconds until the static slowly dissipates. A low grumbling
     can be heard in the distance.
