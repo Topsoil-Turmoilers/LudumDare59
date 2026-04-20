@@ -51,36 +51,40 @@ public class RadioUIManager : MonoBehaviour
         frequencySlider.onValueChanged.AddListener(value => SetFrequency());
         SetFrequency();
 
+        //defaults for the horizontal position, using 5f as thats the map size
         horizontalPositionSlider.onValueChanged.AddListener(value => { 
             RadioState.horizontalPosition = value;
-            MapMaterial.SetFloat("_MarkerPositionX", RadioState.horizontalPosition);
+            MapMaterial.SetFloat("_MarkerPositionX", RadioState.horizontalPosition / 5f);
         });
-        MapMaterial.SetFloat("_MarkerPositionX", RadioState.horizontalPosition);
+        RadioState.horizontalPosition = horizontalPositionSlider.value;
+        MapMaterial.SetFloat("_MarkerPositionX", RadioState.horizontalPosition / 5f);
+
+        //defaults for the vertical position, using 5f as thats the map size
         verticalPositionSlider.onValueChanged.AddListener(value => { 
             RadioState.verticalPosition = value;
-            MapMaterial.SetFloat("_MarkerPositionY", RadioState.verticalPosition);
+            MapMaterial.SetFloat("_MarkerPositionY", RadioState.verticalPosition / 5f);
         });
-        MapMaterial.SetFloat("_MarkerPositionY", RadioState.verticalPosition);
+        RadioState.verticalPosition = verticalPositionSlider.value;
+        MapMaterial.SetFloat("_MarkerPositionY", RadioState.verticalPosition / 5f);
 
-        for (int i = 0; i < Toggles.Length; i++)
-        {
-            Toggle t = Toggles[i];
-            Toggles[i].SetLight();
-            Toggles[i].toggleButton.onClick.AddListener(() =>
-            {
-                t.ToggleValue();
-                RadioState.toggles = ToggleValues;
-                //jank but we take those
-                t.toggleButton.GetComponent<Image>().sprite = t.value ? ToggleTrue : ToggleFalse;
-
-                if (t.value) AudioManager.instance?.PlayRadioButton01SFX();
-                else AudioManager.instance?.PlayRadioButton02SFX();
-            });
-        }
+        //evil connor follows the WET principle
+        Toggles[0].SetLight();
+        Toggles[1].SetLight();
+        Toggles[2].SetLight();
+        Toggles[3].SetLight();
+        Toggles[4].SetLight();
+        Toggles[0].toggleButton.onClick.AddListener(() => PressToggle(Toggles[0], out Toggles[0]));
+        Toggles[1].toggleButton.onClick.AddListener(() => PressToggle(Toggles[1], out Toggles[1]));
+        Toggles[2].toggleButton.onClick.AddListener(() => PressToggle(Toggles[2], out Toggles[2]));
+        Toggles[3].toggleButton.onClick.AddListener(() => PressToggle(Toggles[3], out Toggles[3]));
+        Toggles[4].toggleButton.onClick.AddListener(() => PressToggle(Toggles[4], out Toggles[4]));
 
         RadioState.toggles = new bool[Toggles.Length];
 
-        PlaceCallButton.onClick.AddListener(() => { radioDialogue.MakeCall(RadioState); });
+        PlaceCallButton.onClick.AddListener(() => {
+            RadioState.toggles = ToggleValues;
+            radioDialogue.MakeCall(RadioState); 
+        });
 
         CallbackButton1.onClick.AddListener(() => { radioDialogue.MakeCallBack(0); });
         CallbackButton2.onClick.AddListener(() => { radioDialogue.MakeCallBack(1); });
@@ -109,7 +113,21 @@ public class RadioUIManager : MonoBehaviour
         waveHeight = Mathf.Clamp(waveHeight, 0.1f, 4f);
         WavesMaterial.SetFloat("_WaveHeight", waveHeight);
     }
+    private void PressToggle(Toggle t, out Toggle t0)
+    {
+        t.value = !t.value;
+        t.SetLight();
 
+        //jank but we take those
+        //t.toggleButton.GetComponent<Image>().sprite = t.value ? ToggleTrue : ToggleFalse;
+        t.toggleButton.transform.GetChild(0).GetComponent<RectTransform>()
+            .anchoredPosition = t.value ? new Vector2(0, 30) : new Vector2(0, 0);
+
+        if (t.value) AudioManager.instance?.PlayRadioButton01SFX();
+        else AudioManager.instance?.PlayRadioButton02SFX();
+
+        t0 = t;
+    }
     private void SetFrequency()
     {
         RadioState.frequency = frequencySlider.value;
@@ -117,7 +135,7 @@ public class RadioUIManager : MonoBehaviour
         float shaderValue = 
             ((float)RadioState.frequency - (float)frequencySlider.minValue) / 
             ((float)frequencySlider.maxValue - (float)frequencySlider.minValue);
-        Debug.Log(shaderValue);
+        //Debug.Log(shaderValue);
         FrequencyMaterial.SetFloat("_MarkerPosition", shaderValue);
     }
     public void OpenRadioUI()
@@ -143,12 +161,12 @@ public class RadioUIManager : MonoBehaviour
         public Button toggleButton;
         public Image toggleDisplay;
         public bool value;
-        public void ToggleValue()
-        {
-            value = !value;
+        //public void ToggleValue()
+        //{
+        //    value = !value;
 
-            SetLight();
-        }
+        //    SetLight();
+        //}
         public void SetLight()
         {
             toggleDisplay.color = value ? Color.green : Color.red;

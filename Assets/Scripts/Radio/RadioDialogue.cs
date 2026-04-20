@@ -7,6 +7,8 @@ public class RadioDialogue : MonoBehaviour
     [SerializeField] private bool[] hasConnected;
     [SerializeField] private InteractionHook[] InteractionHooks;
 
+    [SerializeField] private DialogueObject channelNotOpen;
+
     private void Awake()
     {
         hasConnected = new bool[RequiredRadioData.Length];
@@ -20,6 +22,10 @@ public class RadioDialogue : MonoBehaviour
         if (hasConnected[callIndex])
         {
             InteractionHooks[callIndex].OnInteract();
+        }
+        else
+        {
+            DialogueManager.instance?.StartDialogue(channelNotOpen);
         }
     }
     public void MakeCall(RadioData incomingSettings)
@@ -40,30 +46,31 @@ public class RadioDialogue : MonoBehaviour
         float similarity = 0;
 
         int numToggles = Mathf.Min(input.toggles.Length, comparison.toggles.Length);
-        for(int i=0; i< numToggles; i++)
+        for(int i=0; i < numToggles; i++)
         {
             if (input.toggles[i] != comparison.toggles[i])
             {
                 //we need all toggles to match before doing a similarity comparison
                 //so if the toggles are wrong, it can never match
+                Debug.LogWarning("A toggle did not match!");
                 return 0;
             }
         }
 
         //this code currently assumes values between 0 and 1 for each slider
-        if(Mathf.Abs(input.horizontalPosition - comparison.horizontalPosition) <= 0.1f)
+        if(Mathf.Abs(input.horizontalPosition - comparison.horizontalPosition) <= 0.35f)
         {
             similarity += 1;
         }
 
         //this code currently assumes values between 0 and 1 for each slider
-        if (Mathf.Abs(input.verticalPosition - comparison.verticalPosition) <= 0.1f)
+        if (Mathf.Abs(input.verticalPosition - comparison.verticalPosition) <= 0.35f)
         {
             similarity += 1;
         }
 
         //this code currently assumes values between 0 and 1 for each slider
-        if (Mathf.Abs(input.frequency - comparison.frequency) <= 0.1f)
+        if (Mathf.Abs(input.frequency - comparison.frequency) <= 25f)
         {
             similarity += 1;
         }

@@ -22,6 +22,7 @@ MonoBehaviour:
   - You
   - A. Duchamp
   - A. Duchamp
+  - You
   lines:
   - Duchamp? Are you there?
   - "Yes, hello? It was just here, it\u2019s coming to get me."
@@ -33,5 +34,6 @@ MonoBehaviour:
     else."
   - Ellie...
   - Ok. Please hurry.
-  lineSFX: 0400000001000000040000000000000001000000040000000100000001000000
+  - Time to contact the Team.
+  lineSFX: 040000000100000004000000000000000100000004000000010000000100000001000000
   flag: 15
