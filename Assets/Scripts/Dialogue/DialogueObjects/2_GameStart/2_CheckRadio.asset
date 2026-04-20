@@ -23,12 +23,15 @@ MonoBehaviour:
   - You
   - Captain E. Sharp
   - You
+  - Captain E.Sharp
   - 
-  - 
+  - You
   - You
   - Captain E. Sharp
   - You
   - You
+  - 
+  - 
   lines:
   - The radio is already transmitting a signal.
   - "\u2014mitting again. It has been 2 days, 7 hours, and 24 minutes since losing
@@ -39,9 +42,10 @@ MonoBehaviour:
   - "This planet, there\u2019s something connected to it. It woke up and that\u2019s
     when we lost signal."
   - "\u201CIt\u201D? What is \u201CIt\u201D? Where are you, we\u2019re here to help."
-  - "It\u2019s getting closer. \r\nIt\u2019s too late for me, save the others. The
-    channel list is in the desk drawer."
+  - "It\u2019s getting closer. \r\nIt\u2019s too late for me, save the others."
   - What is your location? Are there any others with you?
+  - The channel list is in the desk drawer. I think I saw Doctor Moss go south west
+    from the tower.
   - 'A scream can just barely be made out as the channel is flooded with static. '
   - This goes on for a few seconds until the static slowly dissipates. A low grumbling
     can be heard in the distance.
@@ -49,6 +53,8 @@ MonoBehaviour:
   - ...
   - "That static must have been \u201Cit\u201D messing with the signal. I\u2019ll
     have to keep an ear out for that."
-  - I better let the team know about Sharp.
-  lineSFX: 010000000100000004000000010000000100000002000000040000000200000004000000030000000300000004000000010000000500000000000000
+  - I better let the rescue team know about Sharp.
+  - Use the portable radio located in the HUD to call the Rescue team.
+  - You must be outside near the radio tower to get a hold of them.
+  lineSFX: 010000000100000004000000010000000100000002000000040000000200000004000000020000000300000003000000040000000100000004000000000000000000000000000000
   flag: 2

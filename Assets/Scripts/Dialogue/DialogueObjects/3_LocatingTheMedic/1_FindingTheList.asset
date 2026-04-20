@@ -14,8 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
   _currentLine: 0
   names:
+  - 
+  - 
+  - 
+  - You
   - You
   lines:
+  - There is a list in the desk drawer just like captain Sharp said.
+  - '"Lingas-249 Expedition Team: Captain Eleanora Sharp - [Channel 1, Frequency
+    186], Doctor Edgar Moss - [Channel 4, Frequency 398], Doctor Dennis Banc..."'
+  - The rest of the note is illegible. The paper is torn and stained.
   - '*Sigh* Of Course...'
-  lineSFX: 00000000
+  - All I have to do now is tune to frequency 398 and find it's location south west
+    from the tower.
+  lineSFX: 0800000000000000000000000000000000000000
   flag: 4

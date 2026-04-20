@@ -17,6 +17,7 @@ MonoBehaviour:
   - 
   - 
   - You
+  - You
   lines:
   - Inside the Bag are the medical records of all the expedition team members. Basic
     stuff about small injuries and mental sanity statuses. Except for the Geologist
@@ -24,6 +25,7 @@ MonoBehaviour:
   - "\u201CDoctor Bancroft takes his studies way too seriously. It\u2019s been very
     difficult for me to pull him away from that quarry. I am afraid he may injure
     himself if I don\u2019t keep an eye on him.\u201D"
-  - "Well, it\u2019s worth a shot."
-  lineSFX: 080000000000000000000000
+  - "Well, it\u2019s worth a shot. Just need the frequency number..."
+  - I wonder if there are any more clues out here.
+  lineSFX: 08000000000000000000000000000000
   flag: 8

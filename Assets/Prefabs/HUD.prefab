@@ -563,11 +563,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1639372773811899999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 701, y: 0}
-  m_SizeDelta: {x: 1464, y: 1080}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.75, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &7680225083942372056
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -732,11 +732,11 @@ RectTransform:
   - {fileID: 4683142232897975181}
   m_Father: {fileID: 1639372773811899999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 714.34, y: 0}
-  m_SizeDelta: {x: 490, y: 1080}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.75, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &1110802174772089084
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -810,7 +810,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractionHook
   defaultDialogue: {fileID: 11400000, guid: e9ef41722d63f2445880b455dbc78d9c, type: 2}
-  conditionalDialogue: []
+  conditionalDialogue:
+  - requiredStoryFlag: 2
+    dialogue: {fileID: 11400000, guid: d0d01221557621a49b4fc65a0a5937b5, type: 2}
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - requiredStoryFlag: 5
+    dialogue: {fileID: 11400000, guid: 9bfc9df2de328e84db054909dd74f937, type: 2}
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - requiredStoryFlag: 9
+    dialogue: {fileID: 11400000, guid: c06ffc4c5c68b6545a6adfef4592fecc, type: 2}
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
+  - requiredStoryFlag: 15
+    dialogue: {fileID: 11400000, guid: d9fddc37b52c6e143a10d683115a00e0, type: 2}
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
   OnDefaultDialogueFinished:
     m_PersistentCalls:
       m_Calls: []
