@@ -1,0 +1,39 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class BlackScreenFades : MonoBehaviour
+{
+    [SerializeField] private GameObject blackScreen;
+    [SerializeField] private float alphaColor;
+
+    private void Awake()
+    {
+        alphaColor = blackScreen.GetComponent<Image>().color.a;
+    }
+
+    public void FadeOut()
+    {
+        if (alphaColor >= 0)
+        {
+            alphaColor -= Time.deltaTime / 2;
+            blackScreen.GetComponent<Image>().color = new Vector4(0, 0, 0, alphaColor);
+        }
+        else
+        {
+            blackScreen.GetComponent<Image>().color = new Vector4(0, 0, 0, 0);
+        }
+    }
+
+    public void FadeIn()
+    {
+        if (alphaColor <= 1)
+        {
+            alphaColor += Time.deltaTime / 2;
+            blackScreen.GetComponent<Image>().color = new Vector4(0, 0, 0, alphaColor);
+        }
+        else
+        {
+            blackScreen.GetComponent<Image>().color = new Vector4(0, 0, 0, 1);
+        }
+    }
+}
