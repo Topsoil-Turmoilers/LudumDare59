@@ -12,17 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ff3f978cf0add4da59dee2ad7804ad, type: 3}
   m_Name: 3_FindingResearchNotes
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
-  _currentLine: 0
+  _currentLine: 4
   names:
+  - 
   - 
   - 
   - You
   lines:
   - 'There are many jot notes scribbled around on a page:'
   - "\u201CIt didn\u2019t wake up until dusk when we angered it. It can\u2019t navigate
-    in the daytime. Must be sensitive to light. Definitely more reactive to sound
-    at night. Easier to hear in the dark? Light affects vision? Light level is directly
-    connected to its senses.\u201D"
+    in the daytime. Must be sensitive to light.\""
+  - "\"Definitely more reactive to sound at night. Easier to hear in the dark? Light
+    affects vision? Light level is directly connected to its senses.\u201D"
   - It reacts to sound huh? Maybe I can lure it away using Leblanc's walkie...
-  lineSFX: 050000000000000000000000
+  lineSFX: 05000000000000000000000000000000
   flag: 13

@@ -31,7 +31,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (isDialogueRunning)
         {
-            Debug.LogWarning("Dialogue is already running, but is trying to be started once more. Ignoring...");
+            //Debug.LogWarning("Dialogue is already running, but is trying to be started once more. Ignoring...");
             return;
         }
         isDialogueRunning = true;

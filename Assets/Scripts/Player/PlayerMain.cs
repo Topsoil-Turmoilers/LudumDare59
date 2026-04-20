@@ -151,7 +151,7 @@ public class PlayerMain : MonoBehaviour
             {
                 //Interact
                 interact.OnInteract();
-                Debug.Log("Interacting with " + collision);
+                //Debug.Log("Interacting with " + collision);
                 SwitchState(InteractState);
             }
         }

@@ -19,7 +19,7 @@ public class RoofHider : MonoBehaviour
         if(collision.TryGetComponent<PlayerMain>(out PlayerMain coll))
         {
             this.player = coll;
-            Debug.Log($"{collision.name} collided with the {roofRenderer.name} and made it hide (RoofHider.cs)");
+            //Debug.Log($"{collision.name} collided with the {roofRenderer.name} and made it hide (RoofHider.cs)");
 
             player.isInside = true;
 
@@ -37,7 +37,7 @@ public class RoofHider : MonoBehaviour
 
             //layer mask 1 = everything
             roofRenderer.renderingLayerMask = 1;
-            Debug.Log($"{collision.name} exited with the {roofRenderer.name} and made it show (RoofHider.cs)");
+            //Debug.Log($"{collision.name} exited with the {roofRenderer.name} and made it show (RoofHider.cs)");
         }
     }
 }
