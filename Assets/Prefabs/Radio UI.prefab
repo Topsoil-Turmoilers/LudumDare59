@@ -3544,7 +3544,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Dropped Radio running Towards Quarry. FQ: 240'
+  m_text: 'Dropped Radio just east of the Quarry. FQ: 240'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
   m_sharedMaterial: {fileID: 4454758812649339143, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
@@ -7158,7 +7158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 371aaaebd86225847b1f887bd29a4a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractionHook
-  defaultDialogue: {fileID: 11400000, guid: ab7be8604d137b041844b8eee134fc80, type: 2}
+  defaultDialogue: {fileID: 11400000, guid: 084d48336f808c449a7649abddef5bab, type: 2}
   conditionalDialogue: []
   OnDefaultDialogueFinished:
     m_PersistentCalls:
@@ -8087,7 +8087,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: South-West from Tower. Drawer?
+  m_text: Went South-West far from Tower. Frequency in Drawer?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
   m_sharedMaterial: {fileID: 4454758812649339143, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
@@ -10704,7 +10704,7 @@ MonoBehaviour:
   WavesMaterial: {fileID: 2100000, guid: 2daccf0fc9a734b4da1f5755ffb2d166, type: 2}
   waveHeight: 0
   waveSpeedMultiplier: 5
-  OnFirstRadioVisit: {fileID: 11400000, guid: 81540d2599f45f74ba5df3c0acae8766, type: 2}
+  OnFirstRadioVisit: {fileID: 11400000, guid: ab7be8604d137b041844b8eee134fc80, type: 2}
 --- !u!1 &7254637942791365714
 GameObject:
   m_ObjectHideFlags: 0

@@ -1399,6 +1399,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 598885078}
     m_Modifications:
+    - target: {fileID: 984402834930604497, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: OnFirstRadioVisit
+      value: 
+      objectReference: {fileID: 11400000, guid: ab7be8604d137b041844b8eee134fc80, type: 2}
     - target: {fileID: 2487698020980845066, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: OnDefaultDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1446,7 +1450,7 @@ PrefabInstance:
     - target: {fileID: 6046081489244355539, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: defaultDialogue
       value: 
-      objectReference: {fileID: 11400000, guid: ab7be8604d137b041844b8eee134fc80, type: 2}
+      objectReference: {fileID: 11400000, guid: 084d48336f808c449a7649abddef5bab, type: 2}
     - target: {fileID: 6543269403241496465, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
