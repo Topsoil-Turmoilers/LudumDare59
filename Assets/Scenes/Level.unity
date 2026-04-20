@@ -147,6 +147,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1406460482}
     - target: {fileID: 3105473030311987778, guid: 43f85a5d3051fb145acf4ae32bfd8fd5, type: 3}
+      propertyPath: masterSlider
+      value: 
+      objectReference: {fileID: 540763903}
+    - target: {fileID: 3105473030311987778, guid: 43f85a5d3051fb145acf4ae32bfd8fd5, type: 3}
       propertyPath: voicesSlider
       value: 
       objectReference: {fileID: 540763903}
