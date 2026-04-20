@@ -24,7 +24,6 @@ public class RadioUIManager : MonoBehaviour
             bool[] values = new bool[Toggles.Length];
             for(int i=0; i<Toggles.Length; i++)
             {
-                Debug.Log(Toggles[i].value);
                 values[i] = Toggles[i].value;
             }
             return values;
@@ -77,7 +76,10 @@ public class RadioUIManager : MonoBehaviour
 
         RadioState.toggles = new bool[Toggles.Length];
 
-        PlaceCallButton.onClick.AddListener(() => { radioDialogue.MakeCall(RadioState); });
+        PlaceCallButton.onClick.AddListener(() => {
+            RadioState.toggles = ToggleValues;
+            radioDialogue.MakeCall(RadioState); 
+        });
 
         CallbackButton1.onClick.AddListener(() => { radioDialogue.MakeCallBack(0); });
         CallbackButton2.onClick.AddListener(() => { radioDialogue.MakeCallBack(1); });
@@ -113,8 +115,6 @@ public class RadioUIManager : MonoBehaviour
         
         //jank but we take those
         t.toggleButton.GetComponent<Image>().sprite = t.value ? ToggleTrue : ToggleFalse;
-
-        RadioState.toggles = ToggleValues;
 
         if (t.value) AudioManager.instance?.PlayRadioButton01SFX();
         else AudioManager.instance?.PlayRadioButton02SFX();
