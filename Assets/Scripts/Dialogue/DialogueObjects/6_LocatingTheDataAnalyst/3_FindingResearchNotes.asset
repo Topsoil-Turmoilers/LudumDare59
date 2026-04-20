@@ -17,12 +17,13 @@ MonoBehaviour:
   - 
   - 
   - You
+  - You
   lines:
   - 'There are many jot notes scribbled around on a page:'
   - "\u201CIt didn\u2019t wake up until dusk when we angered it. It can\u2019t navigate
-    in the daytime. Must be sensitive to light. Definitely more reactive to sound
-    at night. Easier to hear in the dark? Light affects vision? Light level is directly
-    connected to its senses.\u201D"
+    in the daytime. Must be sensitive to light.\""
+  - "\"Definitely more reactive to sound at night. Easier to hear in the dark? Light
+    affects vision? Light level is directly connected to its senses.\u201D"
   - It reacts to sound huh?
-  lineSFX: 000000000000000000000000
+  lineSFX: 00000000000000000000000000000000
   flag: 13
