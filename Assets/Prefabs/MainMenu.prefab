@@ -1698,7 +1698,7 @@ GameObject:
   - component: {fileID: 985707884029194504}
   - component: {fileID: 2187724722806521982}
   m_Layer: 5
-  m_Name: Background (1)
+  m_Name: Overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
