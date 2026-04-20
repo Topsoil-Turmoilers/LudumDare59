@@ -112,9 +112,11 @@ public class RadioUIManager : MonoBehaviour
     {
         t.value = !t.value;
         t.SetLight();
-        
+
         //jank but we take those
-        t.toggleButton.GetComponent<Image>().sprite = t.value ? ToggleTrue : ToggleFalse;
+        //t.toggleButton.GetComponent<Image>().sprite = t.value ? ToggleTrue : ToggleFalse;
+        t.toggleButton.transform.GetChild(0).GetComponent<RectTransform>()
+            .anchoredPosition = t.value ? new Vector2(0, 30) : new Vector2(0, 0);
 
         if (t.value) AudioManager.instance?.PlayRadioButton01SFX();
         else AudioManager.instance?.PlayRadioButton02SFX();
