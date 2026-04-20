@@ -1658,7 +1658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3886413808328959972, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5374750885472691842, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1735,6 +1735,10 @@ PrefabInstance:
     - target: {fileID: 7218447697703471131, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_Name
       value: Radio UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7218447697703471131, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7753865367447885726, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_Sprite
