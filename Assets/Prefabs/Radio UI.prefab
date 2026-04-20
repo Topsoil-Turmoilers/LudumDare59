@@ -32,8 +32,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5242310779374525556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.45999998}
+  m_AnchorMax: {x: 1, y: 0.45999998}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -762,8 +762,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 3730475237807303294}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.215, y: 0}
+  m_AnchorMax: {x: 0.215, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -873,8 +873,8 @@ MonoBehaviour:
     verticalPosition: 4
     toggles: 0000000000
   - frequency: 446
-    horizontalPosition: 4
-    verticalPosition: 3
+    horizontalPosition: 4.5
+    verticalPosition: 2
     toggles: 0001000000
   hasConnected: 0100000000
   InteractionHooks:
@@ -1628,8 +1628,8 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MonsterTimer, Assembly-CSharp
-        m_MethodName: PauseMonsterActivity
+        m_TargetAssemblyTypeName: RadioDesk, Assembly-CSharp
+        m_MethodName: DisableRadio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1808,7 +1808,7 @@ RectTransform:
   m_Father: {fileID: 8722237566327759872}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2340,8 +2340,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 745808723096803215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.1, y: 0}
+  m_AnchorMax: {x: 0.1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5872,7 +5872,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6725616633731651587
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8280,7 +8280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 2100000, guid: 14efc2753a587fa4ea6bae77b19de000, type: 2}
+  m_Material: {fileID: 2100000, guid: 13df9b5a43ef38d48acf08f11e66606c, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -10688,7 +10688,7 @@ MonoBehaviour:
   CallbackButton4: {fileID: 8231204222929911991}
   CallbackButton5: {fileID: 5013106116925856571}
   FrequencyMaterial: {fileID: 2100000, guid: a116414b369358745bc1d484f7e522c4, type: 2}
-  MapMaterial: {fileID: 2100000, guid: 14efc2753a587fa4ea6bae77b19de000, type: 2}
+  MapMaterial: {fileID: 2100000, guid: 13df9b5a43ef38d48acf08f11e66606c, type: 2}
   WavesMaterial: {fileID: 2100000, guid: 2daccf0fc9a734b4da1f5755ffb2d166, type: 2}
   waveHeight: 0
   waveSpeedMultiplier: 5
@@ -10899,7 +10899,7 @@ RectTransform:
   m_Father: {fileID: 8109778938122618441}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.45999998}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -12204,7 +12204,7 @@ RectTransform:
   m_Father: {fileID: 3414946145349763213}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.215, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

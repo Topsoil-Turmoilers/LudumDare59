@@ -69,7 +69,7 @@ public class TextScroller : MonoBehaviour
             scrollLine = scrollLine.Substring(1, scrollLine.Length - 1);
         }
 
-        Debug.Log(textDisplay.rectTransform.rect.y);
+        //Debug.Log(textDisplay.rectTransform.rect.y);
     }
 
 

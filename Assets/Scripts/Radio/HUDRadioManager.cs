@@ -14,7 +14,7 @@ public class HUDRadioManager : MonoBehaviour
     [SerializeField] private float radioDist;
     [SerializeField] private bool canCall;
 
-    [SerializeField] private InteractionHook HUDRadioDialogue;
+    [SerializeField] private HudDialogueReport HUDRadioDialogue;
     [SerializeField] private DialogueObject noSignal;
 
     public void PlaceCall()
