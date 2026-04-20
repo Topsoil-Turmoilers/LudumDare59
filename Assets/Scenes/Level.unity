@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &161076835 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 195920683088798368, guid: d72fb933b30489843a349c2c780fde06, type: 3}
+  m_PrefabInstance: {fileID: 8432149651696021862}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4a0df3b467072448b9be9040d75d862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RadioDesk
 --- !u!114 &271300024 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1021430238243410347, guid: ac5110b3d8f965448b2284166c8f9c62, type: 3}
@@ -1401,6 +1412,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4859586742724917733, guid: 001a0633db4d3104aaa887582bcecd26, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1118635224}
+    - target: {fileID: 4859586742724917733, guid: 001a0633db4d3104aaa887582bcecd26, type: 3}
+      propertyPath: radioDesk
+      value: 
+      objectReference: {fileID: 161076835}
+    - target: {fileID: 4859586742724917733, guid: 001a0633db4d3104aaa887582bcecd26, type: 3}
+      propertyPath: monsterTimer
+      value: 
+      objectReference: {fileID: 519420034}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

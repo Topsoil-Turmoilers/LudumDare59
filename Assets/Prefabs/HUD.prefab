@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 3383611389891745757}
   - component: {fileID: 5932721031162816720}
   m_Layer: 5
-  m_Name: Waves
+  m_Name: WavesBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -577,6 +577,7 @@ GameObject:
   - component: {fileID: 5878145681813666819}
   - component: {fileID: 1110802174772089084}
   - component: {fileID: 1742740534823816618}
+  - component: {fileID: 4859586742724917733}
   m_Layer: 5
   m_Name: HUD-Overlay
   m_TagString: Untagged
@@ -642,6 +643,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4859586742724917733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5492886056078745294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bccd87dd5e615ec49ae900f6e18fdf8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HUDRadioManager
+  player: {fileID: 0}
+  radioDesk: {fileID: 0}
+  monsterTimer: {fileID: 0}
+  WaveMaterial: {fileID: 2100000, guid: 40abcd7d24b107d49b6324d25e5b6571, type: 2}
+  waveSize: 0
 --- !u!1 &8826541485192587638
 GameObject:
   m_ObjectHideFlags: 0
