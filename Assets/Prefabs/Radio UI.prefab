@@ -659,9 +659,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Medic
-
-'
+  m_text: Channel 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
   m_sharedMaterial: {fileID: 4454758812649339143, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
@@ -952,9 +950,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Analyst
-
-'
+  m_text: Channel 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
   m_sharedMaterial: {fileID: 4454758812649339143, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
@@ -1708,9 +1704,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Biologist
-
-'
+  m_text: Channel 4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
   m_sharedMaterial: {fileID: 4454758812649339143, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
@@ -5878,7 +5872,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6725616633731651587
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8294,7 +8288,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6613702798706783389, guid: 0d5159f72493f7942922ae04e43c04ad, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 497477e8137ffea4b82037449aaa2228, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9974,9 +9968,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Geologist
-
-'
+  m_text: Channel 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
   m_sharedMaterial: {fileID: 4454758812649339143, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
@@ -11672,9 +11664,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Leader
-
-'
+  m_text: Channel 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
   m_sharedMaterial: {fileID: 4454758812649339143, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
