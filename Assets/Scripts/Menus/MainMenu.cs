@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour
 
         //Switch Scene to Level 1?
         //Ideally would switch to a cutscene then level 1's start, etc
-        SceneManager.LoadScene("Level");
+        SceneManager.LoadScene("Prologue");
     }
 
     public void OnButtonOptions()

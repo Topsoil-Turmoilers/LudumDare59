@@ -7155,7 +7155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &107423764004173623
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7241,8 +7241,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20b672f2aa3e50f469b898ee77a576ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NotebookController
-  NotesLineCaptain: {fileID: 0}
-  NotesLineCaptain2: {fileID: 0}
+  NoteCaptain1: {fileID: 3641855272325681610}
+  NoteCaptain2: {fileID: 6604010799552564695}
+  NoteMedic1: {fileID: 1412465684541910649}
+  NoteMedic2: {fileID: 1668537226406224968}
+  NoteMedic3: {fileID: 3014293218307413528}
+  NoteGeologist1: {fileID: 1360125382949287159}
+  NoteGeologist2: {fileID: 6302890730793498917}
+  NoteBiologist1: {fileID: 1245260976270115003}
+  NoteBiologist2: {fileID: 7680777189798383848}
+  NoteBiologist3: {fileID: 6807970060848254415}
+  NoteAnalyst1: {fileID: 8361028725194686502}
+  NoteAnalyst2: {fileID: 3128947000220314506}
+  NoteAnalyst3: {fileID: 8537068597192062703}
+  NoteAnalyst4: {fileID: 1088196968572646321}
+  NoteAnalyst5: {fileID: 5376870540118606265}
 --- !u!1 &4919167442444396781
 GameObject:
   m_ObjectHideFlags: 0
@@ -8048,7 +8061,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Entity has been lured. Now's my chance!
+  m_text: All missing personnel accounted for
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
   m_sharedMaterial: {fileID: 4454758812649339143, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
@@ -9089,7 +9102,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: All missing personnel accounted for
+  m_text: Entity has been lured. Now's my chance!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}
   m_sharedMaterial: {fileID: 4454758812649339143, guid: 5f6e9e6790f2b0146b4d2b93979146b5, type: 2}

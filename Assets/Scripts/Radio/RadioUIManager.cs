@@ -124,8 +124,8 @@ public class RadioUIManager : MonoBehaviour
         t.toggleButton.transform.GetChild(0).GetComponent<RectTransform>()
             .anchoredPosition = t.value ? new Vector2(0, 30) : new Vector2(0, 0);
 
-        if (t.value) AudioManager.instance?.PlayRadioButton01SFX();
-        else AudioManager.instance?.PlayRadioButton02SFX();
+        if (t.value) AudioManager.instance?.PlayRadioSwitch01SFX();
+        else AudioManager.instance?.PlayRadioSwitch02SFX();
 
         t0 = t;
     }
