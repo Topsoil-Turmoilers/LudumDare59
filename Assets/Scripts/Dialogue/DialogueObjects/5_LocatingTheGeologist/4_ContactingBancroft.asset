@@ -10,31 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17ff3f978cf0add4da59dee2ad7804ad, type: 3}
-  m_Name: 2_ContactingBancroft
+  m_Name: 4_ContactingBancroft
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
   _currentLine: 0
   names:
   - You
   - ???
-  - Doctor D. Bancroft
+  - You
   - Doctor D. Bancroft
   - Doctor A. Leblanc
   - You
   - Doctor A. Leblanc
   - 
   - Doctor D. Bancroft
+  - You
   lines:
-  - Hello? Is anyone there?
-  - "Dennis! Someone\u2019s on the other line! They\u2019re here!"
-  - Oh thank goodness! Yes hello!
+  - Hello?
+  - OH! Thank goodness. I though I hallucinated your call! Dr. Bancroft, present!
+  - I'm sorry to worry you. The radio tower... needed maintenance. We have a team
+    here to help. What's your status?
   - "I\u2019m with doctor LeBlanc, she seems to have broken her leg in a major fall."
   - It was right there. It was going to get me, so I ran and ended up in the quarry.
     I dropped my walkie at some point just east of here.
   - "Don\u2019t worry, I\u2019ll send people your way. What\u2019s your walkie\u2019s
     channel number? Do you know Duchamp\u2019s channel number?"
-  - "Ash was the only one who knew our frequency numbers, so I don\u2019t know hers.
-    But mine is set to 240."
+  - Mine is set to 240, and I believe Ash's frequency was somewhere between 446.
+    I have no idea where she went thought...
   - She hisses in pain.
   - Careful Anna! Please hurry, before it comes for us.
-  lineSFX: 040000000100000001000000010000000100000004000000010000000000000001000000
+  - Doctor Leblanc is injured. I should contact the rescue team immediately.
+  lineSFX: 04000000010000000000000001000000010000000400000001000000000000000100000000000000
   flag: 9

@@ -8,6 +8,7 @@ public class AudioPlaylist : ScriptableObject
     public AudioClip prologueTheme;
     public AudioClip levelTheme;
     public AudioClip monsterTimeTheme;
+    public AudioClip radioToggleMusic;
 
     [Header("Player Movement SFX")]
     public AudioClip insideWalk;
@@ -18,9 +19,16 @@ public class AudioPlaylist : ScriptableObject
     [Header("Radio SFX")]
     public AudioClip radioButton01;
     public AudioClip radioButton02;
+    public AudioClip radioButton03;
+    public AudioClip radioButton04;
+    public AudioClip radioButton05;
+    public AudioClip radioButton06;
+    public AudioClip radioSwitch01;
+    public AudioClip radioSwitch02;
     public AudioClip radioPlayingHighFQ;
     public AudioClip radioPlayingLowFQ;
     public AudioClip radioPlayingOffKeyFQ;
+    public AudioClip radioTuning;
 
     [Header("Inside SFX")]
     public AudioClip windowHit;
@@ -33,4 +41,5 @@ public class AudioPlaylist : ScriptableObject
     public AudioClip flashlightOff;
     public AudioClip flashlightRattle;
     public AudioClip flashlightHit;
+    public AudioClip towerFall;
 }
