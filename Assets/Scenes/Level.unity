@@ -1393,13 +1393,13 @@ PrefabInstance:
       propertyPath: OnDefaultDialogueFinished.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1984680051}
-    - target: {fileID: 5061332794260475660, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
-      propertyPath: conditionalDialogue.Array.data[0].onDialogueStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+    - target: {fileID: 2673332116890637475, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5061332794260475660, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
-      propertyPath: conditionalDialogue.Array.data[0].onDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+    - target: {fileID: 2673332116890637475, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5061332794260475660, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: conditionalDialogue.Array.data[0].onDialogueStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1409,38 +1409,26 @@ PrefabInstance:
       propertyPath: conditionalDialogue.Array.data[0].onDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1747684486}
-    - target: {fileID: 5061332794260475660, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
-      propertyPath: conditionalDialogue.Array.data[0].onDialogueStarted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Play
+    - target: {fileID: 5374750885472691842, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5061332794260475660, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
-      propertyPath: conditionalDialogue.Array.data[0].onDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Stop
+    - target: {fileID: 5374750885472691842, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5061332794260475660, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
-      propertyPath: conditionalDialogue.Array.data[0].onDialogueStarted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.AudioSource, UnityEngine
+    - target: {fileID: 5582014543898884525, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5061332794260475660, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
-      propertyPath: conditionalDialogue.Array.data[0].onDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.AudioSource, UnityEngine
+    - target: {fileID: 5582014543898884525, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5061332794260475660, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
-      propertyPath: conditionalDialogue.Array.data[0].onDialogueStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+    - target: {fileID: 5582014543898884525, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5061332794260475660, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
-      propertyPath: conditionalDialogue.Array.data[0].onDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5263619902394200519, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
-      propertyPath: m_text
-      value: 'Dropped Radio just east of the Quarry. FQ: 240'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6046081489244355539, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
-      propertyPath: defaultDialogue
-      value: 
-      objectReference: {fileID: 11400000, guid: ab7be8604d137b041844b8eee134fc80, type: 2}
     - target: {fileID: 6543269403241496465, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -1493,10 +1481,6 @@ PrefabInstance:
       propertyPath: OnDefaultDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 70151932}
-    - target: {fileID: 8221803379309226158, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
-      propertyPath: m_text
-      value: Went South-West far from Tower. Frequency in Drawer?
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
