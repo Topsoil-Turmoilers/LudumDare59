@@ -1368,6 +1368,10 @@ PrefabInstance:
       propertyPath: conditionalDialogue.Array.data[0].onDialogueFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5263619902394200519, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
+      propertyPath: m_text
+      value: 'Dropped Radio just east of the Quarry. FQ: 240'
+      objectReference: {fileID: 0}
     - target: {fileID: 6046081489244355539, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: defaultDialogue
       value: 
