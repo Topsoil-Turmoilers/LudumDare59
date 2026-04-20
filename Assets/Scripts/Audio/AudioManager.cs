@@ -53,10 +53,14 @@ public class AudioManager : MonoBehaviour
         {
             PlayMenuMusic();
         }
-        //and we will never have more than 1 scene
-        else
+        //1 is the level scene
+        if(newScene.buildIndex == 1)
         {
             PlayLevelMusic();
+        }
+        else
+        {
+            PlayPrologueMusic();
         }
     }
 
