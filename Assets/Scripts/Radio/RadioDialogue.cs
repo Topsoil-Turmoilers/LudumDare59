@@ -40,12 +40,13 @@ public class RadioDialogue : MonoBehaviour
         float similarity = 0;
 
         int numToggles = Mathf.Min(input.toggles.Length, comparison.toggles.Length);
-        for(int i=0; i< numToggles; i++)
+        for(int i=0; i < numToggles; i++)
         {
             if (input.toggles[i] != comparison.toggles[i])
             {
                 //we need all toggles to match before doing a similarity comparison
                 //so if the toggles are wrong, it can never match
+                Debug.LogWarning("A toggle did not match!");
                 return 0;
             }
         }

@@ -1093,6 +1093,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
+--- !u!114 &1876603460 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4859586742724917733, guid: 001a0633db4d3104aaa887582bcecd26, type: 3}
+  m_PrefabInstance: {fileID: 4907592718265169651}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bccd87dd5e615ec49ae900f6e18fdf8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HUDRadioManager
 --- !u!1 &1893057542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,6 +1343,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 1055367089810526471, guid: 001a0633db4d3104aaa887582bcecd26, type: 3}
+      propertyPath: conditionalDialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1055367089810526471, guid: 001a0633db4d3104aaa887582bcecd26, type: 3}
+      propertyPath: conditionalDialogue.Array.data[0].dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: d0d01221557621a49b4fc65a0a5937b5, type: 2}
+    - target: {fileID: 1055367089810526471, guid: 001a0633db4d3104aaa887582bcecd26, type: 3}
+      propertyPath: conditionalDialogue.Array.data[0].requiredStoryFlag
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1639372773811899999, guid: 001a0633db4d3104aaa887582bcecd26, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1442,9 +1465,49 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8253354008648131750, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253354008648131750, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[20].m_ActionId
+      value: ee7461e8-013b-485d-a9eb-1c04bebbc193
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253354008648131750, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[20].m_ActionName
+      value: 'Player/Radio[/Keyboard/r,/XInputControllerWindows/rightShoulder]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253354008648131750, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[20].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253354008648131750, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[20].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253354008648131750, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
       propertyPath: m_ActionEvents.Array.data[19].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 271300024}
+    - target: {fileID: 8253354008648131750, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[20].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1876603460}
+    - target: {fileID: 8253354008648131750, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[20].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253354008648131750, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[20].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlaceCall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253354008648131750, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[20].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HUDRadioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253354008648131750, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
+      propertyPath: m_ActionEvents.Array.data[20].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8701032081410655235, guid: bf394f2f7c4586d48b3184676475b9c5, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1681,7 +1744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3886413808328959972, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5374750885472691842, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1761,7 +1824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7218447697703471131, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7753865367447885726, guid: 52d6c04c2a54e7349afeeb69f49bb719, type: 3}
       propertyPath: m_Sprite
