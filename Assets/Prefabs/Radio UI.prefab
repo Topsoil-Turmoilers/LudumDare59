@@ -686,7 +686,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.15
+  m_fontSize: 20.05
   m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -883,6 +883,12 @@ MonoBehaviour:
   - {fileID: 2487698020980845066}
   - {fileID: 5061332794260475660}
   - {fileID: 826432937166859131}
+  callbackConnectedImages:
+  - {fileID: 4822801155920023560}
+  - {fileID: 2799743136014790572}
+  - {fileID: 5837613707688333676}
+  - {fileID: 4466432716050971655}
+  - {fileID: 6501188710863435098}
   channelNotOpen: {fileID: 11400000, guid: 66f7d49c680172b4894156208f8966d2, type: 2}
   missingToggle: {fileID: 11400000, guid: 2ae2359b0f76bbf4a82cfb849987b5b9, type: 2}
 --- !u!1 &833116334682433609
@@ -977,7 +983,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.75
+  m_fontSize: 20.05
   m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1588,6 +1594,14 @@ MonoBehaviour:
     onDialogueFinished:
       m_PersistentCalls:
         m_Calls: []
+  - requiredStoryFlag: 10
+    dialogue: {fileID: 11400000, guid: 1a5f322438c845f42969d0fc932783e4, type: 2}
+    onDialogueStarted:
+      m_PersistentCalls:
+        m_Calls: []
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
   OnDefaultDialogueFinished:
     m_PersistentCalls:
       m_Calls:
@@ -1731,7 +1745,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7.7
+  m_fontSize: 20.05
   m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2053,7 +2067,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.85
+  m_fontSize: 21.85
   m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3420,6 +3434,38 @@ MonoBehaviour:
         - m_Target: {fileID: 13740632319891201, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
           m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
           m_MethodName: StopRadioToggleMusic
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - requiredStoryFlag: 14
+    dialogue: {fileID: 11400000, guid: 9263b22e721a936429280c9354598c89, type: 2}
+    onDialogueStarted:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Stop
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5517,7 +5563,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 6
+  m_fontSize: 12.55
   m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6572,7 +6618,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.55
+  m_fontSize: 72
   m_fontSizeBase: 72
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7149,7 +7195,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractionHook
   defaultDialogue: {fileID: 11400000, guid: 084d48336f808c449a7649abddef5bab, type: 2}
-  conditionalDialogue: []
+  conditionalDialogue:
+  - requiredStoryFlag: 3
+    dialogue: {fileID: 11400000, guid: 1a5f322438c845f42969d0fc932783e4, type: 2}
+    onDialogueStarted:
+      m_PersistentCalls:
+        m_Calls: []
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
   OnDefaultDialogueFinished:
     m_PersistentCalls:
       m_Calls: []
@@ -7621,7 +7675,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.85
+  m_fontSize: 21.85
   m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9859,7 +9913,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.85
+  m_fontSize: 21.85
   m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9995,7 +10049,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7.15
+  m_fontSize: 20.05
   m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11185,7 +11239,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 6
+  m_fontSize: 12.55
   m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11547,6 +11601,14 @@ MonoBehaviour:
     onDialogueFinished:
       m_PersistentCalls:
         m_Calls: []
+  - requiredStoryFlag: 6
+    dialogue: {fileID: 11400000, guid: 1a5f322438c845f42969d0fc932783e4, type: 2}
+    onDialogueStarted:
+      m_PersistentCalls:
+        m_Calls: []
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
   OnDefaultDialogueFinished:
     m_PersistentCalls:
       m_Calls:
@@ -11691,7 +11753,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 9.1
+  m_fontSize: 20.1
   m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12624,6 +12686,14 @@ MonoBehaviour:
     onDialogueFinished:
       m_PersistentCalls:
         m_Calls: []
+  - requiredStoryFlag: 16
+    dialogue: {fileID: 11400000, guid: 1a5f322438c845f42969d0fc932783e4, type: 2}
+    onDialogueStarted:
+      m_PersistentCalls:
+        m_Calls: []
+    onDialogueFinished:
+      m_PersistentCalls:
+        m_Calls: []
   OnDefaultDialogueFinished:
     m_PersistentCalls:
       m_Calls: []
@@ -12719,7 +12789,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.85
+  m_fontSize: 21.85
   m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1
