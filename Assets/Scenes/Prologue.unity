@@ -442,6 +442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FullScreenOverlay
       objectReference: {fileID: 0}
+    - target: {fileID: 7065373144022004875, guid: 936d962113c479f49b40dd575032ab5f, type: 3}
+      propertyPath: prologueTextCanvas
+      value: 
+      objectReference: {fileID: 9077840578751344520}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -504,6 +508,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c72afb29f0c7b24191cadfbd45fb2f1, type: 3}
+--- !u!1 &9077840578751344520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4600463788782176185, guid: 3c72afb29f0c7b24191cadfbd45fb2f1, type: 3}
+  m_PrefabInstance: {fileID: 9077840578751344519}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
