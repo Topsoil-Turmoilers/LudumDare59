@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
 
     [Header("Music")]
     [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource radioMusicSource;
 
     [Header("SFX")]
     [SerializeField] private AudioSource sfxSource;
@@ -69,7 +70,9 @@ public class AudioManager : MonoBehaviour
     public void PlayPrologueMusic() => PlayMusic(playlist.prologueTheme);
     public void PlayLevelMusic() => PlayMusic(playlist.levelTheme);
     public void PlayMonsterTimeMusic() => PlayMusic(playlist.monsterTimeTheme);
-    public void PlayRadioToggleMusic() => PlayMusic(playlist.radioToggleMusic);
+    public void PlayRadioMusic() => PlayMusic(playlist.radioToggleMusic);
+    public void PlayRadioToggleMusic() => PlayRadioMusic(playlist.radioToggleMusic);
+    public void StopRadioToggleMusic() => StopRadioMusic(playlist.radioToggleMusic);
 
     // SFX =============================================================
 
@@ -126,8 +129,31 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
-// private on purpose: let the AudioManager decide which SFX source plays the audio
-private void PlayDialogueSFX(SFX soundEffect, AudioSource source) {
+    private void PlayRadioMusic(AudioClip clip)
+    {
+        if (musicSource.clip == clip)
+        {
+            //If the clip is already playing, do not restart it
+            return;
+        }
+
+        musicSource.clip = clip;
+        musicSource.Play();
+    }
+
+    private void StopRadioMusic(AudioClip clip)
+    {
+        if(radioMusicSource.clip == clip)
+        {
+            return;
+        }
+
+        radioMusicSource.clip = clip;
+        radioMusicSource.Stop();
+    }
+
+    // private on purpose: let the AudioManager decide which SFX source plays the audio
+    private void PlayDialogueSFX(SFX soundEffect, AudioSource source) {
         switch (soundEffect)
         {
             case SFX.No_Sound: return;

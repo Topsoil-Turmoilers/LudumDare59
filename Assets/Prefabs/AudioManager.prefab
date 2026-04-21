@@ -172,7 +172,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -1737395115003438433, guid: 834be9bfb09a4854a8fadcf3a80b4784, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: a685eb148d5f432449d2481bb7852485, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -436,5 +436,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   playlist: {fileID: 11400000, guid: ccf32763e7d4f064aa47a9dd1c02c9d9, type: 2}
   musicSource: {fileID: 1152177452848378245}
+  radioMusicSource: {fileID: 0}
   sfxSource: {fileID: 5763747176130994601}
   radioSfxSource: {fileID: 2255550593217354423}

@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: 5_FoundGeologist
   m_EditorClassIdentifier: Assembly-CSharp::DialogueObject
   _currentLine: 0
-  names: []
-  lines: []
-  lineSFX: 
+  names:
+  - You
+  lines:
+  - Leblanc is injured. I need to report to the rescue team immediately.
+  lineSFX: 00000000
   flag: 0
