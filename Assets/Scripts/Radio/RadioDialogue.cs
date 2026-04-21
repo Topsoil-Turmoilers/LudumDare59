@@ -1,22 +1,20 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class RadioDialogue : MonoBehaviour
 {
     [SerializeField] private RadioData[] RequiredRadioData;
     [SerializeField] private bool[] hasConnected;
     [SerializeField] private InteractionHook[] InteractionHooks;
+    [SerializeField] private Image[] callbackConnectedImages;
 
     [SerializeField] private DialogueObject channelNotOpen;
     [SerializeField] private DialogueObject missingToggle;
 
     private void Awake()
     {
-        //hasConnected = new bool[RequiredRadioData.Length];
-        //for (int i = 0; i < hasConnected.Length; i++)
-        //{
-        //    hasConnected[i] = false;
-        //}
+        UpdateLights();
     }
     public void MakeCallBack(int callIndex)
     {
@@ -39,6 +37,7 @@ public class RadioDialogue : MonoBehaviour
                 Debug.Log("Match Found!");
                 hasConnected[i] = true;
                 InteractionHooks[i].OnInteract();
+                UpdateLights();
                 return similarity;
             }
         }
@@ -98,6 +97,14 @@ public class RadioDialogue : MonoBehaviour
         }
 
         return similarity;
+    }
+
+    private void UpdateLights()
+    {
+        for(int i = 0; i < callbackConnectedImages.Length; i++)
+        {
+            callbackConnectedImages[i].color = hasConnected[i] ? Color.green : Color.red;
+        }
     }
 
     [System.Serializable]
