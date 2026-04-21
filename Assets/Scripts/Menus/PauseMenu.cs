@@ -7,6 +7,8 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject PauseScreen;
     [SerializeField] private GameObject OptionsScreen;
     [SerializeField] private GameObject QuitPrompt;
+    
+    [SerializeField] private PlayerMain player;
 
     //Variables
     private bool PauseCanOpen = true; //To stop multiple menus from being open at the same time
@@ -16,15 +18,19 @@ public class PauseMenu : MonoBehaviour
     //Pausing
     public void OnPause()
     {
-        if (PauseCanOpen)
+        if (PauseCanOpen && !DialogueManager.isDialogueRunning)
         {
             PauseScreen.SetActive(true);
+            player.SwitchState(player.InteractState);
+            Time.timeScale = 0;
         }
     }
 
     public void OnUnpause()
     {
         PauseScreen.SetActive(false);
+        player.SwitchState(player.WalkState);
+        Time.timeScale = 1;
     }
 
     //Options

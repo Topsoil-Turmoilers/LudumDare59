@@ -10,6 +10,7 @@ public class TextScroller : MonoBehaviour
     [SerializeField] private string displayName;
     [SerializeField] private DialogueObject currentDialogue;
     [SerializeField] private TextMeshProUGUI textDisplay;
+    [SerializeField] private TextMeshProUGUI textDisplayJank;
     [SerializeField] private TextMeshProUGUI nameDisplay;
     //private void Awake()
     //{
@@ -49,6 +50,8 @@ public class TextScroller : MonoBehaviour
     {
         textDisplay.text = "";
         scrollLine = line;
+        textDisplayJank.text = line;
+        
         nameDisplay.text = currentDialogue.CurrentName;
         AudioManager.instance?.PlayDialogueSFX(currentDialogue.CurrentSFX);
     }
@@ -62,8 +65,11 @@ public class TextScroller : MonoBehaviour
         {
             scrollTime -= lps;
             textDisplay.text += scrollLine[0];
+            textDisplay.fontSize = textDisplayJank.fontSize;
             scrollLine = scrollLine.Substring(1, scrollLine.Length - 1);
         }
+
+        //Debug.Log(textDisplay.rectTransform.rect.y);
     }
 
 

@@ -911,6 +911,9 @@ MonoBehaviour:
   conditionalDialogue:
   - requiredStoryFlag: 2
     dialogue: {fileID: 11400000, guid: 0893e0d1cabb149499d84ff3cb665ca8, type: 2}
+    onDialogueStarted:
+      m_PersistentCalls:
+        m_Calls: []
     onDialogueFinished:
       m_PersistentCalls:
         m_Calls: []
@@ -1387,11 +1390,17 @@ MonoBehaviour:
   conditionalDialogue:
   - requiredStoryFlag: 3
     dialogue: {fileID: 11400000, guid: 28a49f1285747bc4e829b920857306cf, type: 2}
+    onDialogueStarted:
+      m_PersistentCalls:
+        m_Calls: []
     onDialogueFinished:
       m_PersistentCalls:
         m_Calls: []
   - requiredStoryFlag: 9
     dialogue: {fileID: 11400000, guid: 2b890adb203900f438461e6f3e49807b, type: 2}
+    onDialogueStarted:
+      m_PersistentCalls:
+        m_Calls: []
     onDialogueFinished:
       m_PersistentCalls:
         m_Calls: []
@@ -27435,7 +27444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6956770698114615193
 Transform:
   m_ObjectHideFlags: 0
@@ -27498,7 +27507,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1991924286, guid: 683c9fb546d1a1348898e85beded67c8, type: 3}
+  m_Sprite: {fileID: 1209245075, guid: 160a4e1e60b24f04284ca5e2d576c3b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -27571,7 +27580,19 @@ MonoBehaviour:
   conditionalDialogue: []
   OnDefaultDialogueFinished:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: MonsterTimer, Assembly-CSharp
+        m_MethodName: StartMonsterActivity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6500932483349730731
 GameObject:
   m_ObjectHideFlags: 0
@@ -28513,31 +28534,7 @@ MonoBehaviour:
   dialogue: {fileID: 11400000, guid: 3002049ec4b789348a3156d18857bfc1, type: 2}
   OnDialogueFinished:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6068642570455965110}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MonsterTimer, Assembly-CSharp
-        m_MethodName: StartMonsterActivity
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!61 &2711710835755572917
 BoxCollider2D:
   m_ObjectHideFlags: 0

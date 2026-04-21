@@ -27,6 +27,7 @@ public class DialogueManager : MonoBehaviour
         dialogueCanvas.gameObject.SetActive(false);
     }
 
+
     public void StartDialogue(DialogueObject dialogue)
     {
         if (isDialogueRunning)

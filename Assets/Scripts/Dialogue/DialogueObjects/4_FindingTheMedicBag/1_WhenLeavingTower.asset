@@ -16,6 +16,6 @@ MonoBehaviour:
   names:
   - You
   lines:
-  - "It\u2019s getting dark. I should try to be quick."
+  - I should try to be quick, it looks like night is falling.
   lineSFX: 00000000
   flag: 7

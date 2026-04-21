@@ -18,6 +18,7 @@ MonoBehaviour:
   - 
   - You
   - You
+  - You
   lines:
   - Inside the Bag are the medical records of all the expedition team members. Basic
     stuff about small injuries and mental sanity statuses. Except for the Geologist
@@ -26,6 +27,8 @@ MonoBehaviour:
     difficult for me to pull him away from that quarry. I am afraid he may injure
     himself if I don\u2019t keep an eye on him.\u201D"
   - "Well, it\u2019s worth a shot. Just need the frequency number..."
-  - I wonder if there are any more clues out here.
-  lineSFX: 11000000050000000000000000000000
+  - I wonder if there are any clues inside. There's that one box of stuff I could
+    check.
+  - ...It's getting dark. I should hurry.
+  lineSFX: 1100000005000000000000000300000000000000
   flag: 8
