@@ -3416,9 +3416,9 @@ MonoBehaviour:
     onDialogueStarted:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
+        - m_Target: {fileID: 13740632319891201, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: PlayRadioToggleMusic
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3431,9 +3431,9 @@ MonoBehaviour:
     onDialogueFinished:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Stop
+        - m_Target: {fileID: 13740632319891201, guid: d4aaf281dc1f2ed458e711209436c87f, type: 3}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: StopRadioToggleMusic
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
