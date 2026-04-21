@@ -4,12 +4,16 @@ using UnityEngine.SceneManagement;
 public class Prologue : MonoBehaviour
 {
     [SerializeField] private DialogueObject prologueDialog;
+    [SerializeField] private GameObject prologueTextCanvas;
 
     private void Start()
     {
         DialogueManager.instance.StartDialogue(prologueDialog);
 
         DialogueManager.onDialogueFinished += DialogueManager_onDialogueFinished;
+
+        //Just in Case
+        prologueTextCanvas.SetActive(true);
     }
 
     private void DialogueManager_onDialogueFinished()
