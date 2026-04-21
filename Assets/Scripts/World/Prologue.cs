@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,10 +11,9 @@ public class Prologue : MonoBehaviour
     {
         DialogueManager.instance.StartDialogue(prologueDialog);
 
-        DialogueManager.onDialogueFinished += DialogueManager_onDialogueFinished;
+        StartCoroutine(showNOW());
 
-        //Just in Case
-        prologueTextCanvas.SetActive(true);
+        DialogueManager.onDialogueFinished += DialogueManager_onDialogueFinished;
     }
 
     private void DialogueManager_onDialogueFinished()
@@ -21,5 +21,12 @@ public class Prologue : MonoBehaviour
         Debug.Log("PROLOGUE DONE");
         DialogueManager.onDialogueFinished -= DialogueManager_onDialogueFinished;
         SceneManager.LoadScene("Level");
+    }
+
+    private IEnumerator showNOW()
+    {
+        yield return new WaitForSeconds(1);
+        //Just in Case
+        prologueTextCanvas.SetActive(true);
     }
 }
