@@ -9,13 +9,18 @@ public class PlayerDeadState : PlayerBaseState
         stopUpdating = false;
         deathTimer = 1f;
         //throw new System.NotImplementedException();
+
+        if (player = null) { player = player.GetComponent<PlayerMain>(); }
     }
 
     public override void ExitState(PlayerMain player)
     {
         Debug.Log("Why am I exiting the Dead State??");
         stopUpdating = false;
-        player.transform.rotation = Quaternion.identity;
+        if (player != null)
+        {
+            player.transform.rotation = Quaternion.identity;
+        }
     }
 
     public override void FixedUpdateState(PlayerMain player)
