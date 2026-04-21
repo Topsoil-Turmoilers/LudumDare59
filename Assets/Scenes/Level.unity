@@ -798,6 +798,63 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: f769d60f3056fd04596c5f4ebf0c95ff, type: 2}
+--- !u!1001 &1484905495159860491
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1332827488872529915, guid: e9d28576dac66f9428c981f362d28088, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.61413
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332827488872529915, guid: e9d28576dac66f9428c981f362d28088, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.90723
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332827488872529915, guid: e9d28576dac66f9428c981f362d28088, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332827488872529915, guid: e9d28576dac66f9428c981f362d28088, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332827488872529915, guid: e9d28576dac66f9428c981f362d28088, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332827488872529915, guid: e9d28576dac66f9428c981f362d28088, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332827488872529915, guid: e9d28576dac66f9428c981f362d28088, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332827488872529915, guid: e9d28576dac66f9428c981f362d28088, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332827488872529915, guid: e9d28576dac66f9428c981f362d28088, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332827488872529915, guid: e9d28576dac66f9428c981f362d28088, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639973628249258881, guid: e9d28576dac66f9428c981f362d28088, type: 3}
+      propertyPath: m_Name
+      value: RadioMusicFR
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e9d28576dac66f9428c981f362d28088, type: 3}
 --- !u!1 &2025297183630906870
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,3 +1629,4 @@ SceneRoots:
   - {fileID: 6573669151889975200}
   - {fileID: 240049606}
   - {fileID: 3097461164880193604}
+  - {fileID: 1484905495159860491}
