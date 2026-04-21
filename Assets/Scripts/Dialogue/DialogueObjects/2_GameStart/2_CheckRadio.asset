@@ -25,7 +25,7 @@ MonoBehaviour:
   - You
   - Captain E.Sharp
   - 
-  - You
+  - 
   - You
   - Captain E. Sharp
   - You
@@ -55,7 +55,8 @@ MonoBehaviour:
   - "That static must have been \u201Cit\u201D messing with the signal. I\u2019ll
     have to keep an ear out for that."
   - I better let the rescue team know about Sharp.
-  - Use the portable radio located in the HUD to call the Rescue team.
-  - You must be outside near the radio tower to get a hold of them.
+  - Use the portable radio located in the HUD (by pressing "R" on your keyboard)
+    to call the Rescue team.
+  - You must be outside, away from the radio tower to get a hold of them.
   lineSFX: 010000000100000006000000010000000100000002000000060000000200000006000000020000000300000003000000060000000100000007000000000000000000000000000000
   flag: 2
