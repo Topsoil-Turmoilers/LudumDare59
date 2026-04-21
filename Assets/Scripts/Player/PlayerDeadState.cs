@@ -39,8 +39,9 @@ public class PlayerDeadState : PlayerBaseState
         deathTimer -= Time.deltaTime;
         player.transform.rotation = Quaternion.Lerp(Quaternion.Euler(0, 0, 90), Quaternion.identity, 
             deathTimer < 0 ? 0 : deathTimer * deathTimer);
+        player.rBody.linearVelocity = new Vector2(0, 0);
 
-        if(deathTimer <= -1.5f)
+        if (deathTimer <= -1.5f)
         {
             //1 second after 'fully rotating'
             GameOverOverlay.Instance.OnGameOver();
